@@ -82,9 +82,9 @@ const MapContainer = ({ onLocationSelect, selectedLocation, nearestLocation }) =
   // Zoom to location when selected
   useEffect(() => {
     if (selectedLocation && mapRef.current) {
-      mapRef.current.setView([selectedLocation.lat, selectedLocation.lng], 10, {
+      mapRef.current.setView([selectedLocation.lat, selectedLocation.lng], 6, {
         animate: true,
-        duration: 1
+        duration: 0.5
       });
     }
   }, [selectedLocation]);
@@ -138,7 +138,7 @@ const MapContainer = ({ onLocationSelect, selectedLocation, nearestLocation }) =
         style={{ height: '100%', width: '100%', zIndex: 1 }}
         zoomControl={false}
         minZoom={2}
-        maxZoom={18}
+        maxZoom={8}
         worldCopyJump={true}
       >
         <TileLayer

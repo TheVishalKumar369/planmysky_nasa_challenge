@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef } from 'react';
 import MapContainer from './components/MapContainer';
 import ResultsPanel from './components/ResultsPanel';
 import SearchBar from './components/SearchBar';
+import HamburgerMenu from './components/HamburgerMenu';
 import { findNearestLocation, getWeatherPrediction } from './services/weatherApi';
 import './styles/App.css';
 
@@ -121,6 +122,8 @@ function App() {
           nearest: nearestLocation
         }}
       />
+
+      <HamburgerMenu />
 
       {/* Minimal instruction overlay */}
       {!isPanelOpen && (
