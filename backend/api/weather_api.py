@@ -18,8 +18,7 @@ from pathlib import Path
 
 # Add src/modeling to path
 sys.path.append(str(Path(__file__).parent.parent.parent / "src" / "modeling"))
-
-from src.modeling.historical_pattern_predictor import HistoricalWeatherPredictor
+from historical_pattern_predictor import HistoricalWeatherPredictor
 
 # Initialize FastAPI
 app = FastAPI(
@@ -140,7 +139,7 @@ def load_predictor(location_name: str):
 
 @app.on_event("startup")
 async def startup_event():
-    """Discover available locations on startup"""
+    """Discover available locations and pre-load data on startup"""
     global available_locations, predictor_status
 
     try:
@@ -151,6 +150,17 @@ async def startup_event():
             predictor_status["loaded"] = True
             predictor_status["locations_available"] = available_locations
             print(f"✓ Found {len(available_locations)} location(s): {', '.join(available_locations)}")
+
+            # Pre-load all locations to speed up first requests
+            print("Pre-loading location data...")
+            for location in available_locations:
+                predictor = load_predictor(location)
+                if predictor:
+                    print(f"  ✓ Pre-loaded {location}")
+                else:
+                    print(f"  ✗ Failed to pre-load {location}")
+
+            print(f"✓ Ready! All {len(predictors)} location(s) loaded")
         else:
             predictor_status["error"] = "No processed data found"
             print(f"✗ No processed data locations found")
