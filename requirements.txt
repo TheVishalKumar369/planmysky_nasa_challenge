@@ -1,0 +1,32 @@
+# Core scientific stack
+numpy
+pandas
+xarray
+netCDF4
+h5netcdf
+
+# Data acquisition & remote access
+cdsapi           # Copernicus Climate Data Store API for ERA5
+requests
+aiohttp          # optional: async requests for large queries
+
+# Plotting / visualization
+matplotlib
+seaborn
+plotly           # interactive plots (good for dashboards)
+
+# Stats & probability modeling
+scipy
+statsmodels
+
+# Web backend (API)
+fastapi
+uvicorn[standard]
+
+# Data storage & serialization
+pyarrow          # for Parquet
+sqlalchemy       # if you use DB later
+
+# Jupyter (for exploration, not production)
+jupyter
+notebook

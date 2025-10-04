@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanMySky - Weather Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .status-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-online {
+            background: #10b981;
+            animation: pulse 2s infinite;
+        }
+
+        .status-offline {
+            background: #ef4444;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        select, input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+        }
+
+        .spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.show {
+            display: block;
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .weather-item {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .weather-item .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .weather-item .label {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .weather-item .value {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .weather-category {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .weather-category h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .weather-category p {
+            opacity: 0.9;
+        }
+
+        .alert {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .alert h4 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .alert ul {
+            margin-left: 20px;
+            color: #78350f;
+        }
+
+        .info-text {
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+
+        .error {
+            background: #fee2e2;
+            border: 2px solid #ef4444;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌤️ PlanMySky</h1>
+            <p>Weather Planning Made Easy</p>
+        </div>
+
+        <div class="status-card">
+            <span class="status-indicator" id="statusIndicator"></span>
+            <span id="statusText">Checking API...</span>
+        </div>
+
+        <div class="card">
+            <h2>Select a Date</h2>
+
+            <div class="input-group">
+                <label>Choose any date to see typical weather patterns:</label>
+                <div class="input-row">
+                    <select id="monthSelect">
+                        <option value="">Select Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <select id="daySelect">
+                        <option value="">Select Day</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="predictBtn" onclick="getWeatherPrediction()">
+                Get Weather Prediction
+            </button>
+
+            <p class="info-text">
+                Based on <span id="dataYears">loading...</span> years of historical data
+            </p>
+        </div>
+
+        <div id="loadingCard" class="card loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing historical weather patterns...</p>
+        </div>
+
+        <div id="resultsCard" class="card results">
+            <h2>Weather Prediction for <span id="resultDate"></span></h2>
+
+            <div class="weather-category">
+                <h3 id="weatherCategory">Loading...</h3>
+                <p id="categoryConfidence"></p>
+            </div>
+
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <div class="icon">☔</div>
+                    <div class="label">Rain Probability</div>
+                    <div class="value" id="rainProb">-</div>
+                </div>
+
+                <div class="weather-item">
+                    <div class="icon">💧</div>
+                    <div class="label">Expected Rainfall</div>
+                    <div class="value" id="rainfall">-</div>
+                </div>
+
+                <div class="weather-item">
+                    <div class="icon">🌡️</div>
+                    <div class="label">Temperature Range</div>
+                    <div class="value" id="tempRange">-</div>
+                </div>
+
+                <div class="weather-item">
+                    <div class="icon">💨</div>
+                    <div class="label">Wind Speed</div>
+                    <div class="value" id="windSpeed">-</div>
+                </div>
+
+                <div class="weather-item">
+                    <div class="icon">☁️</div>
+                    <div class="label">Cloud Cover</div>
+                    <div class="value" id="cloudCover">-</div>
+                </div>
+            </div>
+
+            <div id="extremeAlerts" class="alert" style="display: none;">
+                <h4>⚠️ Extreme Weather Risks</h4>
+                <ul id="alertList"></ul>
+            </div>
+
+            <p class="info-text">
+                Based on <span id="yearsAnalyzed">-</span> years of data
+                (<span id="totalDays">-</span> observations)
+            </p>
+        </div>
+
+        <div id="errorCard" class="card error" style="display: none;">
+            <strong>Error:</strong> <span id="errorMessage"></span>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        // Populate day dropdown
+        const daySelect = document.getElementById('daySelect');
+        for (let i = 1; i <= 31; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            daySelect.appendChild(option);
+        }
+
+        // Check API status on load
+        async function checkStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status`);
+                const data = await response.json();
+
+                const indicator = document.getElementById('statusIndicator');
+                const statusText = document.getElementById('statusText');
+
+                if (data.predictor_loaded) {
+                    indicator.className = 'status-indicator status-online';
+                    statusText.textContent = `API Online - ${data.location} (${data.data_years} years)`;
+                    document.getElementById('dataYears').textContent = data.data_years;
+                } else {
+                    indicator.className = 'status-indicator status-offline';
+                    statusText.textContent = 'API Offline - Predictor not loaded';
+                    document.getElementById('predictBtn').disabled = true;
+                }
+            } catch (error) {
+                const indicator = document.getElementById('statusIndicator');
+                const statusText = document.getElementById('statusText');
+                indicator.className = 'status-indicator status-offline';
+                statusText.textContent = 'Cannot connect to API';
+                document.getElementById('predictBtn').disabled = true;
+            }
+        }
+
+        // Get weather prediction
+        async function getWeatherPrediction() {
+            const month = document.getElementById('monthSelect').value;
+            const day = document.getElementById('daySelect').value;
+
+            if (!month || !day) {
+                alert('Please select both month and day');
+                return;
+            }
+
+            // Hide previous results/errors
+            document.getElementById('resultsCard').classList.remove('show');
+            document.getElementById('errorCard').style.display = 'none';
+            document.getElementById('loadingCard').style.display = 'block';
+
+            try {
+                const response = await fetch(`${API_BASE}/api/predict/${month}/${day}?window_days=7`);
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.detail);
+                }
+
+                const data = await response.json();
+                displayResults(data);
+
+            } catch (error) {
+                document.getElementById('loadingCard').style.display = 'none';
+                document.getElementById('errorCard').style.display = 'block';
+                document.getElementById('errorMessage').textContent = error.message;
+            }
+        }
+
+        // Display results
+        function displayResults(data) {
+            document.getElementById('loadingCard').style.display = 'none';
+
+            // Date
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const [m, d] = data.date.split('-');
+            document.getElementById('resultDate').textContent = `${monthNames[parseInt(m)-1]} ${parseInt(d)}`;
+
+            // Weather category
+            document.getElementById('weatherCategory').textContent = data.weather_category;
+            document.getElementById('categoryConfidence').textContent =
+                `${(data.category_confidence * 100).toFixed(0)}% confidence`;
+
+            // Rain
+            document.getElementById('rainProb').textContent = `${data.rainfall.probability_percent}%`;
+            document.getElementById('rainfall').textContent = `${data.rainfall.expected_amount_mm} mm`;
+
+            // Temperature
+            const tempMin = data.temperature.expected_range.min;
+            const tempMax = data.temperature.expected_range.max;
+            document.getElementById('tempRange').textContent = `${tempMin}-${tempMax}°C`;
+
+            // Wind
+            document.getElementById('windSpeed').textContent = `${data.wind.mean_speed_ms} m/s`;
+
+            // Cloud
+            document.getElementById('cloudCover').textContent = `${data.cloud_cover.mean_percent}%`;
+
+            // Extreme alerts
+            const alerts = [];
+            const ext = data.extreme_probabilities;
+
+            if (ext.temp_above_30C > 0.2) {
+                alerts.push(`${(ext.temp_above_30C * 100).toFixed(0)}% chance of temperature above 30°C`);
+            }
+            if (ext.heavy_rain_above_10mm > 0.2) {
+                alerts.push(`${(ext.heavy_rain_above_10mm * 100).toFixed(0)}% chance of heavy rain (>10mm)`);
+            }
+            if (ext.high_wind_above_5ms > 0.2) {
+                alerts.push(`${(ext.high_wind_above_5ms * 100).toFixed(0)}% chance of high wind (>5m/s)`);
+            }
+
+            const alertDiv = document.getElementById('extremeAlerts');
+            if (alerts.length > 0) {
+                const alertList = document.getElementById('alertList');
+                alertList.innerHTML = alerts.map(a => `<li>${a}</li>`).join('');
+                alertDiv.style.display = 'block';
+            } else {
+                alertDiv.style.display = 'none';
+            }
+
+            // Data info
+            document.getElementById('yearsAnalyzed').textContent = data.historical_years_analyzed;
+            document.getElementById('totalDays').textContent = data.total_observations;
+
+            // Show results
+            document.getElementById('resultsCard').classList.add('show');
+        }
+
+        // Check status on load
+        checkStatus();
+    </script>
+</body>
+</html>

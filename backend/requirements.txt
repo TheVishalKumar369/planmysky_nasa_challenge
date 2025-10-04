@@ -1,0 +1,14 @@
+# PlanMySky Backend Requirements
+# Install with: pip install -r requirements.txt
+
+# FastAPI framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# CORS support
+python-multipart>=0.0.6

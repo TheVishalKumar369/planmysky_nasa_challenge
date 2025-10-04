@@ -1,0 +1,2786 @@
+{
+  "01-01": {
+    "date": "01-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.125,
+      "probability_percent": 12.5,
+      "expected_amount_mm": 0.09,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 2.25,
+      "std_deviation_mm": 0.31,
+      "intensity_distribution": {
+        "light_rain_days": 35,
+        "moderate_rain_days": 0,
+        "heavy_rain_days": 0,
+        "no_rain_days": 245
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 9.7,
+      "mean_std_celsius": 2.4,
+      "expected_range": {
+        "min": 6.6,
+        "max": 12.8
+      },
+      "record_low_celsius": -3.7,
+      "record_high_celsius": 19.9
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.5,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 39.9,
+      "std_percent": 27.4,
+      "clear_days_percent": 42.1,
+      "cloudy_days_percent": 16.8
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.6,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.914,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 6.6,
+      "pressure_hpa": 1016.3,
+      "solar_radiation_wm2": 2.8
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 3.5999999046325684,
+        "temp_celsius": 11.079999923706055,
+        "wind_ms": 0.6899999976158142,
+        "cloud_pct": 70.01000213623047
+      },
+      "2016": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 11.4399995803833,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 36.15999984741211
+      },
+      "2017": {
+        "rainfall_mm": 0.3499999940395355,
+        "temp_celsius": 10.770000457763672,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 28.549999237060547
+      },
+      "2018": {
+        "rainfall_mm": 0.17000000178813934,
+        "temp_celsius": 7.550000190734863,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 31.540000915527344
+      },
+      "2019": {
+        "rainfall_mm": 0.17000000178813934,
+        "temp_celsius": 9.65999984741211,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 19.200000762939453
+      },
+      "2020": {
+        "rainfall_mm": 4.619999885559082,
+        "temp_celsius": 7.900000095367432,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 68.86000061035156
+      },
+      "2021": {
+        "rainfall_mm": 0.019999999552965164,
+        "temp_celsius": 12.930000305175781,
+        "wind_ms": 0.6499999761581421,
+        "cloud_pct": 48.150001525878906
+      },
+      "2022": {
+        "rainfall_mm": 1.8200000524520874,
+        "temp_celsius": 10.75,
+        "wind_ms": 0.33000001311302185,
+        "cloud_pct": 65.5199966430664
+      },
+      "2023": {
+        "rainfall_mm": 0.029999999329447746,
+        "temp_celsius": 9.149999618530273,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 24.06999969482422
+      },
+      "2024": {
+        "rainfall_mm": 0.05000000074505806,
+        "temp_celsius": 10.479999542236328,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 30.020000457763672
+      }
+    }
+  },
+  "01-15": {
+    "date": "01-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.131,
+      "probability_percent": 13.1,
+      "expected_amount_mm": 0.09,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 4.37,
+      "std_deviation_mm": 0.37,
+      "intensity_distribution": {
+        "light_rain_days": 65,
+        "moderate_rain_days": 4,
+        "heavy_rain_days": 0,
+        "no_rain_days": 456
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 9.5,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 6.2,
+        "max": 12.8
+      },
+      "record_low_celsius": -5.3,
+      "record_high_celsius": 18.4
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.7,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 40.1,
+      "std_percent": 26.8,
+      "clear_days_percent": 39.4,
+      "cloudy_days_percent": 16.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.6,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.958,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 6.4,
+      "pressure_hpa": 1015.2,
+      "solar_radiation_wm2": 4.6
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.6700000166893005,
+        "temp_celsius": 9.140000343322754,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 23.239999771118164
+      },
+      "2016": {
+        "rainfall_mm": 1.2799999713897705,
+        "temp_celsius": 9.489999771118164,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 51.5099983215332
+      },
+      "2017": {
+        "rainfall_mm": 0.2800000011920929,
+        "temp_celsius": 9.84000015258789,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 29.110000610351562
+      },
+      "2018": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 9.239999771118164,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 45.34000015258789
+      },
+      "2019": {
+        "rainfall_mm": 0.9700000286102295,
+        "temp_celsius": 9.039999961853027,
+        "wind_ms": 0.5600000023841858,
+        "cloud_pct": 29.299999237060547
+      },
+      "2020": {
+        "rainfall_mm": 3.9100000858306885,
+        "temp_celsius": 9.760000228881836,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 44.810001373291016
+      },
+      "2021": {
+        "rainfall_mm": 0.38999998569488525,
+        "temp_celsius": 10.289999961853027,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 47.290000915527344
+      },
+      "2022": {
+        "rainfall_mm": 2.1700000762939453,
+        "temp_celsius": 9.039999961853027,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 55.06999969482422
+      },
+      "2023": {
+        "rainfall_mm": 0.05000000074505806,
+        "temp_celsius": 9.670000076293945,
+        "wind_ms": 0.6499999761581421,
+        "cloud_pct": 23.3799991607666
+      },
+      "2024": {
+        "rainfall_mm": 0.30000001192092896,
+        "temp_celsius": 9.390000343322754,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 35.63999938964844
+      }
+    }
+  },
+  "02-01": {
+    "date": "02-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.161,
+      "probability_percent": 16.1,
+      "expected_amount_mm": 0.1,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 2.98,
+      "std_deviation_mm": 0.33,
+      "intensity_distribution": {
+        "light_rain_days": 43,
+        "moderate_rain_days": 2,
+        "heavy_rain_days": 0,
+        "no_rain_days": 235
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 10.9,
+      "mean_std_celsius": 3.0,
+      "expected_range": {
+        "min": 7.2,
+        "max": 14.7
+      },
+      "record_low_celsius": -3.9,
+      "record_high_celsius": 21.8
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.5,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 41.6,
+      "std_percent": 28.2,
+      "clear_days_percent": 38.2,
+      "cloudy_days_percent": 18.9
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.58,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.821,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 7.1,
+      "pressure_hpa": 1014.8,
+      "solar_radiation_wm2": 9.3
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.05999999865889549,
+        "temp_celsius": 11.479999542236328,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 34.709999084472656
+      },
+      "2016": {
+        "rainfall_mm": 0.9800000190734863,
+        "temp_celsius": 11.449999809265137,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 38.75
+      },
+      "2017": {
+        "rainfall_mm": 0.09000000357627869,
+        "temp_celsius": 12.850000381469727,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 49.04999923706055
+      },
+      "2018": {
+        "rainfall_mm": 0.23999999463558197,
+        "temp_celsius": 11.8100004196167,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 60.720001220703125
+      },
+      "2019": {
+        "rainfall_mm": 1.75,
+        "temp_celsius": 11.279999732971191,
+        "wind_ms": 0.5600000023841858,
+        "cloud_pct": 42.540000915527344
+      },
+      "2020": {
+        "rainfall_mm": 1.2000000476837158,
+        "temp_celsius": 10.010000228881836,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 49.97999954223633
+      },
+      "2021": {
+        "rainfall_mm": 0.4300000071525574,
+        "temp_celsius": 9.350000381469727,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 12.630000114440918
+      },
+      "2022": {
+        "rainfall_mm": 5.039999961853027,
+        "temp_celsius": 7.230000019073486,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 71.23999786376953
+      },
+      "2023": {
+        "rainfall_mm": 0.23000000417232513,
+        "temp_celsius": 12.470000267028809,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 39.349998474121094
+      },
+      "2024": {
+        "rainfall_mm": 0.25999999046325684,
+        "temp_celsius": 10.34000015258789,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 29.170000076293945
+      }
+    }
+  },
+  "02-15": {
+    "date": "02-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.19,
+      "probability_percent": 19.0,
+      "expected_amount_mm": 0.1,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 2.74,
+      "std_deviation_mm": 0.29,
+      "intensity_distribution": {
+        "light_rain_days": 99,
+        "moderate_rain_days": 1,
+        "heavy_rain_days": 0,
+        "no_rain_days": 425
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 12.0,
+      "mean_std_celsius": 3.4,
+      "expected_range": {
+        "min": 8.0,
+        "max": 16.1
+      },
+      "record_low_celsius": -5.2,
+      "record_high_celsius": 24.0
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 2.1,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 38.7,
+      "std_percent": 28.7,
+      "clear_days_percent": 45.7,
+      "cloudy_days_percent": 17.3
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.61,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.697,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 7.5,
+      "pressure_hpa": 1013.6,
+      "solar_radiation_wm2": 12.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.0800000429153442,
+        "temp_celsius": 13.260000228881836,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 58.470001220703125
+      },
+      "2016": {
+        "rainfall_mm": 1.149999976158142,
+        "temp_celsius": 13.359999656677246,
+        "wind_ms": 0.6499999761581421,
+        "cloud_pct": 31.6299991607666
+      },
+      "2017": {
+        "rainfall_mm": 0.4099999964237213,
+        "temp_celsius": 13.630000114440918,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 32.43000030517578
+      },
+      "2018": {
+        "rainfall_mm": 0.6700000166893005,
+        "temp_celsius": 13.020000457763672,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 40.9900016784668
+      },
+      "2019": {
+        "rainfall_mm": 2.8499999046325684,
+        "temp_celsius": 11.75,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 52.119998931884766
+      },
+      "2020": {
+        "rainfall_mm": 1.6699999570846558,
+        "temp_celsius": 11.630000114440918,
+        "wind_ms": 0.6399999856948853,
+        "cloud_pct": 54.560001373291016
+      },
+      "2021": {
+        "rainfall_mm": 0.7200000286102295,
+        "temp_celsius": 12.729999542236328,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 28.799999237060547
+      },
+      "2022": {
+        "rainfall_mm": 1.309999942779541,
+        "temp_celsius": 10.479999542236328,
+        "wind_ms": 0.4399999976158142,
+        "cloud_pct": 38.880001068115234
+      },
+      "2023": {
+        "rainfall_mm": 0.3400000035762787,
+        "temp_celsius": 13.90999984741211,
+        "wind_ms": 0.5600000023841858,
+        "cloud_pct": 28.219999313354492
+      },
+      "2024": {
+        "rainfall_mm": 0.05000000074505806,
+        "temp_celsius": 12.960000038146973,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 29.18000030517578
+      }
+    }
+  },
+  "03-01": {
+    "date": "03-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.139,
+      "probability_percent": 13.9,
+      "expected_amount_mm": 0.06,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 1.6,
+      "std_deviation_mm": 0.18,
+      "intensity_distribution": {
+        "light_rain_days": 39,
+        "moderate_rain_days": 0,
+        "heavy_rain_days": 0,
+        "no_rain_days": 241
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 14.7,
+      "mean_std_celsius": 2.9,
+      "expected_range": {
+        "min": 10.2,
+        "max": 19.2
+      },
+      "record_low_celsius": -1.5,
+      "record_high_celsius": 26.3
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 1.5,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 30.7,
+      "std_percent": 27.1,
+      "clear_days_percent": 57.9,
+      "cloudy_days_percent": 12.5
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.69,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.432,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 9.0,
+      "pressure_hpa": 1012.1,
+      "solar_radiation_wm2": 18.1
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.9700000286102295,
+        "temp_celsius": 13.970000267028809,
+        "wind_ms": 0.7799999713897705,
+        "cloud_pct": 48.939998626708984
+      },
+      "2016": {
+        "rainfall_mm": 0.12999999523162842,
+        "temp_celsius": 14.960000038146973,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 51.810001373291016
+      },
+      "2017": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 16.31999969482422,
+        "wind_ms": 0.6000000238418579,
+        "cloud_pct": 26.09000015258789
+      },
+      "2018": {
+        "rainfall_mm": 0.6700000166893005,
+        "temp_celsius": 17.06999969482422,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 29.780000686645508
+      },
+      "2019": {
+        "rainfall_mm": 0.75,
+        "temp_celsius": 13.010000228881836,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 37.40999984741211
+      },
+      "2020": {
+        "rainfall_mm": 0.9399999976158142,
+        "temp_celsius": 13.989999771118164,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 36.40999984741211
+      },
+      "2021": {
+        "rainfall_mm": 0.33000001311302185,
+        "temp_celsius": 14.970000267028809,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 24.790000915527344
+      },
+      "2022": {
+        "rainfall_mm": 0.009999999776482582,
+        "temp_celsius": 14.9399995803833,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 10.550000190734863
+      },
+      "2023": {
+        "rainfall_mm": 1.0499999523162842,
+        "temp_celsius": 18.079999923706055,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 25.190000534057617
+      },
+      "2024": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 14.720000267028809,
+        "wind_ms": 0.8100000023841858,
+        "cloud_pct": 29.149999618530273
+      }
+    }
+  },
+  "03-15": {
+    "date": "03-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.147,
+      "probability_percent": 14.7,
+      "expected_amount_mm": 0.08,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 2.4,
+      "std_deviation_mm": 0.24,
+      "intensity_distribution": {
+        "light_rain_days": 77,
+        "moderate_rain_days": 0,
+        "heavy_rain_days": 0,
+        "no_rain_days": 448
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 15.7,
+      "mean_std_celsius": 3.5,
+      "expected_range": {
+        "min": 11.2,
+        "max": 20.2
+      },
+      "record_low_celsius": -2.3,
+      "record_high_celsius": 29.2
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 1.8,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 35.2,
+      "std_percent": 27.2,
+      "clear_days_percent": 50.1,
+      "cloudy_days_percent": 13.5
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.65,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.324,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 9.1,
+      "pressure_hpa": 1011.6,
+      "solar_radiation_wm2": 20.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.8899999856948853,
+        "temp_celsius": 14.710000038146973,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 39.45000076293945
+      },
+      "2016": {
+        "rainfall_mm": 0.3100000023841858,
+        "temp_celsius": 15.8100004196167,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 33.70000076293945
+      },
+      "2017": {
+        "rainfall_mm": 2.5,
+        "temp_celsius": 13.0,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 47.849998474121094
+      },
+      "2018": {
+        "rainfall_mm": 0.3799999952316284,
+        "temp_celsius": 15.899999618530273,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 26.809999465942383
+      },
+      "2019": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 15.25,
+        "wind_ms": 0.6600000262260437,
+        "cloud_pct": 30.149999618530273
+      },
+      "2020": {
+        "rainfall_mm": 1.2799999713897705,
+        "temp_celsius": 13.979999542236328,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 43.25
+      },
+      "2021": {
+        "rainfall_mm": 0.6100000143051147,
+        "temp_celsius": 17.299999237060547,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 36.31999969482422
+      },
+      "2022": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 18.520000457763672,
+        "wind_ms": 0.33000001311302185,
+        "cloud_pct": 14.039999961853027
+      },
+      "2023": {
+        "rainfall_mm": 2.799999952316284,
+        "temp_celsius": 15.1899995803833,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 59.54999923706055
+      },
+      "2024": {
+        "rainfall_mm": 1.5099999904632568,
+        "temp_celsius": 17.09000015258789,
+        "wind_ms": 0.699999988079071,
+        "cloud_pct": 30.209999084472656
+      }
+    }
+  },
+  "04-01": {
+    "date": "04-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.211,
+      "probability_percent": 21.1,
+      "expected_amount_mm": 0.12,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 3.16,
+      "std_deviation_mm": 0.35,
+      "intensity_distribution": {
+        "light_rain_days": 58,
+        "moderate_rain_days": 1,
+        "heavy_rain_days": 0,
+        "no_rain_days": 221
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 18.8,
+      "mean_std_celsius": 3.2,
+      "expected_range": {
+        "min": 14.1,
+        "max": 23.5
+      },
+      "record_low_celsius": 2.2,
+      "record_high_celsius": 31.2
+    },
+    "wind": {
+      "mean_speed_ms": 0.7,
+      "max_recorded_ms": 1.9,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 34.8,
+      "std_percent": 28.2,
+      "clear_days_percent": 48.2,
+      "cloudy_days_percent": 12.1
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.65,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.011,
+      "temp_below_10C": 0.111,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 10.8,
+      "pressure_hpa": 1009.2,
+      "solar_radiation_wm2": 24.3
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.4300000071525574,
+        "temp_celsius": 19.40999984741211,
+        "wind_ms": 0.7400000095367432,
+        "cloud_pct": 25.1299991607666
+      },
+      "2016": {
+        "rainfall_mm": 0.9800000190734863,
+        "temp_celsius": 21.1200008392334,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 62.02000045776367
+      },
+      "2017": {
+        "rainfall_mm": 0.1899999976158142,
+        "temp_celsius": 19.18000030517578,
+        "wind_ms": 0.6899999976158142,
+        "cloud_pct": 44.040000915527344
+      },
+      "2018": {
+        "rainfall_mm": 1.7999999523162842,
+        "temp_celsius": 19.469999313354492,
+        "wind_ms": 0.6800000071525574,
+        "cloud_pct": 65.47000122070312
+      },
+      "2019": {
+        "rainfall_mm": 4.320000171661377,
+        "temp_celsius": 16.850000381469727,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 62.970001220703125
+      },
+      "2020": {
+        "rainfall_mm": 0.07000000029802322,
+        "temp_celsius": 20.360000610351562,
+        "wind_ms": 0.6700000166893005,
+        "cloud_pct": 11.4399995803833
+      },
+      "2021": {
+        "rainfall_mm": 0.14000000059604645,
+        "temp_celsius": 20.860000610351562,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 11.069999694824219
+      },
+      "2022": {
+        "rainfall_mm": 2.0799999237060547,
+        "temp_celsius": 21.559999465942383,
+        "wind_ms": 0.33000001311302185,
+        "cloud_pct": 45.79999923706055
+      },
+      "2023": {
+        "rainfall_mm": 0.8799999952316284,
+        "temp_celsius": 18.959999084472656,
+        "wind_ms": 0.75,
+        "cloud_pct": 31.790000915527344
+      },
+      "2024": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 21.299999237060547,
+        "wind_ms": 0.6700000166893005,
+        "cloud_pct": 41.2599983215332
+      }
+    }
+  },
+  "04-15": {
+    "date": "04-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.179,
+      "probability_percent": 17.9,
+      "expected_amount_mm": 0.13,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 5.33,
+      "std_deviation_mm": 0.42,
+      "intensity_distribution": {
+        "light_rain_days": 91,
+        "moderate_rain_days": 3,
+        "heavy_rain_days": 0,
+        "no_rain_days": 431
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 20.0,
+      "mean_std_celsius": 3.4,
+      "expected_range": {
+        "min": 15.4,
+        "max": 24.6
+      },
+      "record_low_celsius": 0.9,
+      "record_high_celsius": 34.0
+    },
+    "wind": {
+      "mean_speed_ms": 0.7,
+      "max_recorded_ms": 1.9,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 35.4,
+      "std_percent": 27.5,
+      "clear_days_percent": 50.3,
+      "cloudy_days_percent": 14.5
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.65,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.065,
+      "temp_below_10C": 0.072,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 12.0,
+      "pressure_hpa": 1008.4,
+      "solar_radiation_wm2": 26.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 5.460000038146973,
+        "temp_celsius": 19.31999969482422,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 50.79999923706055
+      },
+      "2016": {
+        "rainfall_mm": 0.3199999928474426,
+        "temp_celsius": 22.5,
+        "wind_ms": 0.7900000214576721,
+        "cloud_pct": 23.440000534057617
+      },
+      "2017": {
+        "rainfall_mm": 5.710000038146973,
+        "temp_celsius": 19.8799991607666,
+        "wind_ms": 0.5600000023841858,
+        "cloud_pct": 42.31999969482422
+      },
+      "2018": {
+        "rainfall_mm": 2.7300000190734863,
+        "temp_celsius": 19.729999542236328,
+        "wind_ms": 0.6000000238418579,
+        "cloud_pct": 38.41999816894531
+      },
+      "2019": {
+        "rainfall_mm": 6.800000190734863,
+        "temp_celsius": 19.559999465942383,
+        "wind_ms": 0.7599999904632568,
+        "cloud_pct": 46.90999984741211
+      },
+      "2020": {
+        "rainfall_mm": 2.140000104904175,
+        "temp_celsius": 18.610000610351562,
+        "wind_ms": 0.75,
+        "cloud_pct": 53.33000183105469
+      },
+      "2021": {
+        "rainfall_mm": 0.33000001311302185,
+        "temp_celsius": 19.829999923706055,
+        "wind_ms": 0.6800000071525574,
+        "cloud_pct": 37.08000183105469
+      },
+      "2022": {
+        "rainfall_mm": 1.899999976158142,
+        "temp_celsius": 21.3700008392334,
+        "wind_ms": 0.7799999713897705,
+        "cloud_pct": 48.029998779296875
+      },
+      "2023": {
+        "rainfall_mm": 0.05999999865889549,
+        "temp_celsius": 20.719999313354492,
+        "wind_ms": 0.7099999785423279,
+        "cloud_pct": 28.6200008392334
+      },
+      "2024": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 21.489999771118164,
+        "wind_ms": 0.6299999952316284,
+        "cloud_pct": 28.969999313354492
+      }
+    }
+  },
+  "05-01": {
+    "date": "05-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.404,
+      "probability_percent": 40.4,
+      "expected_amount_mm": 0.29,
+      "median_amount_mm": 0.05,
+      "max_recorded_mm": 3.74,
+      "std_deviation_mm": 0.54,
+      "intensity_distribution": {
+        "light_rain_days": 107,
+        "moderate_rain_days": 6,
+        "heavy_rain_days": 0,
+        "no_rain_days": 167
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 20.5,
+      "mean_std_celsius": 3.4,
+      "expected_range": {
+        "min": 17.1,
+        "max": 23.9
+      },
+      "record_low_celsius": 2.1,
+      "record_high_celsius": 33.8
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 1.5,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 45.2,
+      "std_percent": 27.0,
+      "clear_days_percent": 32.5,
+      "cloudy_days_percent": 21.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.55,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.05,
+      "temp_below_10C": 0.054,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 15.0,
+      "pressure_hpa": 1007.5,
+      "solar_radiation_wm2": 27.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.36000001430511475,
+        "temp_celsius": 22.6200008392334,
+        "wind_ms": 0.6000000238418579,
+        "cloud_pct": 27.969999313354492
+      },
+      "2016": {
+        "rainfall_mm": 0.9300000071525574,
+        "temp_celsius": 21.040000915527344,
+        "wind_ms": 0.44999998807907104,
+        "cloud_pct": 57.91999816894531
+      },
+      "2017": {
+        "rainfall_mm": 1.6399999856948853,
+        "temp_celsius": 19.1200008392334,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 39.65999984741211
+      },
+      "2018": {
+        "rainfall_mm": 1.7899999618530273,
+        "temp_celsius": 21.209999084472656,
+        "wind_ms": 0.6600000262260437,
+        "cloud_pct": 63.029998779296875
+      },
+      "2019": {
+        "rainfall_mm": 0.800000011920929,
+        "temp_celsius": 22.139999389648438,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 22.489999771118164
+      },
+      "2020": {
+        "rainfall_mm": 3.9100000858306885,
+        "temp_celsius": 17.93000030517578,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 66.5199966430664
+      },
+      "2021": {
+        "rainfall_mm": 5.170000076293945,
+        "temp_celsius": 19.170000076293945,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 67.19999694824219
+      },
+      "2022": {
+        "rainfall_mm": 6.539999961853027,
+        "temp_celsius": 20.5,
+        "wind_ms": 0.5,
+        "cloud_pct": 75.63999938964844
+      },
+      "2023": {
+        "rainfall_mm": 1.2400000095367432,
+        "temp_celsius": 19.979999542236328,
+        "wind_ms": 0.6800000071525574,
+        "cloud_pct": 49.13999938964844
+      },
+      "2024": {
+        "rainfall_mm": 2.5199999809265137,
+        "temp_celsius": 21.649999618530273,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 37.40999984741211
+      }
+    }
+  },
+  "05-15": {
+    "date": "05-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.469,
+      "probability_percent": 46.9,
+      "expected_amount_mm": 0.39,
+      "median_amount_mm": 0.07,
+      "max_recorded_mm": 7.57,
+      "std_deviation_mm": 0.79,
+      "intensity_distribution": {
+        "light_rain_days": 231,
+        "moderate_rain_days": 15,
+        "heavy_rain_days": 0,
+        "no_rain_days": 279
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 21.2,
+      "mean_std_celsius": 3.5,
+      "expected_range": {
+        "min": 18.0,
+        "max": 24.4
+      },
+      "record_low_celsius": 5.1,
+      "record_high_celsius": 32.6
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 1.7,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 44.7,
+      "std_percent": 26.6,
+      "clear_days_percent": 33.1,
+      "cloudy_days_percent": 20.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.55,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.059,
+      "temp_below_10C": 0.04,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 16.3,
+      "pressure_hpa": 1006.2,
+      "solar_radiation_wm2": 28.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 4.690000057220459,
+        "temp_celsius": 21.530000686645508,
+        "wind_ms": 0.6200000047683716,
+        "cloud_pct": 56.650001525878906
+      },
+      "2016": {
+        "rainfall_mm": 10.170000076293945,
+        "temp_celsius": 20.969999313354492,
+        "wind_ms": 0.4399999976158142,
+        "cloud_pct": 54.81999969482422
+      },
+      "2017": {
+        "rainfall_mm": 8.649999618530273,
+        "temp_celsius": 21.690000534057617,
+        "wind_ms": 0.6299999952316284,
+        "cloud_pct": 56.86000061035156
+      },
+      "2018": {
+        "rainfall_mm": 4.5,
+        "temp_celsius": 20.290000915527344,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 58.04999923706055
+      },
+      "2019": {
+        "rainfall_mm": 0.8500000238418579,
+        "temp_celsius": 21.639999389648438,
+        "wind_ms": 0.6700000166893005,
+        "cloud_pct": 26.979999542236328
+      },
+      "2020": {
+        "rainfall_mm": 1.8899999856948853,
+        "temp_celsius": 21.43000030517578,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 53.68000030517578
+      },
+      "2021": {
+        "rainfall_mm": 8.050000190734863,
+        "temp_celsius": 20.059999465942383,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 64.41999816894531
+      },
+      "2022": {
+        "rainfall_mm": 12.199999809265137,
+        "temp_celsius": 21.959999084472656,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 47.279998779296875
+      },
+      "2023": {
+        "rainfall_mm": 3.630000114440918,
+        "temp_celsius": 20.709999084472656,
+        "wind_ms": 0.7699999809265137,
+        "cloud_pct": 26.1200008392334
+      },
+      "2024": {
+        "rainfall_mm": 5.03000020980835,
+        "temp_celsius": 21.020000457763672,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 60.5
+      }
+    }
+  },
+  "06-01": {
+    "date": "06-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.625,
+      "probability_percent": 62.5,
+      "expected_amount_mm": 0.51,
+      "median_amount_mm": 0.19,
+      "max_recorded_mm": 8.49,
+      "std_deviation_mm": 0.93,
+      "intensity_distribution": {
+        "light_rain_days": 165,
+        "moderate_rain_days": 10,
+        "heavy_rain_days": 0,
+        "no_rain_days": 105
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.9,
+      "mean_std_celsius": 2.4,
+      "expected_range": {
+        "min": 20.3,
+        "max": 25.5
+      },
+      "record_low_celsius": 11.2,
+      "record_high_celsius": 33.5
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.6,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 51.4,
+      "std_percent": 29.5,
+      "clear_days_percent": 30.4,
+      "cloudy_days_percent": 31.1
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.62,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.061,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 19.1,
+      "pressure_hpa": 1004.1,
+      "solar_radiation_wm2": 29.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.36000001430511475,
+        "temp_celsius": 24.110000610351562,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 19.139999389648438
+      },
+      "2016": {
+        "rainfall_mm": 4.019999980926514,
+        "temp_celsius": 23.139999389648438,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 62.4900016784668
+      },
+      "2017": {
+        "rainfall_mm": 2.5399999618530273,
+        "temp_celsius": 23.670000076293945,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 59.15999984741211
+      },
+      "2018": {
+        "rainfall_mm": 3.609999895095825,
+        "temp_celsius": 22.899999618530273,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 68.80999755859375
+      },
+      "2019": {
+        "rainfall_mm": 4.559999942779541,
+        "temp_celsius": 22.530000686645508,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 61.369998931884766
+      },
+      "2020": {
+        "rainfall_mm": 10.850000381469727,
+        "temp_celsius": 21.899999618530273,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 76.41000366210938
+      },
+      "2021": {
+        "rainfall_mm": 1.8700000047683716,
+        "temp_celsius": 23.610000610351562,
+        "wind_ms": 0.6600000262260437,
+        "cloud_pct": 47.689998626708984
+      },
+      "2022": {
+        "rainfall_mm": 3.049999952316284,
+        "temp_celsius": 22.610000610351562,
+        "wind_ms": 0.3400000035762787,
+        "cloud_pct": 70.13999938964844
+      },
+      "2023": {
+        "rainfall_mm": 0.23000000417232513,
+        "temp_celsius": 23.719999313354492,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 19.049999237060547
+      },
+      "2024": {
+        "rainfall_mm": 2.4700000286102295,
+        "temp_celsius": 23.440000534057617,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 39.43000030517578
+      }
+    }
+  },
+  "06-15": {
+    "date": "06-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.804,
+      "probability_percent": 80.4,
+      "expected_amount_mm": 1.03,
+      "median_amount_mm": 0.49,
+      "max_recorded_mm": 13.57,
+      "std_deviation_mm": 1.61,
+      "intensity_distribution": {
+        "light_rain_days": 367,
+        "moderate_rain_days": 52,
+        "heavy_rain_days": 3,
+        "no_rain_days": 103
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.0,
+      "mean_std_celsius": 2.5,
+      "expected_range": {
+        "min": 21.0,
+        "max": 25.1
+      },
+      "record_low_celsius": 11.2,
+      "record_high_celsius": 33.6
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 2.1,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 70.8,
+      "std_percent": 27.0,
+      "clear_days_percent": 12.4,
+      "cloudy_days_percent": 60.0
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.8,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.038,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.006,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 20.2,
+      "pressure_hpa": 1002.4,
+      "solar_radiation_wm2": 25.5
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 11.069999694824219,
+        "temp_celsius": 22.940000534057617,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 64.98999786376953
+      },
+      "2016": {
+        "rainfall_mm": 12.3100004196167,
+        "temp_celsius": 22.299999237060547,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 82.6500015258789
+      },
+      "2017": {
+        "rainfall_mm": 11.25,
+        "temp_celsius": 22.780000686645508,
+        "wind_ms": 0.5,
+        "cloud_pct": 65.91000366210938
+      },
+      "2018": {
+        "rainfall_mm": 14.119999885559082,
+        "temp_celsius": 23.190000534057617,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 64.5
+      },
+      "2019": {
+        "rainfall_mm": 9.4399995803833,
+        "temp_celsius": 22.90999984741211,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 52.09000015258789
+      },
+      "2020": {
+        "rainfall_mm": 31.270000457763672,
+        "temp_celsius": 23.450000762939453,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 78.43000030517578
+      },
+      "2021": {
+        "rainfall_mm": 23.229999542236328,
+        "temp_celsius": 22.43000030517578,
+        "wind_ms": 0.7200000286102295,
+        "cloud_pct": 89.81999969482422
+      },
+      "2022": {
+        "rainfall_mm": 14.15999984741211,
+        "temp_celsius": 22.020000457763672,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 83.68000030517578
+      },
+      "2023": {
+        "rainfall_mm": 5.96999979019165,
+        "temp_celsius": 24.700000762939453,
+        "wind_ms": 0.7099999785423279,
+        "cloud_pct": 50.7400016784668
+      },
+      "2024": {
+        "rainfall_mm": 17.75,
+        "temp_celsius": 25.020000457763672,
+        "wind_ms": 0.6700000166893005,
+        "cloud_pct": 63.91999816894531
+      }
+    }
+  },
+  "07-01": {
+    "date": "07-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.939,
+      "probability_percent": 93.9,
+      "expected_amount_mm": 1.77,
+      "median_amount_mm": 0.87,
+      "max_recorded_mm": 21.75,
+      "std_deviation_mm": 2.8,
+      "intensity_distribution": {
+        "light_rain_days": 213,
+        "moderate_rain_days": 44,
+        "heavy_rain_days": 6,
+        "no_rain_days": 17
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.8,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 21.3,
+        "max": 24.3
+      },
+      "record_low_celsius": 13.5,
+      "record_high_celsius": 29.4
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 1.8,
+      "std_deviation_ms": 0.4
+    },
+    "cloud_cover": {
+      "mean_percent": 92.5,
+      "std_percent": 11.6,
+      "clear_days_percent": 0.0,
+      "cloudy_days_percent": 93.2
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.94,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.021,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 20.9,
+      "pressure_hpa": 1002.5,
+      "solar_radiation_wm2": 20.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 6.989999771118164,
+        "temp_celsius": 22.729999542236328,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 90.5
+      },
+      "2016": {
+        "rainfall_mm": 17.399999618530273,
+        "temp_celsius": 22.610000610351562,
+        "wind_ms": 0.4099999964237213,
+        "cloud_pct": 98.76000213623047
+      },
+      "2017": {
+        "rainfall_mm": 20.290000915527344,
+        "temp_celsius": 23.139999389648438,
+        "wind_ms": 0.8700000047683716,
+        "cloud_pct": 99.69000244140625
+      },
+      "2018": {
+        "rainfall_mm": 19.139999389648438,
+        "temp_celsius": 22.350000381469727,
+        "wind_ms": 0.6700000166893005,
+        "cloud_pct": 96.83000183105469
+      },
+      "2019": {
+        "rainfall_mm": 12.630000114440918,
+        "temp_celsius": 23.940000534057617,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 94.0
+      },
+      "2020": {
+        "rainfall_mm": 9.850000381469727,
+        "temp_celsius": 23.56999969482422,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 94.3499984741211
+      },
+      "2021": {
+        "rainfall_mm": 28.3799991607666,
+        "temp_celsius": 23.040000915527344,
+        "wind_ms": 0.6800000071525574,
+        "cloud_pct": 92.0999984741211
+      },
+      "2022": {
+        "rainfall_mm": 4.230000019073486,
+        "temp_celsius": 24.290000915527344,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 82.2699966430664
+      },
+      "2023": {
+        "rainfall_mm": 12.5,
+        "temp_celsius": 24.5,
+        "wind_ms": 0.8700000047683716,
+        "cloud_pct": 91.44000244140625
+      },
+      "2024": {
+        "rainfall_mm": 19.270000457763672,
+        "temp_celsius": 23.270000457763672,
+        "wind_ms": 0.7599999904632568,
+        "cloud_pct": 95.18000030517578
+      }
+    }
+  },
+  "07-15": {
+    "date": "07-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.947,
+      "probability_percent": 94.7,
+      "expected_amount_mm": 1.61,
+      "median_amount_mm": 0.85,
+      "max_recorded_mm": 24.8,
+      "std_deviation_mm": 2.4,
+      "intensity_distribution": {
+        "light_rain_days": 417,
+        "moderate_rain_days": 70,
+        "heavy_rain_days": 10,
+        "no_rain_days": 28
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.3,
+      "mean_std_celsius": 1.9,
+      "expected_range": {
+        "min": 21.8,
+        "max": 24.8
+      },
+      "record_low_celsius": 13.9,
+      "record_high_celsius": 29.2
+    },
+    "wind": {
+      "mean_speed_ms": 0.6,
+      "max_recorded_ms": 2.6,
+      "std_deviation_ms": 0.4
+    },
+    "cloud_cover": {
+      "mean_percent": 94.3,
+      "std_percent": 9.1,
+      "clear_days_percent": 0.0,
+      "cloudy_days_percent": 96.2
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.95,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.019,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 21.5,
+      "pressure_hpa": 1002.3,
+      "solar_radiation_wm2": 20.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 12.270000457763672,
+        "temp_celsius": 24.209999084472656,
+        "wind_ms": 0.6100000143051147,
+        "cloud_pct": 89.55000305175781
+      },
+      "2016": {
+        "rainfall_mm": 27.15999984741211,
+        "temp_celsius": 23.229999542236328,
+        "wind_ms": 0.6499999761581421,
+        "cloud_pct": 98.97000122070312
+      },
+      "2017": {
+        "rainfall_mm": 18.309999465942383,
+        "temp_celsius": 23.850000381469727,
+        "wind_ms": 0.7699999809265137,
+        "cloud_pct": 91.08999633789062
+      },
+      "2018": {
+        "rainfall_mm": 20.959999084472656,
+        "temp_celsius": 24.959999084472656,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 97.94000244140625
+      },
+      "2019": {
+        "rainfall_mm": 53.779998779296875,
+        "temp_celsius": 23.1200008392334,
+        "wind_ms": 0.8399999737739563,
+        "cloud_pct": 91.25
+      },
+      "2020": {
+        "rainfall_mm": 47.88999938964844,
+        "temp_celsius": 23.34000015258789,
+        "wind_ms": 0.6899999976158142,
+        "cloud_pct": 97.62000274658203
+      },
+      "2021": {
+        "rainfall_mm": 25.329999923706055,
+        "temp_celsius": 23.84000015258789,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 98.63999938964844
+      },
+      "2022": {
+        "rainfall_mm": 10.920000076293945,
+        "temp_celsius": 24.65999984741211,
+        "wind_ms": 0.5299999713897705,
+        "cloud_pct": 81.55000305175781
+      },
+      "2023": {
+        "rainfall_mm": 13.920000076293945,
+        "temp_celsius": 24.760000228881836,
+        "wind_ms": 0.6000000238418579,
+        "cloud_pct": 91.86000061035156
+      },
+      "2024": {
+        "rainfall_mm": 28.440000534057617,
+        "temp_celsius": 24.770000457763672,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 95.81999969482422
+      }
+    }
+  },
+  "08-01": {
+    "date": "08-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.907,
+      "probability_percent": 90.7,
+      "expected_amount_mm": 1.17,
+      "median_amount_mm": 0.68,
+      "max_recorded_mm": 18.85,
+      "std_deviation_mm": 1.8,
+      "intensity_distribution": {
+        "light_rain_days": 226,
+        "moderate_rain_days": 26,
+        "heavy_rain_days": 2,
+        "no_rain_days": 26
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.0,
+      "mean_std_celsius": 2.1,
+      "expected_range": {
+        "min": 21.4,
+        "max": 24.6
+      },
+      "record_low_celsius": 13.9,
+      "record_high_celsius": 30.3
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.5,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 94.4,
+      "std_percent": 8.6,
+      "clear_days_percent": 0.0,
+      "cloudy_days_percent": 95.7
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.91,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.004,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.007,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 21.0,
+      "pressure_hpa": 1003.2,
+      "solar_radiation_wm2": 19.9
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 6.389999866485596,
+        "temp_celsius": 22.739999771118164,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 92.80000305175781
+      },
+      "2016": {
+        "rainfall_mm": 6.179999828338623,
+        "temp_celsius": 23.56999969482422,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 91.41000366210938
+      },
+      "2017": {
+        "rainfall_mm": 12.119999885559082,
+        "temp_celsius": 23.8799991607666,
+        "wind_ms": 0.7400000095367432,
+        "cloud_pct": 98.91999816894531
+      },
+      "2018": {
+        "rainfall_mm": 15.170000076293945,
+        "temp_celsius": 23.559999465942383,
+        "wind_ms": 0.7400000095367432,
+        "cloud_pct": 99.0999984741211
+      },
+      "2019": {
+        "rainfall_mm": 8.609999656677246,
+        "temp_celsius": 23.280000686645508,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 95.18000030517578
+      },
+      "2020": {
+        "rainfall_mm": 3.509999990463257,
+        "temp_celsius": 25.239999771118164,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 94.38999938964844
+      },
+      "2021": {
+        "rainfall_mm": 9.430000305175781,
+        "temp_celsius": 24.229999542236328,
+        "wind_ms": 0.5,
+        "cloud_pct": 93.44999694824219
+      },
+      "2022": {
+        "rainfall_mm": 9.029999732971191,
+        "temp_celsius": 23.020000457763672,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 91.08000183105469
+      },
+      "2023": {
+        "rainfall_mm": 13.109999656677246,
+        "temp_celsius": 24.3799991607666,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 99.6500015258789
+      },
+      "2024": {
+        "rainfall_mm": 9.970000267028809,
+        "temp_celsius": 23.020000457763672,
+        "wind_ms": 0.38999998569488525,
+        "cloud_pct": 96.19999694824219
+      }
+    }
+  },
+  "08-15": {
+    "date": "08-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.918,
+      "probability_percent": 91.8,
+      "expected_amount_mm": 1.36,
+      "median_amount_mm": 0.74,
+      "max_recorded_mm": 26.73,
+      "std_deviation_mm": 2.31,
+      "intensity_distribution": {
+        "light_rain_days": 424,
+        "moderate_rain_days": 48,
+        "heavy_rain_days": 10,
+        "no_rain_days": 43
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.8,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 21.3,
+        "max": 24.3
+      },
+      "record_low_celsius": 12.4,
+      "record_high_celsius": 29.6
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 2.1,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 93.4,
+      "std_percent": 10.9,
+      "clear_days_percent": 0.2,
+      "cloudy_days_percent": 94.7
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.92,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.019,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 21.0,
+      "pressure_hpa": 1004.3,
+      "solar_radiation_wm2": 17.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 13.279999732971191,
+        "temp_celsius": 22.68000030517578,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 93.52999877929688
+      },
+      "2016": {
+        "rainfall_mm": 6.699999809265137,
+        "temp_celsius": 24.1200008392334,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 92.56999969482422
+      },
+      "2017": {
+        "rainfall_mm": 66.51000213623047,
+        "temp_celsius": 23.260000228881836,
+        "wind_ms": 0.6600000262260437,
+        "cloud_pct": 98.19999694824219
+      },
+      "2018": {
+        "rainfall_mm": 8.90999984741211,
+        "temp_celsius": 23.84000015258789,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 98.31999969482422
+      },
+      "2019": {
+        "rainfall_mm": 9.890000343322754,
+        "temp_celsius": 24.559999465942383,
+        "wind_ms": 0.6299999952316284,
+        "cloud_pct": 85.38999938964844
+      },
+      "2020": {
+        "rainfall_mm": 15.699999809265137,
+        "temp_celsius": 24.040000915527344,
+        "wind_ms": 0.5699999928474426,
+        "cloud_pct": 88.06999969482422
+      },
+      "2021": {
+        "rainfall_mm": 21.799999237060547,
+        "temp_celsius": 23.670000076293945,
+        "wind_ms": 0.75,
+        "cloud_pct": 96.05999755859375
+      },
+      "2022": {
+        "rainfall_mm": 14.210000038146973,
+        "temp_celsius": 24.610000610351562,
+        "wind_ms": 0.6399999856948853,
+        "cloud_pct": 73.75
+      },
+      "2023": {
+        "rainfall_mm": 12.449999809265137,
+        "temp_celsius": 23.43000030517578,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 97.48999786376953
+      },
+      "2024": {
+        "rainfall_mm": 21.1200008392334,
+        "temp_celsius": 23.760000228881836,
+        "wind_ms": 0.4099999964237213,
+        "cloud_pct": 91.20999908447266
+      }
+    }
+  },
+  "09-01": {
+    "date": "09-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.764,
+      "probability_percent": 76.4,
+      "expected_amount_mm": 0.65,
+      "median_amount_mm": 0.29,
+      "max_recorded_mm": 14.92,
+      "std_deviation_mm": 1.22,
+      "intensity_distribution": {
+        "light_rain_days": 205,
+        "moderate_rain_days": 8,
+        "heavy_rain_days": 1,
+        "no_rain_days": 66
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.9,
+      "mean_std_celsius": 1.8,
+      "expected_range": {
+        "min": 21.3,
+        "max": 24.5
+      },
+      "record_low_celsius": 10.7,
+      "record_high_celsius": 28.5
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.7,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 83.2,
+      "std_percent": 18.6,
+      "clear_days_percent": 1.1,
+      "cloudy_days_percent": 76.8
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.76,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.004,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 20.9,
+      "pressure_hpa": 1006.0,
+      "solar_radiation_wm2": 14.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.5,
+        "temp_celsius": 23.610000610351562,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 67.2699966430664
+      },
+      "2016": {
+        "rainfall_mm": 14.960000038146973,
+        "temp_celsius": 22.969999313354492,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 98.66999816894531
+      },
+      "2017": {
+        "rainfall_mm": 1.3700000047683716,
+        "temp_celsius": 22.700000762939453,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 71.41000366210938
+      },
+      "2018": {
+        "rainfall_mm": 4.78000020980835,
+        "temp_celsius": 23.770000457763672,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 78.19000244140625
+      },
+      "2019": {
+        "rainfall_mm": 7.110000133514404,
+        "temp_celsius": 24.299999237060547,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 95.66000366210938
+      },
+      "2020": {
+        "rainfall_mm": 2.950000047683716,
+        "temp_celsius": 22.780000686645508,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 90.29000091552734
+      },
+      "2021": {
+        "rainfall_mm": 5.940000057220459,
+        "temp_celsius": 23.75,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 93.22000122070312
+      },
+      "2022": {
+        "rainfall_mm": 6.570000171661377,
+        "temp_celsius": 23.049999237060547,
+        "wind_ms": 0.5199999809265137,
+        "cloud_pct": 90.4000015258789
+      },
+      "2023": {
+        "rainfall_mm": 5.320000171661377,
+        "temp_celsius": 24.399999618530273,
+        "wind_ms": 0.44999998807907104,
+        "cloud_pct": 83.36000061035156
+      },
+      "2024": {
+        "rainfall_mm": 12.699999809265137,
+        "temp_celsius": 24.15999984741211,
+        "wind_ms": 0.3499999940395355,
+        "cloud_pct": 85.4000015258789
+      }
+    }
+  },
+  "09-15": {
+    "date": "09-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.632,
+      "probability_percent": 63.2,
+      "expected_amount_mm": 0.51,
+      "median_amount_mm": 0.19,
+      "max_recorded_mm": 9.87,
+      "std_deviation_mm": 0.83,
+      "intensity_distribution": {
+        "light_rain_days": 315,
+        "moderate_rain_days": 17,
+        "heavy_rain_days": 0,
+        "no_rain_days": 193
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.1,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 20.4,
+        "max": 23.8
+      },
+      "record_low_celsius": 10.3,
+      "record_high_celsius": 28.6
+    },
+    "wind": {
+      "mean_speed_ms": 0.4,
+      "max_recorded_ms": 1.9,
+      "std_deviation_ms": 0.3
+    },
+    "cloud_cover": {
+      "mean_percent": 75.8,
+      "std_percent": 23.1,
+      "clear_days_percent": 4.0,
+      "cloudy_days_percent": 64.8
+    },
+    "weather_category": "Rainy",
+    "category_confidence": 0.63,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 20.0,
+      "pressure_hpa": 1007.4,
+      "solar_radiation_wm2": 11.5
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 14.65999984741211,
+        "temp_celsius": 22.670000076293945,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 76.19000244140625
+      },
+      "2016": {
+        "rainfall_mm": 8.130000114440918,
+        "temp_celsius": 22.260000228881836,
+        "wind_ms": 0.38999998569488525,
+        "cloud_pct": 84.3499984741211
+      },
+      "2017": {
+        "rainfall_mm": 6.630000114440918,
+        "temp_celsius": 23.729999542236328,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 71.37000274658203
+      },
+      "2018": {
+        "rainfall_mm": 5.409999847412109,
+        "temp_celsius": 22.059999465942383,
+        "wind_ms": 0.46000000834465027,
+        "cloud_pct": 73.95999908447266
+      },
+      "2019": {
+        "rainfall_mm": 20.360000610351562,
+        "temp_celsius": 22.739999771118164,
+        "wind_ms": 0.7099999785423279,
+        "cloud_pct": 89.86000061035156
+      },
+      "2020": {
+        "rainfall_mm": 14.279999732971191,
+        "temp_celsius": 21.899999618530273,
+        "wind_ms": 0.4399999976158142,
+        "cloud_pct": 90.70999908447266
+      },
+      "2021": {
+        "rainfall_mm": 9.729999542236328,
+        "temp_celsius": 22.93000030517578,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 83.38999938964844
+      },
+      "2022": {
+        "rainfall_mm": 8.960000038146973,
+        "temp_celsius": 23.190000534057617,
+        "wind_ms": 0.6600000262260437,
+        "cloud_pct": 86.47000122070312
+      },
+      "2023": {
+        "rainfall_mm": 8.800000190734863,
+        "temp_celsius": 22.780000686645508,
+        "wind_ms": 0.3700000047683716,
+        "cloud_pct": 73.16000366210938
+      },
+      "2024": {
+        "rainfall_mm": 4.75,
+        "temp_celsius": 23.540000915527344,
+        "wind_ms": 0.3700000047683716,
+        "cloud_pct": 82.52999877929688
+      }
+    }
+  },
+  "10-01": {
+    "date": "10-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.311,
+      "probability_percent": 31.1,
+      "expected_amount_mm": 0.21,
+      "median_amount_mm": 0.03,
+      "max_recorded_mm": 3.08,
+      "std_deviation_mm": 0.47,
+      "intensity_distribution": {
+        "light_rain_days": 84,
+        "moderate_rain_days": 3,
+        "heavy_rain_days": 0,
+        "no_rain_days": 193
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 20.8,
+      "mean_std_celsius": 2.5,
+      "expected_range": {
+        "min": 18.7,
+        "max": 22.9
+      },
+      "record_low_celsius": 8.2,
+      "record_high_celsius": 26.9
+    },
+    "wind": {
+      "mean_speed_ms": 0.4,
+      "max_recorded_ms": 1.2,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 49.8,
+      "std_percent": 26.1,
+      "clear_days_percent": 26.1,
+      "cloudy_days_percent": 23.6
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.5,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.011,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 18.5,
+      "pressure_hpa": 1010.3,
+      "solar_radiation_wm2": 7.3
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.09000000357627869,
+        "temp_celsius": 20.280000686645508,
+        "wind_ms": 0.3499999940395355,
+        "cloud_pct": 20.25
+      },
+      "2016": {
+        "rainfall_mm": 1.149999976158142,
+        "temp_celsius": 23.049999237060547,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 78.68000030517578
+      },
+      "2017": {
+        "rainfall_mm": 0.3499999940395355,
+        "temp_celsius": 23.799999237060547,
+        "wind_ms": 0.36000001430511475,
+        "cloud_pct": 34.9900016784668
+      },
+      "2018": {
+        "rainfall_mm": 0.6899999976158142,
+        "temp_celsius": 21.18000030517578,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 46.93000030517578
+      },
+      "2019": {
+        "rainfall_mm": 0.3700000047683716,
+        "temp_celsius": 21.920000076293945,
+        "wind_ms": 0.3499999940395355,
+        "cloud_pct": 60.290000915527344
+      },
+      "2020": {
+        "rainfall_mm": 0.8999999761581421,
+        "temp_celsius": 21.8700008392334,
+        "wind_ms": 0.3400000035762787,
+        "cloud_pct": 67.41999816894531
+      },
+      "2021": {
+        "rainfall_mm": 1.9500000476837158,
+        "temp_celsius": 22.8799991607666,
+        "wind_ms": 0.44999998807907104,
+        "cloud_pct": 72.0199966430664
+      },
+      "2022": {
+        "rainfall_mm": 6.25,
+        "temp_celsius": 21.649999618530273,
+        "wind_ms": 0.33000001311302185,
+        "cloud_pct": 64.97000122070312
+      },
+      "2023": {
+        "rainfall_mm": 6.960000038146973,
+        "temp_celsius": 21.579999923706055,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 82.41999816894531
+      },
+      "2024": {
+        "rainfall_mm": 0.9800000190734863,
+        "temp_celsius": 23.06999969482422,
+        "wind_ms": 0.5400000214576721,
+        "cloud_pct": 66.63999938964844
+      }
+    }
+  },
+  "10-15": {
+    "date": "10-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.194,
+      "probability_percent": 19.4,
+      "expected_amount_mm": 0.17,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 13.86,
+      "std_deviation_mm": 0.92,
+      "intensity_distribution": {
+        "light_rain_days": 94,
+        "moderate_rain_days": 7,
+        "heavy_rain_days": 1,
+        "no_rain_days": 423
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 19.3,
+      "mean_std_celsius": 2.4,
+      "expected_range": {
+        "min": 16.9,
+        "max": 21.8
+      },
+      "record_low_celsius": 3.8,
+      "record_high_celsius": 26.6
+    },
+    "wind": {
+      "mean_speed_ms": 0.4,
+      "max_recorded_ms": 1.7,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 39.2,
+      "std_percent": 24.2,
+      "clear_days_percent": 40.8,
+      "cloudy_days_percent": 11.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.61,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.023,
+      "heavy_rain_above_10mm": 0.002,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 16.7,
+      "pressure_hpa": 1012.0,
+      "solar_radiation_wm2": 5.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.550000011920929,
+        "temp_celsius": 19.040000915527344,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 40.040000915527344
+      },
+      "2016": {
+        "rainfall_mm": 2.390000104904175,
+        "temp_celsius": 19.809999465942383,
+        "wind_ms": 0.25,
+        "cloud_pct": 53.43000030517578
+      },
+      "2017": {
+        "rainfall_mm": 0.7400000095367432,
+        "temp_celsius": 21.690000534057617,
+        "wind_ms": 0.3400000035762787,
+        "cloud_pct": 41.470001220703125
+      },
+      "2018": {
+        "rainfall_mm": 0.5400000214576721,
+        "temp_celsius": 18.290000915527344,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 36.220001220703125
+      },
+      "2019": {
+        "rainfall_mm": 0.28999999165534973,
+        "temp_celsius": 19.209999084472656,
+        "wind_ms": 0.38999998569488525,
+        "cloud_pct": 38.79999923706055
+      },
+      "2020": {
+        "rainfall_mm": 0.07000000029802322,
+        "temp_celsius": 21.399999618530273,
+        "wind_ms": 0.23999999463558197,
+        "cloud_pct": 17.0
+      },
+      "2021": {
+        "rainfall_mm": 28.110000610351562,
+        "temp_celsius": 21.649999618530273,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 49.849998474121094
+      },
+      "2022": {
+        "rainfall_mm": 1.5099999904632568,
+        "temp_celsius": 19.780000686645508,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 41.310001373291016
+      },
+      "2023": {
+        "rainfall_mm": 0.9800000190734863,
+        "temp_celsius": 20.200000762939453,
+        "wind_ms": 0.3700000047683716,
+        "cloud_pct": 40.09000015258789
+      },
+      "2024": {
+        "rainfall_mm": 0.7300000190734863,
+        "temp_celsius": 20.170000076293945,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 42.310001373291016
+      }
+    }
+  },
+  "11-01": {
+    "date": "11-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.089,
+      "probability_percent": 8.9,
+      "expected_amount_mm": 0.03,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 0.68,
+      "std_deviation_mm": 0.09,
+      "intensity_distribution": {
+        "light_rain_days": 25,
+        "moderate_rain_days": 0,
+        "heavy_rain_days": 0,
+        "no_rain_days": 255
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 15.6,
+      "mean_std_celsius": 2.9,
+      "expected_range": {
+        "min": 12.4,
+        "max": 18.8
+      },
+      "record_low_celsius": 0.7,
+      "record_high_celsius": 23.7
+    },
+    "wind": {
+      "mean_speed_ms": 0.4,
+      "max_recorded_ms": 1.4,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 27.1,
+      "std_percent": 21.5,
+      "clear_days_percent": 64.6,
+      "cloudy_days_percent": 3.2
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.73,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.15,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 12.2,
+      "pressure_hpa": 1014.9,
+      "solar_radiation_wm2": 1.9
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.4300000071525574,
+        "temp_celsius": 14.819999694824219,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 21.06999969482422
+      },
+      "2016": {
+        "rainfall_mm": 0.009999999776482582,
+        "temp_celsius": 16.040000915527344,
+        "wind_ms": 0.4399999976158142,
+        "cloud_pct": 10.720000267028809
+      },
+      "2017": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 16.239999771118164,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 11.050000190734863
+      },
+      "2018": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 14.9399995803833,
+        "wind_ms": 0.5,
+        "cloud_pct": 5.309999942779541
+      },
+      "2019": {
+        "rainfall_mm": 0.800000011920929,
+        "temp_celsius": 16.790000915527344,
+        "wind_ms": 0.30000001192092896,
+        "cloud_pct": 42.43000030517578
+      },
+      "2020": {
+        "rainfall_mm": 0.019999999552965164,
+        "temp_celsius": 16.610000610351562,
+        "wind_ms": 0.28999999165534973,
+        "cloud_pct": 18.15999984741211
+      },
+      "2021": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 15.039999961853027,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 42.70000076293945
+      },
+      "2022": {
+        "rainfall_mm": 0.07000000029802322,
+        "temp_celsius": 16.899999618530273,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 23.209999084472656
+      },
+      "2023": {
+        "rainfall_mm": 0.12999999523162842,
+        "temp_celsius": 15.569999694824219,
+        "wind_ms": 0.33000001311302185,
+        "cloud_pct": 42.16999816894531
+      },
+      "2024": {
+        "rainfall_mm": 0.4699999988079071,
+        "temp_celsius": 18.059999465942383,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 38.93000030517578
+      }
+    }
+  },
+  "11-15": {
+    "date": "11-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.091,
+      "probability_percent": 9.1,
+      "expected_amount_mm": 0.05,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 5.66,
+      "std_deviation_mm": 0.31,
+      "intensity_distribution": {
+        "light_rain_days": 46,
+        "moderate_rain_days": 2,
+        "heavy_rain_days": 0,
+        "no_rain_days": 477
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 14.6,
+      "mean_std_celsius": 2.5,
+      "expected_range": {
+        "min": 11.6,
+        "max": 17.6
+      },
+      "record_low_celsius": -1.6,
+      "record_high_celsius": 23.9
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.3,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 33.3,
+      "std_percent": 25.8,
+      "clear_days_percent": 52.8,
+      "cloudy_days_percent": 11.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.67,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.225,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 11.4,
+      "pressure_hpa": 1015.0,
+      "solar_radiation_wm2": 1.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.49000000953674316,
+        "temp_celsius": 15.779999732971191,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 36.43000030517578
+      },
+      "2016": {
+        "rainfall_mm": 0.029999999329447746,
+        "temp_celsius": 14.680000305175781,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 17.829999923706055
+      },
+      "2017": {
+        "rainfall_mm": 0.699999988079071,
+        "temp_celsius": 15.229999542236328,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 25.969999313354492
+      },
+      "2018": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 14.350000381469727,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 27.100000381469727
+      },
+      "2019": {
+        "rainfall_mm": 0.27000001072883606,
+        "temp_celsius": 16.420000076293945,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 52.310001373291016
+      },
+      "2020": {
+        "rainfall_mm": 0.2199999988079071,
+        "temp_celsius": 14.0,
+        "wind_ms": 0.4300000071525574,
+        "cloud_pct": 10.649999618530273
+      },
+      "2021": {
+        "rainfall_mm": 0.23999999463558197,
+        "temp_celsius": 15.09000015258789,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 34.83000183105469
+      },
+      "2022": {
+        "rainfall_mm": 0.3400000035762787,
+        "temp_celsius": 14.380000114440918,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 30.020000457763672
+      },
+      "2023": {
+        "rainfall_mm": 0.11999999731779099,
+        "temp_celsius": 15.350000381469727,
+        "wind_ms": 0.38999998569488525,
+        "cloud_pct": 30.059999465942383
+      },
+      "2024": {
+        "rainfall_mm": 0.6899999976158142,
+        "temp_celsius": 14.739999771118164,
+        "wind_ms": 0.3700000047683716,
+        "cloud_pct": 40.349998474121094
+      }
+    }
+  },
+  "12-01": {
+    "date": "12-01",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.039,
+      "probability_percent": 3.9,
+      "expected_amount_mm": 0.02,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 1.03,
+      "std_deviation_mm": 0.07,
+      "intensity_distribution": {
+        "light_rain_days": 11,
+        "moderate_rain_days": 0,
+        "heavy_rain_days": 0,
+        "no_rain_days": 269
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 12.6,
+      "mean_std_celsius": 2.1,
+      "expected_range": {
+        "min": 9.5,
+        "max": 15.7
+      },
+      "record_low_celsius": -3.1,
+      "record_high_celsius": 20.1
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.0,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 36.5,
+      "std_percent": 25.1,
+      "clear_days_percent": 45.0,
+      "cloudy_days_percent": 10.7
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.63,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.532,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 9.6,
+      "pressure_hpa": 1015.7,
+      "solar_radiation_wm2": 0.8
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.05000000074505806,
+        "temp_celsius": 14.100000381469727,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 36.369998931884766
+      },
+      "2016": {
+        "rainfall_mm": 0.05000000074505806,
+        "temp_celsius": 13.109999656677246,
+        "wind_ms": 0.3799999952316284,
+        "cloud_pct": 19.559999465942383
+      },
+      "2017": {
+        "rainfall_mm": 0.33000001311302185,
+        "temp_celsius": 13.380000114440918,
+        "wind_ms": 0.3700000047683716,
+        "cloud_pct": 60.27000045776367
+      },
+      "2018": {
+        "rainfall_mm": 0.03999999910593033,
+        "temp_celsius": 13.289999961853027,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 44.209999084472656
+      },
+      "2019": {
+        "rainfall_mm": 0.05999999865889549,
+        "temp_celsius": 12.229999542236328,
+        "wind_ms": 0.47999998927116394,
+        "cloud_pct": 27.350000381469727
+      },
+      "2020": {
+        "rainfall_mm": 0.14000000059604645,
+        "temp_celsius": 13.300000190734863,
+        "wind_ms": 0.36000001430511475,
+        "cloud_pct": 31.139999389648438
+      },
+      "2021": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 14.039999961853027,
+        "wind_ms": 0.4000000059604645,
+        "cloud_pct": 42.18000030517578
+      },
+      "2022": {
+        "rainfall_mm": 0.07999999821186066,
+        "temp_celsius": 13.680000305175781,
+        "wind_ms": 0.44999998807907104,
+        "cloud_pct": 26.459999084472656
+      },
+      "2023": {
+        "rainfall_mm": 0.05999999865889549,
+        "temp_celsius": 14.899999618530273,
+        "wind_ms": 0.36000001430511475,
+        "cloud_pct": 56.18000030517578
+      },
+      "2024": {
+        "rainfall_mm": 0.07000000029802322,
+        "temp_celsius": 13.130000114440918,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 35.4900016784668
+      }
+    }
+  },
+  "12-15": {
+    "date": "12-15",
+    "location": "Kathmandu Nepal Lat27 7103",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.053,
+      "probability_percent": 5.3,
+      "expected_amount_mm": 0.04,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.74,
+      "std_deviation_mm": 0.33,
+      "intensity_distribution": {
+        "light_rain_days": 27,
+        "moderate_rain_days": 1,
+        "heavy_rain_days": 0,
+        "no_rain_days": 497
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 11.1,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 7.9,
+        "max": 14.3
+      },
+      "record_low_celsius": -2.1,
+      "record_high_celsius": 18.8
+    },
+    "wind": {
+      "mean_speed_ms": 0.5,
+      "max_recorded_ms": 1.2,
+      "std_deviation_ms": 0.2
+    },
+    "cloud_cover": {
+      "mean_percent": 36.4,
+      "std_percent": 26.1,
+      "clear_days_percent": 43.6,
+      "cloudy_days_percent": 12.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.64,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.798,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.0
+    },
+    "additional": {
+      "humidity_celsius": 8.0,
+      "pressure_hpa": 1015.9,
+      "solar_radiation_wm2": 1.1
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.2800000011920929,
+        "temp_celsius": 9.289999961853027,
+        "wind_ms": 0.5799999833106995,
+        "cloud_pct": 42.470001220703125
+      },
+      "2016": {
+        "rainfall_mm": 0.1599999964237213,
+        "temp_celsius": 11.760000228881836,
+        "wind_ms": 0.44999998807907104,
+        "cloud_pct": 29.899999618530273
+      },
+      "2017": {
+        "rainfall_mm": 0.09000000357627869,
+        "temp_celsius": 12.40999984741211,
+        "wind_ms": 0.49000000953674316,
+        "cloud_pct": 35.150001525878906
+      },
+      "2018": {
+        "rainfall_mm": 0.25999999046325684,
+        "temp_celsius": 11.15999984741211,
+        "wind_ms": 0.4699999988079071,
+        "cloud_pct": 28.739999771118164
+      },
+      "2019": {
+        "rainfall_mm": 2.059999942779541,
+        "temp_celsius": 10.600000381469727,
+        "wind_ms": 0.5099999904632568,
+        "cloud_pct": 52.90999984741211
+      },
+      "2020": {
+        "rainfall_mm": 0.12999999523162842,
+        "temp_celsius": 10.329999923706055,
+        "wind_ms": 0.5899999737739563,
+        "cloud_pct": 37.59000015258789
+      },
+      "2021": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 11.390000343322754,
+        "wind_ms": 0.550000011920929,
+        "cloud_pct": 21.010000228881836
+      },
+      "2022": {
+        "rainfall_mm": 0.20000000298023224,
+        "temp_celsius": 12.779999732971191,
+        "wind_ms": 0.5,
+        "cloud_pct": 34.290000915527344
+      },
+      "2023": {
+        "rainfall_mm": 0.28999999165534973,
+        "temp_celsius": 11.539999961853027,
+        "wind_ms": 0.41999998688697815,
+        "cloud_pct": 41.04999923706055
+      },
+      "2024": {
+        "rainfall_mm": 0.019999999552965164,
+        "temp_celsius": 11.039999961853027,
+        "wind_ms": 0.4099999964237213,
+        "cloud_pct": 22.200000762939453
+      }
+    }
+  }
+}

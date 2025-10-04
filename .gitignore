@@ -1,0 +1,40 @@
+.claude/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Data files
+*.nc
+*.nc4
+*.h5
+*.hdf5
+
+# Logs
+*.log
+merra2_production.log
+
+# Temporary directories
+temp_raw/
+raw_data/
+processed_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.venv
+env/
+venv/

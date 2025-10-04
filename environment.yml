@@ -1,0 +1,41 @@
+name: planmysky
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.11
+
+  # Core data science
+  - numpy
+  - pandas
+  - xarray
+  - netcdf4
+  - h5netcdf
+  - scipy
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # NASA data access
+  - pydap
+  - requests
+  - aiohttp
+
+  # Web backend / API
+  - fastapi
+  - uvicorn
+
+  # Data storage & serialization
+  - pyarrow
+  - sqlalchemy
+
+  # Optional Jupyter environment
+  - notebook
+  - jupyter
+
+  # Pip packages (if any)
+  - pip
+  - pip:
+      # Any packages that are not available via conda-forge
+      # e.g., special NASA tools or latest versions

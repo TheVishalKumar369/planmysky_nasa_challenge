@@ -1,0 +1,28 @@
+{
+  "location_name": "NewYork, USA",
+  "latitude": 40.7128,
+  "longitude": -74.006,
+  "coverage_km": 222,
+  "coverage_area": {
+    "north": 41.7128,
+    "south": 39.7128,
+    "west": -75.006,
+    "east": -73.006,
+    "margin_degrees": 1.0
+  },
+  "start_date": "2022-12-24",
+  "end_date": "2024-12-31",
+  "download_date": "2025-10-02T19:28:15.419464",
+  "file_size_mb": 2.431690216064453,
+  "variables": [
+    "total_precipitation",
+    "2m_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_cloud_cover",
+    "2m_dewpoint_temperature",
+    "mean_sea_level_pressure",
+    "total_column_water_vapour",
+    "surface_solar_radiation_downwards"
+  ]
+}

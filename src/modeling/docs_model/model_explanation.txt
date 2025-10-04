@@ -1,0 +1,1 @@
+Our model transforms 30+ years of ERA5 weather data into daily, location-specific forecasts—predicting rain probability, precipitation, temperature, wind, humidity, and cloud cover—delivered in a user-ready format for decision-making.

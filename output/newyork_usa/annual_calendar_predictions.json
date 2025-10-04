@@ -1,0 +1,2858 @@
+{
+  "01-01": {
+    "date": "2026-01-01",
+    "month_day": "01-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.271,
+      "probability_percent": 27.1,
+      "expected_amount_mm": 0.29,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 7.25,
+      "std_deviation_mm": 0.79,
+      "intensity_distribution": {
+        "light_rain_days": 70,
+        "moderate_rain_days": 6,
+        "heavy_rain_days": 0,
+        "no_rain_days": 204
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 3.8,
+      "mean_std_celsius": 5.0,
+      "expected_range": {
+        "min": 2.4,
+        "max": 5.1
+      },
+      "record_low_celsius": -20.0,
+      "record_high_celsius": 17.9
+    },
+    "wind": {
+      "mean_speed_ms": 6.1,
+      "max_recorded_ms": 16.5,
+      "std_deviation_ms": 3.5
+    },
+    "cloud_cover": {
+      "mean_percent": 65.2,
+      "std_percent": 34.7,
+      "clear_days_percent": 19.3,
+      "cloudy_days_percent": 52.1
+    },
+    "weather_category": "Cloudy",
+    "category_confidence": 0.65,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.932,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.55
+    },
+    "additional": {
+      "humidity_celsius": -1.0,
+      "pressure_hpa": 1018.0,
+      "solar_radiation_wm2": null
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.8199999928474426,
+        "temp_celsius": 2.4100000858306885,
+        "wind_ms": 7.199999809265137,
+        "cloud_pct": 61.849998474121094
+      },
+      "2016": {
+        "rainfall_mm": 0.019999999552965164,
+        "temp_celsius": 2.7799999713897705,
+        "wind_ms": 6.139999866485596,
+        "cloud_pct": 55.4900016784668
+      },
+      "2017": {
+        "rainfall_mm": 1.9199999570846558,
+        "temp_celsius": 3.869999885559082,
+        "wind_ms": 6.519999980926514,
+        "cloud_pct": 82.94999694824219
+      },
+      "2018": {
+        "rainfall_mm": 4.210000038146973,
+        "temp_celsius": -4.539999961853027,
+        "wind_ms": 10.869999885559082,
+        "cloud_pct": 75.37000274658203
+      },
+      "2019": {
+        "rainfall_mm": 2.4800000190734863,
+        "temp_celsius": 6.170000076293945,
+        "wind_ms": 4.300000190734863,
+        "cloud_pct": 84.8499984741211
+      },
+      "2020": {
+        "rainfall_mm": 3.0299999713897705,
+        "temp_celsius": 5.599999904632568,
+        "wind_ms": 4.409999847412109,
+        "cloud_pct": 55.220001220703125
+      },
+      "2021": {
+        "rainfall_mm": 2.5199999809265137,
+        "temp_celsius": 5.480000019073486,
+        "wind_ms": 5.070000171661377,
+        "cloud_pct": 69.7699966430664
+      },
+      "2022": {
+        "rainfall_mm": 4.059999942779541,
+        "temp_celsius": 5.079999923706055,
+        "wind_ms": 5.010000228881836,
+        "cloud_pct": 74.79000091552734
+      },
+      "2023": {
+        "rainfall_mm": 2.7100000381469727,
+        "temp_celsius": 8.699999809265137,
+        "wind_ms": 5.119999885559082,
+        "cloud_pct": 71.05999755859375
+      },
+      "2024": {
+        "rainfall_mm": 2.4000000953674316,
+        "temp_celsius": 4.050000190734863,
+        "wind_ms": 5.400000095367432,
+        "cloud_pct": 60.04999923706055
+      }
+    }
+  },
+  "01-15": {
+    "date": "2026-01-15",
+    "month_day": "01-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.28,
+      "probability_percent": 28.0,
+      "expected_amount_mm": 0.25,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.15,
+      "std_deviation_mm": 0.66,
+      "intensity_distribution": {
+        "light_rain_days": 138,
+        "moderate_rain_days": 9,
+        "heavy_rain_days": 0,
+        "no_rain_days": 378
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 2.5,
+      "mean_std_celsius": 5.1,
+      "expected_range": {
+        "min": 1.0,
+        "max": 4.0
+      },
+      "record_low_celsius": -20.5,
+      "record_high_celsius": 16.9
+    },
+    "wind": {
+      "mean_speed_ms": 5.9,
+      "max_recorded_ms": 16.5,
+      "std_deviation_ms": 3.5
+    },
+    "cloud_cover": {
+      "mean_percent": 61.5,
+      "std_percent": 33.5,
+      "clear_days_percent": 20.0,
+      "cloudy_days_percent": 44.6
+    },
+    "weather_category": "Cloudy",
+    "category_confidence": 0.61,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.966,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.514
+    },
+    "additional": {
+      "humidity_celsius": -2.6,
+      "pressure_hpa": 1018.4,
+      "solar_radiation_wm2": null
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 3.0999999046325684,
+        "temp_celsius": -0.2199999988079071,
+        "wind_ms": 6.059999942779541,
+        "cloud_pct": 50.16999816894531
+      },
+      "2016": {
+        "rainfall_mm": 4.349999904632568,
+        "temp_celsius": 3.2699999809265137,
+        "wind_ms": 6.5,
+        "cloud_pct": 56.5
+      },
+      "2017": {
+        "rainfall_mm": 3.5299999713897705,
+        "temp_celsius": 3.9100000858306885,
+        "wind_ms": 4.230000019073486,
+        "cloud_pct": 77.04000091552734
+      },
+      "2018": {
+        "rainfall_mm": 3.390000104904175,
+        "temp_celsius": 3.2100000381469727,
+        "wind_ms": 6.289999961853027,
+        "cloud_pct": 64.05999755859375
+      },
+      "2019": {
+        "rainfall_mm": 2.690000057220459,
+        "temp_celsius": 1.1799999475479126,
+        "wind_ms": 6.539999961853027,
+        "cloud_pct": 55.7599983215332
+      },
+      "2020": {
+        "rainfall_mm": 3.700000047683716,
+        "temp_celsius": 4.380000114440918,
+        "wind_ms": 6.28000020980835,
+        "cloud_pct": 63.79999923706055
+      },
+      "2021": {
+        "rainfall_mm": 0.5899999737739563,
+        "temp_celsius": 3.9800000190734863,
+        "wind_ms": 4.570000171661377,
+        "cloud_pct": 44.81999969482422
+      },
+      "2022": {
+        "rainfall_mm": 2.25,
+        "temp_celsius": 1.600000023841858,
+        "wind_ms": 7.71999979019165,
+        "cloud_pct": 63.06999969482422
+      },
+      "2023": {
+        "rainfall_mm": 3.2100000381469727,
+        "temp_celsius": 5.389999866485596,
+        "wind_ms": 5.099999904632568,
+        "cloud_pct": 65.30999755859375
+      },
+      "2024": {
+        "rainfall_mm": 6.119999885559082,
+        "temp_celsius": 2.700000047683716,
+        "wind_ms": 6.539999961853027,
+        "cloud_pct": 53.29999923706055
+      }
+    }
+  },
+  "02-01": {
+    "date": "2026-02-01",
+    "month_day": "02-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.254,
+      "probability_percent": 25.4,
+      "expected_amount_mm": 0.31,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 5.83,
+      "std_deviation_mm": 0.85,
+      "intensity_distribution": {
+        "light_rain_days": 61,
+        "moderate_rain_days": 10,
+        "heavy_rain_days": 0,
+        "no_rain_days": 209
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 2.4,
+      "mean_std_celsius": 4.1,
+      "expected_range": {
+        "min": 1.0,
+        "max": 3.9
+      },
+      "record_low_celsius": -14.1,
+      "record_high_celsius": 14.1
+    },
+    "wind": {
+      "mean_speed_ms": 5.4,
+      "max_recorded_ms": 18.0,
+      "std_deviation_ms": 3.3
+    },
+    "cloud_cover": {
+      "mean_percent": 58.7,
+      "std_percent": 35.2,
+      "clear_days_percent": 23.6,
+      "cloudy_days_percent": 42.1
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.41,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.989,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.486
+    },
+    "additional": {
+      "humidity_celsius": -2.7,
+      "pressure_hpa": 1018.4,
+      "solar_radiation_wm2": 0.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 2.5199999809265137,
+        "temp_celsius": -0.5,
+        "wind_ms": 5.900000095367432,
+        "cloud_pct": 67.77999877929688
+      },
+      "2016": {
+        "rainfall_mm": 6.449999809265137,
+        "temp_celsius": 6.309999942779541,
+        "wind_ms": 5.239999771118164,
+        "cloud_pct": 69.77999877929688
+      },
+      "2017": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 4.0,
+        "wind_ms": 4.710000038146973,
+        "cloud_pct": 51.83000183105469
+      },
+      "2018": {
+        "rainfall_mm": 2.430000066757202,
+        "temp_celsius": 1.9199999570846558,
+        "wind_ms": 4.929999828338623,
+        "cloud_pct": 75.37999725341797
+      },
+      "2019": {
+        "rainfall_mm": 1.090000033378601,
+        "temp_celsius": 2.4200000762939453,
+        "wind_ms": 3.359999895095825,
+        "cloud_pct": 51.540000915527344
+      },
+      "2020": {
+        "rainfall_mm": 4.480000019073486,
+        "temp_celsius": 6.25,
+        "wind_ms": 3.299999952316284,
+        "cloud_pct": 79.26000213623047
+      },
+      "2021": {
+        "rainfall_mm": 5.050000190734863,
+        "temp_celsius": 3.130000114440918,
+        "wind_ms": 7.730000019073486,
+        "cloud_pct": 75.5999984741211
+      },
+      "2022": {
+        "rainfall_mm": 3.2200000286102295,
+        "temp_celsius": 2.9000000953674316,
+        "wind_ms": 4.710000038146973,
+        "cloud_pct": 82.69000244140625
+      },
+      "2023": {
+        "rainfall_mm": 0.07999999821186066,
+        "temp_celsius": 1.3799999952316284,
+        "wind_ms": 4.639999866485596,
+        "cloud_pct": 65.41999816894531
+      },
+      "2024": {
+        "rainfall_mm": 0.9900000095367432,
+        "temp_celsius": 3.7699999809265137,
+        "wind_ms": 4.480000019073486,
+        "cloud_pct": 40.95000076293945
+      }
+    }
+  },
+  "02-15": {
+    "date": "2026-02-15",
+    "month_day": "02-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.242,
+      "probability_percent": 24.2,
+      "expected_amount_mm": 0.25,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.69,
+      "std_deviation_mm": 0.71,
+      "intensity_distribution": {
+        "light_rain_days": 114,
+        "moderate_rain_days": 13,
+        "heavy_rain_days": 0,
+        "no_rain_days": 398
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 2.8,
+      "mean_std_celsius": 4.2,
+      "expected_range": {
+        "min": 1.3,
+        "max": 4.3
+      },
+      "record_low_celsius": -17.1,
+      "record_high_celsius": 16.0
+    },
+    "wind": {
+      "mean_speed_ms": 5.5,
+      "max_recorded_ms": 14.9,
+      "std_deviation_ms": 3.2
+    },
+    "cloud_cover": {
+      "mean_percent": 57.6,
+      "std_percent": 35.0,
+      "clear_days_percent": 24.8,
+      "cloudy_days_percent": 40.2
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.42,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.989,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.526
+    },
+    "additional": {
+      "humidity_celsius": -2.6,
+      "pressure_hpa": 1018.2,
+      "solar_radiation_wm2": 0.1
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 2.940000057220459,
+        "temp_celsius": -2.690000057220459,
+        "wind_ms": 6.110000133514404,
+        "cloud_pct": 76.68000030517578
+      },
+      "2016": {
+        "rainfall_mm": 3.1500000953674316,
+        "temp_celsius": 1.4199999570846558,
+        "wind_ms": 6.150000095367432,
+        "cloud_pct": 60.41999816894531
+      },
+      "2017": {
+        "rainfall_mm": 4.150000095367432,
+        "temp_celsius": 5.849999904632568,
+        "wind_ms": 6.369999885559082,
+        "cloud_pct": 56.61000061035156
+      },
+      "2018": {
+        "rainfall_mm": 9.180000305175781,
+        "temp_celsius": 5.820000171661377,
+        "wind_ms": 4.929999828338623,
+        "cloud_pct": 84.27999877929688
+      },
+      "2019": {
+        "rainfall_mm": 2.359999895095825,
+        "temp_celsius": 3.3399999141693115,
+        "wind_ms": 5.210000038146973,
+        "cloud_pct": 77.5
+      },
+      "2020": {
+        "rainfall_mm": 2.4000000953674316,
+        "temp_celsius": 4.190000057220459,
+        "wind_ms": 4.360000133514404,
+        "cloud_pct": 66.91000366210938
+      },
+      "2021": {
+        "rainfall_mm": 4.860000133514404,
+        "temp_celsius": 1.2200000286102295,
+        "wind_ms": 6.21999979019165,
+        "cloud_pct": 78.47000122070312
+      },
+      "2022": {
+        "rainfall_mm": 1.809999942779541,
+        "temp_celsius": 4.329999923706055,
+        "wind_ms": 6.559999942779541,
+        "cloud_pct": 33.79999923706055
+      },
+      "2023": {
+        "rainfall_mm": 2.859999895095825,
+        "temp_celsius": 8.119999885559082,
+        "wind_ms": 5.519999980926514,
+        "cloud_pct": 69.08999633789062
+      },
+      "2024": {
+        "rainfall_mm": 3.759999990463257,
+        "temp_celsius": 3.309999942779541,
+        "wind_ms": 4.28000020980835,
+        "cloud_pct": 52.91999816894531
+      }
+    }
+  },
+  "03-01": {
+    "date": "2026-03-01",
+    "month_day": "03-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.279,
+      "probability_percent": 27.9,
+      "expected_amount_mm": 0.31,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 3.57,
+      "std_deviation_mm": 0.66,
+      "intensity_distribution": {
+        "light_rain_days": 74,
+        "moderate_rain_days": 4,
+        "heavy_rain_days": 0,
+        "no_rain_days": 202
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 4.0,
+      "mean_std_celsius": 3.9,
+      "expected_range": {
+        "min": 2.5,
+        "max": 5.5
+      },
+      "record_low_celsius": -13.1,
+      "record_high_celsius": 17.0
+    },
+    "wind": {
+      "mean_speed_ms": 5.7,
+      "max_recorded_ms": 17.0,
+      "std_deviation_ms": 3.3
+    },
+    "cloud_cover": {
+      "mean_percent": 56.1,
+      "std_percent": 36.9,
+      "clear_days_percent": 28.2,
+      "cloudy_days_percent": 41.1
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.44,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.979,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.525
+    },
+    "additional": {
+      "humidity_celsius": -1.3,
+      "pressure_hpa": 1017.0,
+      "solar_radiation_wm2": 2.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 5.539999961853027,
+        "temp_celsius": -0.9599999785423279,
+        "wind_ms": 3.7100000381469727,
+        "cloud_pct": 57.18000030517578
+      },
+      "2016": {
+        "rainfall_mm": 2.700000047683716,
+        "temp_celsius": 4.340000152587891,
+        "wind_ms": 4.099999904632568,
+        "cloud_pct": 37.0099983215332
+      },
+      "2017": {
+        "rainfall_mm": 1.5299999713897705,
+        "temp_celsius": 5.320000171661377,
+        "wind_ms": 7.670000076293945,
+        "cloud_pct": 50.709999084472656
+      },
+      "2018": {
+        "rainfall_mm": 4.739999771118164,
+        "temp_celsius": 4.449999809265137,
+        "wind_ms": 6.639999866485596,
+        "cloud_pct": 64.3499984741211
+      },
+      "2019": {
+        "rainfall_mm": 1.809999942779541,
+        "temp_celsius": 0.6800000071525574,
+        "wind_ms": 4.849999904632568,
+        "cloud_pct": 67.16999816894531
+      },
+      "2020": {
+        "rainfall_mm": 1.5800000429153442,
+        "temp_celsius": 5.820000171661377,
+        "wind_ms": 5.800000190734863,
+        "cloud_pct": 46.11000061035156
+      },
+      "2021": {
+        "rainfall_mm": 1.9600000381469727,
+        "temp_celsius": 3.130000114440918,
+        "wind_ms": 7.059999942779541,
+        "cloud_pct": 34.310001373291016
+      },
+      "2022": {
+        "rainfall_mm": 0.9100000262260437,
+        "temp_celsius": 5.25,
+        "wind_ms": 4.809999942779541,
+        "cloud_pct": 45.0
+      },
+      "2023": {
+        "rainfall_mm": 0.7099999785423279,
+        "temp_celsius": 5.320000171661377,
+        "wind_ms": 4.380000114440918,
+        "cloud_pct": 49.90999984741211
+      },
+      "2024": {
+        "rainfall_mm": 7.670000076293945,
+        "temp_celsius": 7.409999847412109,
+        "wind_ms": 5.300000190734863,
+        "cloud_pct": 76.58000183105469
+      }
+    }
+  },
+  "03-15": {
+    "date": "2026-03-15",
+    "month_day": "03-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.25,
+      "probability_percent": 25.0,
+      "expected_amount_mm": 0.31,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 8.2,
+      "std_deviation_mm": 0.89,
+      "intensity_distribution": {
+        "light_rain_days": 112,
+        "moderate_rain_days": 19,
+        "heavy_rain_days": 0,
+        "no_rain_days": 394
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 5.3,
+      "mean_std_celsius": 3.7,
+      "expected_range": {
+        "min": 3.8,
+        "max": 6.8
+      },
+      "record_low_celsius": -11.7,
+      "record_high_celsius": 22.3
+    },
+    "wind": {
+      "mean_speed_ms": 5.2,
+      "max_recorded_ms": 15.0,
+      "std_deviation_ms": 3.0
+    },
+    "cloud_cover": {
+      "mean_percent": 55.1,
+      "std_percent": 36.3,
+      "clear_days_percent": 29.0,
+      "cloudy_days_percent": 38.7
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.45,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.954,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.446
+    },
+    "additional": {
+      "humidity_celsius": -0.2,
+      "pressure_hpa": 1017.6,
+      "solar_radiation_wm2": 5.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 3.299999952316284,
+        "temp_celsius": 4.789999961853027,
+        "wind_ms": 4.880000114440918,
+        "cloud_pct": 48.709999084472656
+      },
+      "2016": {
+        "rainfall_mm": 3.299999952316284,
+        "temp_celsius": 8.5600004196167,
+        "wind_ms": 4.329999923706055,
+        "cloud_pct": 58.900001525878906
+      },
+      "2017": {
+        "rainfall_mm": 10.289999961853027,
+        "temp_celsius": 3.9600000381469727,
+        "wind_ms": 7.059999942779541,
+        "cloud_pct": 50.58000183105469
+      },
+      "2018": {
+        "rainfall_mm": 7.400000095367432,
+        "temp_celsius": 2.7100000381469727,
+        "wind_ms": 7.159999847412109,
+        "cloud_pct": 43.04999923706055
+      },
+      "2019": {
+        "rainfall_mm": 4.429999828338623,
+        "temp_celsius": 5.480000019073486,
+        "wind_ms": 3.809999942779541,
+        "cloud_pct": 56.72999954223633
+      },
+      "2020": {
+        "rainfall_mm": 3.690000057220459,
+        "temp_celsius": 8.270000457763672,
+        "wind_ms": 3.6500000953674316,
+        "cloud_pct": 59.529998779296875
+      },
+      "2021": {
+        "rainfall_mm": 0.46000000834465027,
+        "temp_celsius": 5.860000133514404,
+        "wind_ms": 4.820000171661377,
+        "cloud_pct": 35.68000030517578
+      },
+      "2022": {
+        "rainfall_mm": 5.380000114440918,
+        "temp_celsius": 7.340000152587891,
+        "wind_ms": 5.400000095367432,
+        "cloud_pct": 60.380001068115234
+      },
+      "2023": {
+        "rainfall_mm": 2.450000047683716,
+        "temp_celsius": 5.420000076293945,
+        "wind_ms": 6.369999885559082,
+        "cloud_pct": 51.90999984741211
+      },
+      "2024": {
+        "rainfall_mm": 3.1500000953674316,
+        "temp_celsius": 7.179999828338623,
+        "wind_ms": 5.630000114440918,
+        "cloud_pct": 51.08000183105469
+      }
+    }
+  },
+  "04-01": {
+    "date": "2026-04-01",
+    "month_day": "04-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.296,
+      "probability_percent": 29.6,
+      "expected_amount_mm": 0.29,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.8,
+      "std_deviation_mm": 0.72,
+      "intensity_distribution": {
+        "light_rain_days": 76,
+        "moderate_rain_days": 7,
+        "heavy_rain_days": 0,
+        "no_rain_days": 197
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 8.0,
+      "mean_std_celsius": 3.1,
+      "expected_range": {
+        "min": 6.6,
+        "max": 9.3
+      },
+      "record_low_celsius": -1.9,
+      "record_high_celsius": 25.0
+    },
+    "wind": {
+      "mean_speed_ms": 5.1,
+      "max_recorded_ms": 15.8,
+      "std_deviation_ms": 2.9
+    },
+    "cloud_cover": {
+      "mean_percent": 57.1,
+      "std_percent": 35.2,
+      "clear_days_percent": 25.7,
+      "cloudy_days_percent": 40.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.43,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.882,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.468
+    },
+    "additional": {
+      "humidity_celsius": 2.9,
+      "pressure_hpa": 1014.3,
+      "solar_radiation_wm2": 15.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.2100000381469727,
+        "temp_celsius": 7.690000057220459,
+        "wind_ms": 6.460000038146973,
+        "cloud_pct": 57.77000045776367
+      },
+      "2016": {
+        "rainfall_mm": 1.1699999570846558,
+        "temp_celsius": 8.609999656677246,
+        "wind_ms": 6.650000095367432,
+        "cloud_pct": 49.810001373291016
+      },
+      "2017": {
+        "rainfall_mm": 3.069999933242798,
+        "temp_celsius": 8.819999694824219,
+        "wind_ms": 5.019999980926514,
+        "cloud_pct": 68.9000015258789
+      },
+      "2018": {
+        "rainfall_mm": 2.569999933242798,
+        "temp_celsius": 6.539999961853027,
+        "wind_ms": 4.699999809265137,
+        "cloud_pct": 74.41000366210938
+      },
+      "2019": {
+        "rainfall_mm": 3.1600000858306885,
+        "temp_celsius": 8.140000343322754,
+        "wind_ms": 3.759999990463257,
+        "cloud_pct": 50.04999923706055
+      },
+      "2020": {
+        "rainfall_mm": 1.0700000524520874,
+        "temp_celsius": 8.239999771118164,
+        "wind_ms": 5.119999885559082,
+        "cloud_pct": 67.16999816894531
+      },
+      "2021": {
+        "rainfall_mm": 1.9299999475479126,
+        "temp_celsius": 8.609999656677246,
+        "wind_ms": 4.900000095367432,
+        "cloud_pct": 32.290000915527344
+      },
+      "2022": {
+        "rainfall_mm": 11.0600004196167,
+        "temp_celsius": 8.899999618530273,
+        "wind_ms": 5.25,
+        "cloud_pct": 65.88999938964844
+      },
+      "2023": {
+        "rainfall_mm": 1.8300000429153442,
+        "temp_celsius": 11.069999694824219,
+        "wind_ms": 4.949999809265137,
+        "cloud_pct": 63.849998474121094
+      },
+      "2024": {
+        "rainfall_mm": 5.099999904632568,
+        "temp_celsius": 7.460000038146973,
+        "wind_ms": 4.21999979019165,
+        "cloud_pct": 52.86000061035156
+      }
+    }
+  },
+  "04-15": {
+    "date": "2026-04-15",
+    "month_day": "04-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.24,
+      "probability_percent": 24.0,
+      "expected_amount_mm": 0.28,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 9.29,
+      "std_deviation_mm": 0.84,
+      "intensity_distribution": {
+        "light_rain_days": 112,
+        "moderate_rain_days": 14,
+        "heavy_rain_days": 0,
+        "no_rain_days": 399
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 9.7,
+      "mean_std_celsius": 3.2,
+      "expected_range": {
+        "min": 8.6,
+        "max": 10.8
+      },
+      "record_low_celsius": -0.7,
+      "record_high_celsius": 25.0
+    },
+    "wind": {
+      "mean_speed_ms": 4.8,
+      "max_recorded_ms": 13.6,
+      "std_deviation_ms": 2.9
+    },
+    "cloud_cover": {
+      "mean_percent": 55.9,
+      "std_percent": 36.9,
+      "clear_days_percent": 29.1,
+      "cloudy_days_percent": 41.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.44,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.703,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.415
+    },
+    "additional": {
+      "humidity_celsius": 5.0,
+      "pressure_hpa": 1016.5,
+      "solar_radiation_wm2": 22.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 4.329999923706055,
+        "temp_celsius": 10.300000190734863,
+        "wind_ms": 4.820000171661377,
+        "cloud_pct": 70.87000274658203
+      },
+      "2016": {
+        "rainfall_mm": 0.800000011920929,
+        "temp_celsius": 9.079999923706055,
+        "wind_ms": 4.590000152587891,
+        "cloud_pct": 43.43000030517578
+      },
+      "2017": {
+        "rainfall_mm": 2.180000066757202,
+        "temp_celsius": 11.510000228881836,
+        "wind_ms": 4.300000190734863,
+        "cloud_pct": 59.099998474121094
+      },
+      "2018": {
+        "rainfall_mm": 1.4500000476837158,
+        "temp_celsius": 7.260000228881836,
+        "wind_ms": 5.71999979019165,
+        "cloud_pct": 48.2599983215332
+      },
+      "2019": {
+        "rainfall_mm": 5.010000228881836,
+        "temp_celsius": 11.970000267028809,
+        "wind_ms": 5.070000171661377,
+        "cloud_pct": 79.68000030517578
+      },
+      "2020": {
+        "rainfall_mm": 3.0899999141693115,
+        "temp_celsius": 8.859999656677246,
+        "wind_ms": 4.639999866485596,
+        "cloud_pct": 42.33000183105469
+      },
+      "2021": {
+        "rainfall_mm": 6.28000020980835,
+        "temp_celsius": 9.760000228881836,
+        "wind_ms": 4.909999847412109,
+        "cloud_pct": 54.41999816894531
+      },
+      "2022": {
+        "rainfall_mm": 8.029999732971191,
+        "temp_celsius": 10.199999809265137,
+        "wind_ms": 4.46999979019165,
+        "cloud_pct": 39.29999923706055
+      },
+      "2023": {
+        "rainfall_mm": 0.07999999821186066,
+        "temp_celsius": 11.930000305175781,
+        "wind_ms": 4.150000095367432,
+        "cloud_pct": 48.0099983215332
+      },
+      "2024": {
+        "rainfall_mm": 1.2000000476837158,
+        "temp_celsius": 10.880000114440918,
+        "wind_ms": 4.71999979019165,
+        "cloud_pct": 52.970001220703125
+      }
+    }
+  },
+  "05-01": {
+    "date": "2026-05-01",
+    "month_day": "05-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.264,
+      "probability_percent": 26.4,
+      "expected_amount_mm": 0.3,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 7.24,
+      "std_deviation_mm": 0.82,
+      "intensity_distribution": {
+        "light_rain_days": 64,
+        "moderate_rain_days": 10,
+        "heavy_rain_days": 0,
+        "no_rain_days": 206
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 12.4,
+      "mean_std_celsius": 2.7,
+      "expected_range": {
+        "min": 11.5,
+        "max": 13.4
+      },
+      "record_low_celsius": 6.6,
+      "record_high_celsius": 28.2
+    },
+    "wind": {
+      "mean_speed_ms": 4.4,
+      "max_recorded_ms": 15.8,
+      "std_deviation_ms": 2.6
+    },
+    "cloud_cover": {
+      "mean_percent": 60.1,
+      "std_percent": 34.9,
+      "clear_days_percent": 23.6,
+      "cloudy_days_percent": 45.4
+    },
+    "weather_category": "Cloudy",
+    "category_confidence": 0.6,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.286,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.354
+    },
+    "additional": {
+      "humidity_celsius": 8.5,
+      "pressure_hpa": 1016.1,
+      "solar_radiation_wm2": 31.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 12.210000038146973,
+        "wind_ms": 4.090000152587891,
+        "cloud_pct": 45.25
+      },
+      "2016": {
+        "rainfall_mm": 3.9100000858306885,
+        "temp_celsius": 9.989999771118164,
+        "wind_ms": 3.5899999141693115,
+        "cloud_pct": 85.58000183105469
+      },
+      "2017": {
+        "rainfall_mm": 3.9800000190734863,
+        "temp_celsius": 12.770000457763672,
+        "wind_ms": 6.360000133514404,
+        "cloud_pct": 64.4000015258789
+      },
+      "2018": {
+        "rainfall_mm": 0.029999999329447746,
+        "temp_celsius": 14.109999656677246,
+        "wind_ms": 4.579999923706055,
+        "cloud_pct": 67.80999755859375
+      },
+      "2019": {
+        "rainfall_mm": 6.059999942779541,
+        "temp_celsius": 13.229999542236328,
+        "wind_ms": 3.8299999237060547,
+        "cloud_pct": 78.94000244140625
+      },
+      "2020": {
+        "rainfall_mm": 8.770000457763672,
+        "temp_celsius": 11.1899995803833,
+        "wind_ms": 5.010000228881836,
+        "cloud_pct": 50.63999938964844
+      },
+      "2021": {
+        "rainfall_mm": 1.0299999713897705,
+        "temp_celsius": 13.050000190734863,
+        "wind_ms": 4.619999885559082,
+        "cloud_pct": 64.83999633789062
+      },
+      "2022": {
+        "rainfall_mm": 3.369999885559082,
+        "temp_celsius": 11.609999656677246,
+        "wind_ms": 6.25,
+        "cloud_pct": 78.87999725341797
+      },
+      "2023": {
+        "rainfall_mm": 4.960000038146973,
+        "temp_celsius": 11.699999809265137,
+        "wind_ms": 3.569999933242798,
+        "cloud_pct": 36.41999816894531
+      },
+      "2024": {
+        "rainfall_mm": 2.069999933242798,
+        "temp_celsius": 13.520000457763672,
+        "wind_ms": 2.940000057220459,
+        "cloud_pct": 84.94999694824219
+      }
+    }
+  },
+  "05-15": {
+    "date": "2026-05-15",
+    "month_day": "05-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.242,
+      "probability_percent": 24.2,
+      "expected_amount_mm": 0.24,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 4.08,
+      "std_deviation_mm": 0.63,
+      "intensity_distribution": {
+        "light_rain_days": 116,
+        "moderate_rain_days": 11,
+        "heavy_rain_days": 0,
+        "no_rain_days": 398
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 13.9,
+      "mean_std_celsius": 3.0,
+      "expected_range": {
+        "min": 12.9,
+        "max": 14.8
+      },
+      "record_low_celsius": 3.4,
+      "record_high_celsius": 29.3
+    },
+    "wind": {
+      "mean_speed_ms": 4.4,
+      "max_recorded_ms": 15.8,
+      "std_deviation_ms": 2.7
+    },
+    "cloud_cover": {
+      "mean_percent": 58.3,
+      "std_percent": 34.9,
+      "clear_days_percent": 25.5,
+      "cloudy_days_percent": 42.1
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.42,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.116,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.381
+    },
+    "additional": {
+      "humidity_celsius": 9.8,
+      "pressure_hpa": 1016.2,
+      "solar_radiation_wm2": 37.9
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.7300000190734863,
+        "temp_celsius": 15.260000228881836,
+        "wind_ms": 3.640000104904175,
+        "cloud_pct": 63.2400016784668
+      },
+      "2016": {
+        "rainfall_mm": 4.349999904632568,
+        "temp_celsius": 12.479999542236328,
+        "wind_ms": 3.609999895095825,
+        "cloud_pct": 64.9000015258789
+      },
+      "2017": {
+        "rainfall_mm": 3.6600000858306885,
+        "temp_celsius": 13.930000305175781,
+        "wind_ms": 4.320000171661377,
+        "cloud_pct": 51.72999954223633
+      },
+      "2018": {
+        "rainfall_mm": 11.770000457763672,
+        "temp_celsius": 15.020000457763672,
+        "wind_ms": 3.5399999618530273,
+        "cloud_pct": 73.6500015258789
+      },
+      "2019": {
+        "rainfall_mm": 3.259999990463257,
+        "temp_celsius": 14.109999656677246,
+        "wind_ms": 4.889999866485596,
+        "cloud_pct": 75.23999786376953
+      },
+      "2020": {
+        "rainfall_mm": 0.5199999809265137,
+        "temp_celsius": 11.579999923706055,
+        "wind_ms": 5.670000076293945,
+        "cloud_pct": 53.459999084472656
+      },
+      "2021": {
+        "rainfall_mm": 0.17000000178813934,
+        "temp_celsius": 14.180000305175781,
+        "wind_ms": 3.309999942779541,
+        "cloud_pct": 31.3700008392334
+      },
+      "2022": {
+        "rainfall_mm": 5.699999809265137,
+        "temp_celsius": 14.25,
+        "wind_ms": 5.820000171661377,
+        "cloud_pct": 57.689998626708984
+      },
+      "2023": {
+        "rainfall_mm": 1.840000033378601,
+        "temp_celsius": 15.119999885559082,
+        "wind_ms": 3.5299999713897705,
+        "cloud_pct": 41.41999816894531
+      },
+      "2024": {
+        "rainfall_mm": 5.210000038146973,
+        "temp_celsius": 12.949999809265137,
+        "wind_ms": 4.900000095367432,
+        "cloud_pct": 71.33000183105469
+      }
+    }
+  },
+  "06-01": {
+    "date": "2026-06-01",
+    "month_day": "06-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.229,
+      "probability_percent": 22.9,
+      "expected_amount_mm": 0.31,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.01,
+      "std_deviation_mm": 0.87,
+      "intensity_distribution": {
+        "light_rain_days": 53,
+        "moderate_rain_days": 11,
+        "heavy_rain_days": 0,
+        "no_rain_days": 216
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 17.8,
+      "mean_std_celsius": 2.9,
+      "expected_range": {
+        "min": 16.9,
+        "max": 18.7
+      },
+      "record_low_celsius": 10.6,
+      "record_high_celsius": 31.7
+    },
+    "wind": {
+      "mean_speed_ms": 4.1,
+      "max_recorded_ms": 12.2,
+      "std_deviation_ms": 2.5
+    },
+    "cloud_cover": {
+      "mean_percent": 58.0,
+      "std_percent": 34.5,
+      "clear_days_percent": 25.0,
+      "cloudy_days_percent": 40.7
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.42,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.004,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.364
+    },
+    "additional": {
+      "humidity_celsius": 13.9,
+      "pressure_hpa": 1014.1,
+      "solar_radiation_wm2": 45.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 4.139999866485596,
+        "temp_celsius": 16.309999465942383,
+        "wind_ms": 5.130000114440918,
+        "cloud_pct": 82.69000244140625
+      },
+      "2016": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 18.670000076293945,
+        "wind_ms": 4.039999961853027,
+        "cloud_pct": 66.18000030517578
+      },
+      "2017": {
+        "rainfall_mm": 2.450000047683716,
+        "temp_celsius": 16.770000457763672,
+        "wind_ms": 2.8399999141693115,
+        "cloud_pct": 61.099998474121094
+      },
+      "2018": {
+        "rainfall_mm": 2.630000114440918,
+        "temp_celsius": 15.9399995803833,
+        "wind_ms": 3.6700000762939453,
+        "cloud_pct": 73.58999633789062
+      },
+      "2019": {
+        "rainfall_mm": 0.1899999976158142,
+        "temp_celsius": 19.360000610351562,
+        "wind_ms": 3.180000066757202,
+        "cloud_pct": 64.98999786376953
+      },
+      "2020": {
+        "rainfall_mm": 0.029999999329447746,
+        "temp_celsius": 19.719999313354492,
+        "wind_ms": 2.819999933242798,
+        "cloud_pct": 51.16999816894531
+      },
+      "2021": {
+        "rainfall_mm": 1.75,
+        "temp_celsius": 18.979999542236328,
+        "wind_ms": 4.550000190734863,
+        "cloud_pct": 68.2300033569336
+      },
+      "2022": {
+        "rainfall_mm": 0.33000001311302185,
+        "temp_celsius": 19.209999084472656,
+        "wind_ms": 2.809999942779541,
+        "cloud_pct": 66.44999694824219
+      },
+      "2023": {
+        "rainfall_mm": 0.009999999776482582,
+        "temp_celsius": 16.420000076293945,
+        "wind_ms": 3.6700000762939453,
+        "cloud_pct": 41.470001220703125
+      },
+      "2024": {
+        "rainfall_mm": 2.359999895095825,
+        "temp_celsius": 20.049999237060547,
+        "wind_ms": 4.300000190734863,
+        "cloud_pct": 63.630001068115234
+      }
+    }
+  },
+  "06-15": {
+    "date": "2026-06-15",
+    "month_day": "06-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.179,
+      "probability_percent": 17.9,
+      "expected_amount_mm": 0.18,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 5.15,
+      "std_deviation_mm": 0.55,
+      "intensity_distribution": {
+        "light_rain_days": 86,
+        "moderate_rain_days": 8,
+        "heavy_rain_days": 0,
+        "no_rain_days": 431
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 20.0,
+      "mean_std_celsius": 2.8,
+      "expected_range": {
+        "min": 19.2,
+        "max": 20.8
+      },
+      "record_low_celsius": 12.6,
+      "record_high_celsius": 33.0
+    },
+    "wind": {
+      "mean_speed_ms": 3.8,
+      "max_recorded_ms": 11.8,
+      "std_deviation_ms": 2.1
+    },
+    "cloud_cover": {
+      "mean_percent": 55.7,
+      "std_percent": 33.5,
+      "clear_days_percent": 26.5,
+      "cloudy_days_percent": 39.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.44,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.01,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.284
+    },
+    "additional": {
+      "humidity_celsius": 16.1,
+      "pressure_hpa": 1015.1,
+      "solar_radiation_wm2": 47.6
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 3.2300000190734863,
+        "temp_celsius": 21.889999389648438,
+        "wind_ms": 3.9800000190734863,
+        "cloud_pct": 72.77999877929688
+      },
+      "2016": {
+        "rainfall_mm": 1.2999999523162842,
+        "temp_celsius": 19.729999542236328,
+        "wind_ms": 4.400000095367432,
+        "cloud_pct": 43.13999938964844
+      },
+      "2017": {
+        "rainfall_mm": 6.210000038146973,
+        "temp_celsius": 20.09000015258789,
+        "wind_ms": 4.659999847412109,
+        "cloud_pct": 50.939998626708984
+      },
+      "2018": {
+        "rainfall_mm": 1.9700000286102295,
+        "temp_celsius": 20.489999771118164,
+        "wind_ms": 2.9100000858306885,
+        "cloud_pct": 63.939998626708984
+      },
+      "2019": {
+        "rainfall_mm": 9.8100004196167,
+        "temp_celsius": 19.989999771118164,
+        "wind_ms": 4.340000152587891,
+        "cloud_pct": 71.9800033569336
+      },
+      "2020": {
+        "rainfall_mm": 1.3600000143051147,
+        "temp_celsius": 19.43000030517578,
+        "wind_ms": 3.890000104904175,
+        "cloud_pct": 60.77000045776367
+      },
+      "2021": {
+        "rainfall_mm": 0.8700000047683716,
+        "temp_celsius": 20.84000015258789,
+        "wind_ms": 3.2300000190734863,
+        "cloud_pct": 68.30000305175781
+      },
+      "2022": {
+        "rainfall_mm": 3.1700000762939453,
+        "temp_celsius": 20.450000762939453,
+        "wind_ms": 5.110000133514404,
+        "cloud_pct": 57.849998474121094
+      },
+      "2023": {
+        "rainfall_mm": 3.690000057220459,
+        "temp_celsius": 19.209999084472656,
+        "wind_ms": 4.179999828338623,
+        "cloud_pct": 49.470001220703125
+      },
+      "2024": {
+        "rainfall_mm": 1.7599999904632568,
+        "temp_celsius": 21.649999618530273,
+        "wind_ms": 3.700000047683716,
+        "cloud_pct": 26.600000381469727
+      }
+    }
+  },
+  "07-01": {
+    "date": "2026-07-01",
+    "month_day": "07-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.2,
+      "probability_percent": 20.0,
+      "expected_amount_mm": 0.26,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 10.25,
+      "std_deviation_mm": 0.97,
+      "intensity_distribution": {
+        "light_rain_days": 49,
+        "moderate_rain_days": 6,
+        "heavy_rain_days": 1,
+        "no_rain_days": 224
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 22.9,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 22.2,
+        "max": 23.7
+      },
+      "record_low_celsius": 16.8,
+      "record_high_celsius": 33.6
+    },
+    "wind": {
+      "mean_speed_ms": 3.8,
+      "max_recorded_ms": 12.0,
+      "std_deviation_ms": 2.2
+    },
+    "cloud_cover": {
+      "mean_percent": 52.0,
+      "std_percent": 31.0,
+      "clear_days_percent": 27.5,
+      "cloudy_days_percent": 30.7
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.48,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.036,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.004,
+      "high_wind_above_5ms": 0.296
+    },
+    "additional": {
+      "humidity_celsius": 19.0,
+      "pressure_hpa": 1015.0,
+      "solar_radiation_wm2": 47.5
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.5099999904632568,
+        "temp_celsius": 22.639999389648438,
+        "wind_ms": 3.0399999618530273,
+        "cloud_pct": 70.05999755859375
+      },
+      "2016": {
+        "rainfall_mm": 4.519999980926514,
+        "temp_celsius": 22.579999923706055,
+        "wind_ms": 3.630000114440918,
+        "cloud_pct": 68.02999877929688
+      },
+      "2017": {
+        "rainfall_mm": 1.5299999713897705,
+        "temp_celsius": 23.06999969482422,
+        "wind_ms": 3.7699999809265137,
+        "cloud_pct": 63.11000061035156
+      },
+      "2018": {
+        "rainfall_mm": 0.15000000596046448,
+        "temp_celsius": 24.600000381469727,
+        "wind_ms": 3.559999942779541,
+        "cloud_pct": 40.83000183105469
+      },
+      "2019": {
+        "rainfall_mm": 4.71999979019165,
+        "temp_celsius": 23.959999084472656,
+        "wind_ms": 3.690000057220459,
+        "cloud_pct": 69.87999725341797
+      },
+      "2020": {
+        "rainfall_mm": 0.3199999928474426,
+        "temp_celsius": 24.579999923706055,
+        "wind_ms": 3.119999885559082,
+        "cloud_pct": 42.709999084472656
+      },
+      "2021": {
+        "rainfall_mm": 12.979999542236328,
+        "temp_celsius": 22.719999313354492,
+        "wind_ms": 4.269999980926514,
+        "cloud_pct": 54.2599983215332
+      },
+      "2022": {
+        "rainfall_mm": 2.690000057220459,
+        "temp_celsius": 23.360000610351562,
+        "wind_ms": 4.769999980926514,
+        "cloud_pct": 58.279998779296875
+      },
+      "2023": {
+        "rainfall_mm": 0.9700000286102295,
+        "temp_celsius": 24.520000457763672,
+        "wind_ms": 2.5399999618530273,
+        "cloud_pct": 57.0099983215332
+      },
+      "2024": {
+        "rainfall_mm": 0.3700000047683716,
+        "temp_celsius": 22.6299991607666,
+        "wind_ms": 4.53000020980835,
+        "cloud_pct": 61.95000076293945
+      }
+    }
+  },
+  "07-15": {
+    "date": "2026-07-15",
+    "month_day": "07-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.166,
+      "probability_percent": 16.6,
+      "expected_amount_mm": 0.21,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 7.14,
+      "std_deviation_mm": 0.81,
+      "intensity_distribution": {
+        "light_rain_days": 71,
+        "moderate_rain_days": 16,
+        "heavy_rain_days": 0,
+        "no_rain_days": 438
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.8,
+      "mean_std_celsius": 2.0,
+      "expected_range": {
+        "min": 23.1,
+        "max": 24.6
+      },
+      "record_low_celsius": 16.7,
+      "record_high_celsius": 32.9
+    },
+    "wind": {
+      "mean_speed_ms": 3.7,
+      "max_recorded_ms": 10.4,
+      "std_deviation_ms": 2.2
+    },
+    "cloud_cover": {
+      "mean_percent": 48.8,
+      "std_percent": 31.5,
+      "clear_days_percent": 32.4,
+      "cloudy_days_percent": 28.8
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.51,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.03,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.295
+    },
+    "additional": {
+      "humidity_celsius": 19.8,
+      "pressure_hpa": 1014.9,
+      "solar_radiation_wm2": 44.2
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.6200000047683716,
+        "temp_celsius": 24.43000030517578,
+        "wind_ms": 3.0899999141693115,
+        "cloud_pct": 52.02000045776367
+      },
+      "2016": {
+        "rainfall_mm": 0.8399999737739563,
+        "temp_celsius": 24.229999542236328,
+        "wind_ms": 3.319999933242798,
+        "cloud_pct": 56.61000061035156
+      },
+      "2017": {
+        "rainfall_mm": 1.9900000095367432,
+        "temp_celsius": 24.8799991607666,
+        "wind_ms": 3.25,
+        "cloud_pct": 53.619998931884766
+      },
+      "2018": {
+        "rainfall_mm": 2.9100000858306885,
+        "temp_celsius": 23.100000381469727,
+        "wind_ms": 3.25,
+        "cloud_pct": 34.599998474121094
+      },
+      "2019": {
+        "rainfall_mm": 4.389999866485596,
+        "temp_celsius": 25.760000228881836,
+        "wind_ms": 3.359999895095825,
+        "cloud_pct": 55.33000183105469
+      },
+      "2020": {
+        "rainfall_mm": 2.9200000762939453,
+        "temp_celsius": 24.65999984741211,
+        "wind_ms": 3.880000114440918,
+        "cloud_pct": 42.5
+      },
+      "2021": {
+        "rainfall_mm": 0.8700000047683716,
+        "temp_celsius": 24.350000381469727,
+        "wind_ms": 4.070000171661377,
+        "cloud_pct": 53.869998931884766
+      },
+      "2022": {
+        "rainfall_mm": 0.23999999463558197,
+        "temp_celsius": 24.020000457763672,
+        "wind_ms": 3.990000009536743,
+        "cloud_pct": 53.959999084472656
+      },
+      "2023": {
+        "rainfall_mm": 1.909999966621399,
+        "temp_celsius": 24.829999923706055,
+        "wind_ms": 2.940000057220459,
+        "cloud_pct": 55.470001220703125
+      },
+      "2024": {
+        "rainfall_mm": 3.4200000762939453,
+        "temp_celsius": 24.440000534057617,
+        "wind_ms": 3.450000047683716,
+        "cloud_pct": 54.81999969482422
+      }
+    }
+  },
+  "08-01": {
+    "date": "2026-08-01",
+    "month_day": "08-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.214,
+      "probability_percent": 21.4,
+      "expected_amount_mm": 0.3,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 15.19,
+      "std_deviation_mm": 1.19,
+      "intensity_distribution": {
+        "light_rain_days": 53,
+        "moderate_rain_days": 6,
+        "heavy_rain_days": 1,
+        "no_rain_days": 220
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.8,
+      "mean_std_celsius": 1.9,
+      "expected_range": {
+        "min": 23.0,
+        "max": 24.6
+      },
+      "record_low_celsius": 14.3,
+      "record_high_celsius": 33.2
+    },
+    "wind": {
+      "mean_speed_ms": 3.4,
+      "max_recorded_ms": 12.2,
+      "std_deviation_ms": 2.2
+    },
+    "cloud_cover": {
+      "mean_percent": 49.8,
+      "std_percent": 32.2,
+      "clear_days_percent": 30.0,
+      "cloudy_days_percent": 30.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.5,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.011,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.004,
+      "high_wind_above_5ms": 0.246
+    },
+    "additional": {
+      "humidity_celsius": 19.5,
+      "pressure_hpa": 1016.0,
+      "solar_radiation_wm2": 33.9
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 24.850000381469727,
+        "wind_ms": 3.8299999237060547,
+        "cloud_pct": 51.5
+      },
+      "2016": {
+        "rainfall_mm": 5.079999923706055,
+        "temp_celsius": 23.809999465942383,
+        "wind_ms": 3.2200000286102295,
+        "cloud_pct": 42.18000030517578
+      },
+      "2017": {
+        "rainfall_mm": 15.680000305175781,
+        "temp_celsius": 22.389999389648438,
+        "wind_ms": 3.559999942779541,
+        "cloud_pct": 53.150001525878906
+      },
+      "2018": {
+        "rainfall_mm": 0.8899999856948853,
+        "temp_celsius": 25.399999618530273,
+        "wind_ms": 4.610000133514404,
+        "cloud_pct": 49.61000061035156
+      },
+      "2019": {
+        "rainfall_mm": 5.199999809265137,
+        "temp_celsius": 24.420000076293945,
+        "wind_ms": 2.0,
+        "cloud_pct": 77.37999725341797
+      },
+      "2020": {
+        "rainfall_mm": 0.550000011920929,
+        "temp_celsius": 25.239999771118164,
+        "wind_ms": 4.320000171661377,
+        "cloud_pct": 64.94000244140625
+      },
+      "2021": {
+        "rainfall_mm": 2.069999933242798,
+        "temp_celsius": 21.989999771118164,
+        "wind_ms": 2.619999885559082,
+        "cloud_pct": 68.2699966430664
+      },
+      "2022": {
+        "rainfall_mm": 0.20000000298023224,
+        "temp_celsius": 25.450000762939453,
+        "wind_ms": 4.150000095367432,
+        "cloud_pct": 43.790000915527344
+      },
+      "2023": {
+        "rainfall_mm": 0.30000001192092896,
+        "temp_celsius": 23.100000381469727,
+        "wind_ms": 3.509999990463257,
+        "cloud_pct": 43.189998626708984
+      },
+      "2024": {
+        "rainfall_mm": 12.470000267028809,
+        "temp_celsius": 24.389999389648438,
+        "wind_ms": 4.150000095367432,
+        "cloud_pct": 61.15999984741211
+      }
+    }
+  },
+  "08-15": {
+    "date": "2026-08-15",
+    "month_day": "08-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.251,
+      "probability_percent": 25.1,
+      "expected_amount_mm": 0.37,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 15.19,
+      "std_deviation_mm": 1.23,
+      "intensity_distribution": {
+        "light_rain_days": 109,
+        "moderate_rain_days": 22,
+        "heavy_rain_days": 1,
+        "no_rain_days": 393
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 23.4,
+      "mean_std_celsius": 1.9,
+      "expected_range": {
+        "min": 22.6,
+        "max": 24.2
+      },
+      "record_low_celsius": 15.6,
+      "record_high_celsius": 33.2
+    },
+    "wind": {
+      "mean_speed_ms": 3.7,
+      "max_recorded_ms": 13.3,
+      "std_deviation_ms": 2.3
+    },
+    "cloud_cover": {
+      "mean_percent": 53.3,
+      "std_percent": 32.6,
+      "clear_days_percent": 30.3,
+      "cloudy_days_percent": 35.0
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.47,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.004,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.002,
+      "high_wind_above_5ms": 0.259
+    },
+    "additional": {
+      "humidity_celsius": 19.3,
+      "pressure_hpa": 1015.9,
+      "solar_radiation_wm2": 26.9
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 2.109999895095825,
+        "temp_celsius": 23.84000015258789,
+        "wind_ms": 4.079999923706055,
+        "cloud_pct": 41.9900016784668
+      },
+      "2016": {
+        "rainfall_mm": 3.9000000953674316,
+        "temp_celsius": 26.309999465942383,
+        "wind_ms": 3.440000057220459,
+        "cloud_pct": 50.9900016784668
+      },
+      "2017": {
+        "rainfall_mm": 16.229999542236328,
+        "temp_celsius": 23.200000762939453,
+        "wind_ms": 2.5899999141693115,
+        "cloud_pct": 61.900001525878906
+      },
+      "2018": {
+        "rainfall_mm": 7.579999923706055,
+        "temp_celsius": 24.84000015258789,
+        "wind_ms": 3.9200000762939453,
+        "cloud_pct": 65.79000091552734
+      },
+      "2019": {
+        "rainfall_mm": 5.650000095367432,
+        "temp_celsius": 24.290000915527344,
+        "wind_ms": 3.380000114440918,
+        "cloud_pct": 59.77000045776367
+      },
+      "2020": {
+        "rainfall_mm": 2.4000000953674316,
+        "temp_celsius": 23.579999923706055,
+        "wind_ms": 3.9200000762939453,
+        "cloud_pct": 61.5
+      },
+      "2021": {
+        "rainfall_mm": 11.949999809265137,
+        "temp_celsius": 24.290000915527344,
+        "wind_ms": 4.139999866485596,
+        "cloud_pct": 76.16000366210938
+      },
+      "2022": {
+        "rainfall_mm": 1.7100000381469727,
+        "temp_celsius": 24.020000457763672,
+        "wind_ms": 3.549999952316284,
+        "cloud_pct": 45.099998474121094
+      },
+      "2023": {
+        "rainfall_mm": 3.0199999809265137,
+        "temp_celsius": 23.950000762939453,
+        "wind_ms": 4.389999866485596,
+        "cloud_pct": 48.79999923706055
+      },
+      "2024": {
+        "rainfall_mm": 3.640000104904175,
+        "temp_celsius": 22.610000610351562,
+        "wind_ms": 3.430000066757202,
+        "cloud_pct": 41.70000076293945
+      }
+    }
+  },
+  "09-01": {
+    "date": "2026-09-01",
+    "month_day": "09-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.179,
+      "probability_percent": 17.9,
+      "expected_amount_mm": 0.22,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 5.02,
+      "std_deviation_mm": 0.7,
+      "intensity_distribution": {
+        "light_rain_days": 42,
+        "moderate_rain_days": 8,
+        "heavy_rain_days": 0,
+        "no_rain_days": 230
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 21.9,
+      "mean_std_celsius": 2.2,
+      "expected_range": {
+        "min": 21.0,
+        "max": 22.8
+      },
+      "record_low_celsius": 12.4,
+      "record_high_celsius": 29.0
+    },
+    "wind": {
+      "mean_speed_ms": 3.9,
+      "max_recorded_ms": 13.7,
+      "std_deviation_ms": 2.5
+    },
+    "cloud_cover": {
+      "mean_percent": 48.9,
+      "std_percent": 35.7,
+      "clear_days_percent": 37.9,
+      "cloudy_days_percent": 32.9
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.51,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.0,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.286
+    },
+    "additional": {
+      "humidity_celsius": 17.5,
+      "pressure_hpa": 1017.5,
+      "solar_radiation_wm2": 17.3
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 23.81999969482422,
+        "wind_ms": 2.950000047683716,
+        "cloud_pct": 28.0
+      },
+      "2016": {
+        "rainfall_mm": 1.6200000047683716,
+        "temp_celsius": 22.65999984741211,
+        "wind_ms": 5.889999866485596,
+        "cloud_pct": 69.77999877929688
+      },
+      "2017": {
+        "rainfall_mm": 6.730000019073486,
+        "temp_celsius": 20.389999389648438,
+        "wind_ms": 5.130000114440918,
+        "cloud_pct": 47.880001068115234
+      },
+      "2018": {
+        "rainfall_mm": 2.8299999237060547,
+        "temp_celsius": 24.350000381469727,
+        "wind_ms": 3.0299999713897705,
+        "cloud_pct": 63.650001525878906
+      },
+      "2019": {
+        "rainfall_mm": 2.259999990463257,
+        "temp_celsius": 21.3700008392334,
+        "wind_ms": 4.010000228881836,
+        "cloud_pct": 59.75
+      },
+      "2020": {
+        "rainfall_mm": 0.17000000178813934,
+        "temp_celsius": 23.610000610351562,
+        "wind_ms": 3.609999895095825,
+        "cloud_pct": 43.91999816894531
+      },
+      "2021": {
+        "rainfall_mm": 3.950000047683716,
+        "temp_celsius": 21.600000381469727,
+        "wind_ms": 3.7799999713897705,
+        "cloud_pct": 43.81999969482422
+      },
+      "2022": {
+        "rainfall_mm": 1.0299999713897705,
+        "temp_celsius": 23.309999465942383,
+        "wind_ms": 3.700000047683716,
+        "cloud_pct": 62.81999969482422
+      },
+      "2023": {
+        "rainfall_mm": 0.0,
+        "temp_celsius": 23.059999465942383,
+        "wind_ms": 3.4700000286102295,
+        "cloud_pct": 36.91999816894531
+      },
+      "2024": {
+        "rainfall_mm": 1.190000057220459,
+        "temp_celsius": 20.290000915527344,
+        "wind_ms": 4.010000228881836,
+        "cloud_pct": 48.849998474121094
+      }
+    }
+  },
+  "09-15": {
+    "date": "2026-09-15",
+    "month_day": "09-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.181,
+      "probability_percent": 18.1,
+      "expected_amount_mm": 0.22,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 8.29,
+      "std_deviation_mm": 0.77,
+      "intensity_distribution": {
+        "light_rain_days": 85,
+        "moderate_rain_days": 10,
+        "heavy_rain_days": 0,
+        "no_rain_days": 430
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 20.4,
+      "mean_std_celsius": 2.5,
+      "expected_range": {
+        "min": 19.4,
+        "max": 21.3
+      },
+      "record_low_celsius": 9.4,
+      "record_high_celsius": 28.5
+    },
+    "wind": {
+      "mean_speed_ms": 4.2,
+      "max_recorded_ms": 13.8,
+      "std_deviation_ms": 2.6
+    },
+    "cloud_cover": {
+      "mean_percent": 49.0,
+      "std_percent": 34.7,
+      "clear_days_percent": 34.1,
+      "cloudy_days_percent": 32.4
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.51,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.004,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.324
+    },
+    "additional": {
+      "humidity_celsius": 16.1,
+      "pressure_hpa": 1018.0,
+      "solar_radiation_wm2": 13.6
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 2.930000066757202,
+        "temp_celsius": 21.610000610351562,
+        "wind_ms": 3.640000104904175,
+        "cloud_pct": 42.4900016784668
+      },
+      "2016": {
+        "rainfall_mm": 3.690000057220459,
+        "temp_celsius": 21.90999984741211,
+        "wind_ms": 3.5999999046325684,
+        "cloud_pct": 53.95000076293945
+      },
+      "2017": {
+        "rainfall_mm": 1.4900000095367432,
+        "temp_celsius": 20.65999984741211,
+        "wind_ms": 5.0,
+        "cloud_pct": 60.689998626708984
+      },
+      "2018": {
+        "rainfall_mm": 9.220000267028809,
+        "temp_celsius": 21.559999465942383,
+        "wind_ms": 4.78000020980835,
+        "cloud_pct": 79.7300033569336
+      },
+      "2019": {
+        "rainfall_mm": 1.6299999952316284,
+        "temp_celsius": 20.020000457763672,
+        "wind_ms": 4.389999866485596,
+        "cloud_pct": 48.91999816894531
+      },
+      "2020": {
+        "rainfall_mm": 6.050000190734863,
+        "temp_celsius": 19.610000610351562,
+        "wind_ms": 4.480000019073486,
+        "cloud_pct": 53.380001068115234
+      },
+      "2021": {
+        "rainfall_mm": 3.25,
+        "temp_celsius": 22.049999237060547,
+        "wind_ms": 4.380000114440918,
+        "cloud_pct": 44.029998779296875
+      },
+      "2022": {
+        "rainfall_mm": 2.0999999046325684,
+        "temp_celsius": 21.739999771118164,
+        "wind_ms": 3.740000009536743,
+        "cloud_pct": 31.290000915527344
+      },
+      "2023": {
+        "rainfall_mm": 4.179999828338623,
+        "temp_celsius": 21.15999984741211,
+        "wind_ms": 4.320000171661377,
+        "cloud_pct": 51.5
+      },
+      "2024": {
+        "rainfall_mm": 0.46000000834465027,
+        "temp_celsius": 20.18000030517578,
+        "wind_ms": 5.460000038146973,
+        "cloud_pct": 38.16999816894531
+      }
+    }
+  },
+  "10-01": {
+    "date": "2026-10-01",
+    "month_day": "10-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.207,
+      "probability_percent": 20.7,
+      "expected_amount_mm": 0.26,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 7.7,
+      "std_deviation_mm": 0.85,
+      "intensity_distribution": {
+        "light_rain_days": 48,
+        "moderate_rain_days": 10,
+        "heavy_rain_days": 0,
+        "no_rain_days": 222
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 17.0,
+      "mean_std_celsius": 3.3,
+      "expected_range": {
+        "min": 15.9,
+        "max": 18.0
+      },
+      "record_low_celsius": 4.4,
+      "record_high_celsius": 27.8
+    },
+    "wind": {
+      "mean_speed_ms": 4.6,
+      "max_recorded_ms": 16.0,
+      "std_deviation_ms": 3.0
+    },
+    "cloud_cover": {
+      "mean_percent": 46.7,
+      "std_percent": 35.3,
+      "clear_days_percent": 39.3,
+      "cloudy_days_percent": 29.6
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.53,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.086,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.354
+    },
+    "additional": {
+      "humidity_celsius": 12.5,
+      "pressure_hpa": 1019.0,
+      "solar_radiation_wm2": 7.8
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 6.380000114440918,
+        "temp_celsius": 16.56999969482422,
+        "wind_ms": 8.699999809265137,
+        "cloud_pct": 85.73999786376953
+      },
+      "2016": {
+        "rainfall_mm": 0.6000000238418579,
+        "temp_celsius": 17.06999969482422,
+        "wind_ms": 3.950000047683716,
+        "cloud_pct": 69.83999633789062
+      },
+      "2017": {
+        "rainfall_mm": 3.319999933242798,
+        "temp_celsius": 18.940000534057617,
+        "wind_ms": 5.010000228881836,
+        "cloud_pct": 49.279998779296875
+      },
+      "2018": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 20.84000015258789,
+        "wind_ms": 3.180000066757202,
+        "cloud_pct": 76.51000213623047
+      },
+      "2019": {
+        "rainfall_mm": 0.4300000071525574,
+        "temp_celsius": 18.899999618530273,
+        "wind_ms": 4.570000171661377,
+        "cloud_pct": 69.31999969482422
+      },
+      "2020": {
+        "rainfall_mm": 0.25,
+        "temp_celsius": 16.8799991607666,
+        "wind_ms": 3.569999933242798,
+        "cloud_pct": 20.3799991607666
+      },
+      "2021": {
+        "rainfall_mm": 0.10000000149011612,
+        "temp_celsius": 18.860000610351562,
+        "wind_ms": 3.9700000286102295,
+        "cloud_pct": 51.279998779296875
+      },
+      "2022": {
+        "rainfall_mm": 18.280000686645508,
+        "temp_celsius": 15.729999542236328,
+        "wind_ms": 7.849999904632568,
+        "cloud_pct": 67.98999786376953
+      },
+      "2023": {
+        "rainfall_mm": 0.550000011920929,
+        "temp_celsius": 18.200000762939453,
+        "wind_ms": 4.400000095367432,
+        "cloud_pct": 26.6299991607666
+      },
+      "2024": {
+        "rainfall_mm": 2.450000047683716,
+        "temp_celsius": 17.90999984741211,
+        "wind_ms": 3.4800000190734863,
+        "cloud_pct": 38.56999969482422
+      }
+    }
+  },
+  "10-15": {
+    "date": "2025-10-15",
+    "month_day": "10-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.208,
+      "probability_percent": 20.8,
+      "expected_amount_mm": 0.29,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 12.49,
+      "std_deviation_mm": 0.94,
+      "intensity_distribution": {
+        "light_rain_days": 93,
+        "moderate_rain_days": 15,
+        "heavy_rain_days": 1,
+        "no_rain_days": 416
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 15.2,
+      "mean_std_celsius": 3.4,
+      "expected_range": {
+        "min": 14.0,
+        "max": 16.4
+      },
+      "record_low_celsius": -0.4,
+      "record_high_celsius": 24.3
+    },
+    "wind": {
+      "mean_speed_ms": 4.9,
+      "max_recorded_ms": 14.9,
+      "std_deviation_ms": 3.0
+    },
+    "cloud_cover": {
+      "mean_percent": 47.4,
+      "std_percent": 36.0,
+      "clear_days_percent": 38.1,
+      "cloudy_days_percent": 31.8
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.53,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.156,
+      "heavy_rain_above_10mm": 0.002,
+      "high_wind_above_5ms": 0.404
+    },
+    "additional": {
+      "humidity_celsius": 10.4,
+      "pressure_hpa": 1017.3,
+      "solar_radiation_wm2": 5.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.8300000429153442,
+        "temp_celsius": 14.329999923706055,
+        "wind_ms": 4.550000190734863,
+        "cloud_pct": 21.540000915527344
+      },
+      "2016": {
+        "rainfall_mm": 8.359999656677246,
+        "temp_celsius": 16.229999542236328,
+        "wind_ms": 4.519999980926514,
+        "cloud_pct": 47.869998931884766
+      },
+      "2017": {
+        "rainfall_mm": 4.28000020980835,
+        "temp_celsius": 17.959999084472656,
+        "wind_ms": 4.630000114440918,
+        "cloud_pct": 67.12999725341797
+      },
+      "2018": {
+        "rainfall_mm": 2.9000000953674316,
+        "temp_celsius": 15.260000228881836,
+        "wind_ms": 4.46999979019165,
+        "cloud_pct": 66.1500015258789
+      },
+      "2019": {
+        "rainfall_mm": 12.199999809265137,
+        "temp_celsius": 15.760000228881836,
+        "wind_ms": 6.429999828338623,
+        "cloud_pct": 65.88999938964844
+      },
+      "2020": {
+        "rainfall_mm": 3.7899999618530273,
+        "temp_celsius": 16.68000030517578,
+        "wind_ms": 4.710000038146973,
+        "cloud_pct": 58.88999938964844
+      },
+      "2021": {
+        "rainfall_mm": 1.2999999523162842,
+        "temp_celsius": 17.860000610351562,
+        "wind_ms": 5.340000152587891,
+        "cloud_pct": 44.099998474121094
+      },
+      "2022": {
+        "rainfall_mm": 2.4700000286102295,
+        "temp_celsius": 13.949999809265137,
+        "wind_ms": 3.8399999141693115,
+        "cloud_pct": 26.690000534057617
+      },
+      "2023": {
+        "rainfall_mm": 3.7100000381469727,
+        "temp_celsius": 14.09000015258789,
+        "wind_ms": 4.349999904632568,
+        "cloud_pct": 32.220001220703125
+      },
+      "2024": {
+        "rainfall_mm": 0.019999999552965164,
+        "temp_celsius": 14.800000190734863,
+        "wind_ms": 4.869999885559082,
+        "cloud_pct": 14.380000114440918
+      }
+    }
+  },
+  "11-01": {
+    "date": "2025-11-01",
+    "month_day": "11-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.186,
+      "probability_percent": 18.6,
+      "expected_amount_mm": 0.2,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 4.71,
+      "std_deviation_mm": 0.59,
+      "intensity_distribution": {
+        "light_rain_days": 48,
+        "moderate_rain_days": 4,
+        "heavy_rain_days": 0,
+        "no_rain_days": 228
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 11.9,
+      "mean_std_celsius": 3.9,
+      "expected_range": {
+        "min": 10.5,
+        "max": 13.3
+      },
+      "record_low_celsius": -1.7,
+      "record_high_celsius": 22.7
+    },
+    "wind": {
+      "mean_speed_ms": 5.3,
+      "max_recorded_ms": 15.4,
+      "std_deviation_ms": 3.0
+    },
+    "cloud_cover": {
+      "mean_percent": 51.6,
+      "std_percent": 35.4,
+      "clear_days_percent": 32.1,
+      "cloudy_days_percent": 34.6
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.48,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.429,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.482
+    },
+    "additional": {
+      "humidity_celsius": 6.5,
+      "pressure_hpa": 1019.1,
+      "solar_radiation_wm2": 1.3
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.0199999809265137,
+        "temp_celsius": 15.34000015258789,
+        "wind_ms": 4.019999980926514,
+        "cloud_pct": 55.47999954223633
+      },
+      "2016": {
+        "rainfall_mm": 0.11999999731779099,
+        "temp_celsius": 12.770000457763672,
+        "wind_ms": 5.389999866485596,
+        "cloud_pct": 49.720001220703125
+      },
+      "2017": {
+        "rainfall_mm": 2.4600000381469727,
+        "temp_celsius": 13.720000267028809,
+        "wind_ms": 3.2200000286102295,
+        "cloud_pct": 76.79000091552734
+      },
+      "2018": {
+        "rainfall_mm": 2.2200000286102295,
+        "temp_celsius": 15.260000228881836,
+        "wind_ms": 6.090000152587891,
+        "cloud_pct": 63.0099983215332
+      },
+      "2019": {
+        "rainfall_mm": 0.6800000071525574,
+        "temp_celsius": 10.8100004196167,
+        "wind_ms": 4.539999961853027,
+        "cloud_pct": 42.310001373291016
+      },
+      "2020": {
+        "rainfall_mm": 0.3199999928474426,
+        "temp_celsius": 12.3100004196167,
+        "wind_ms": 5.199999809265137,
+        "cloud_pct": 42.34000015258789
+      },
+      "2021": {
+        "rainfall_mm": 0.6700000166893005,
+        "temp_celsius": 11.619999885559082,
+        "wind_ms": 6.690000057220459,
+        "cloud_pct": 61.84000015258789
+      },
+      "2022": {
+        "rainfall_mm": 1.4700000286102295,
+        "temp_celsius": 16.540000915527344,
+        "wind_ms": 4.789999961853027,
+        "cloud_pct": 44.439998626708984
+      },
+      "2023": {
+        "rainfall_mm": 1.7000000476837158,
+        "temp_celsius": 9.989999771118164,
+        "wind_ms": 4.199999809265137,
+        "cloud_pct": 40.119998931884766
+      },
+      "2024": {
+        "rainfall_mm": 0.03999999910593033,
+        "temp_celsius": 15.369999885559082,
+        "wind_ms": 5.03000020980835,
+        "cloud_pct": 38.72999954223633
+      }
+    }
+  },
+  "11-15": {
+    "date": "2025-11-15",
+    "month_day": "11-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.202,
+      "probability_percent": 20.2,
+      "expected_amount_mm": 0.26,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 9.41,
+      "std_deviation_mm": 0.86,
+      "intensity_distribution": {
+        "light_rain_days": 91,
+        "moderate_rain_days": 15,
+        "heavy_rain_days": 0,
+        "no_rain_days": 419
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 9.7,
+      "mean_std_celsius": 4.3,
+      "expected_range": {
+        "min": 8.5,
+        "max": 11.0
+      },
+      "record_low_celsius": -6.7,
+      "record_high_celsius": 21.1
+    },
+    "wind": {
+      "mean_speed_ms": 5.6,
+      "max_recorded_ms": 17.4,
+      "std_deviation_ms": 3.2
+    },
+    "cloud_cover": {
+      "mean_percent": 53.1,
+      "std_percent": 37.0,
+      "clear_days_percent": 33.3,
+      "cloudy_days_percent": 37.9
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.47,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.59,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.507
+    },
+    "additional": {
+      "humidity_celsius": 4.3,
+      "pressure_hpa": 1019.5,
+      "solar_radiation_wm2": 0.4
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.9600000381469727,
+        "temp_celsius": 12.460000038146973,
+        "wind_ms": 5.090000152587891,
+        "cloud_pct": 52.38999938964844
+      },
+      "2016": {
+        "rainfall_mm": 0.7599999904632568,
+        "temp_celsius": 10.0600004196167,
+        "wind_ms": 5.820000171661377,
+        "cloud_pct": 41.25
+      },
+      "2017": {
+        "rainfall_mm": 9.460000038146973,
+        "temp_celsius": 8.960000038146973,
+        "wind_ms": 6.260000228881836,
+        "cloud_pct": 70.48999786376953
+      },
+      "2018": {
+        "rainfall_mm": 8.8100004196167,
+        "temp_celsius": 8.140000343322754,
+        "wind_ms": 5.639999866485596,
+        "cloud_pct": 61.72999954223633
+      },
+      "2019": {
+        "rainfall_mm": 0.8500000238418579,
+        "temp_celsius": 7.949999809265137,
+        "wind_ms": 5.929999828338623,
+        "cloud_pct": 73.18000030517578
+      },
+      "2020": {
+        "rainfall_mm": 10.520000457763672,
+        "temp_celsius": 11.859999656677246,
+        "wind_ms": 4.96999979019165,
+        "cloud_pct": 37.45000076293945
+      },
+      "2021": {
+        "rainfall_mm": 2.6600000858306885,
+        "temp_celsius": 11.149999618530273,
+        "wind_ms": 5.170000076293945,
+        "cloud_pct": 40.20000076293945
+      },
+      "2022": {
+        "rainfall_mm": 0.9800000190734863,
+        "temp_celsius": 9.819999694824219,
+        "wind_ms": 5.730000019073486,
+        "cloud_pct": 34.81999969482422
+      },
+      "2023": {
+        "rainfall_mm": 0.8799999952316284,
+        "temp_celsius": 10.479999542236328,
+        "wind_ms": 4.610000133514404,
+        "cloud_pct": 42.72999954223633
+      },
+      "2024": {
+        "rainfall_mm": 1.149999976158142,
+        "temp_celsius": 11.470000267028809,
+        "wind_ms": 5.03000020980835,
+        "cloud_pct": 39.72999954223633
+      }
+    }
+  },
+  "12-01": {
+    "date": "2025-12-01",
+    "month_day": "12-01",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 280,
+    "rainfall": {
+      "probability": 0.254,
+      "probability_percent": 25.4,
+      "expected_amount_mm": 0.33,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 6.78,
+      "std_deviation_mm": 0.89,
+      "intensity_distribution": {
+        "light_rain_days": 63,
+        "moderate_rain_days": 8,
+        "heavy_rain_days": 0,
+        "no_rain_days": 209
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 6.8,
+      "mean_std_celsius": 4.7,
+      "expected_range": {
+        "min": 5.4,
+        "max": 8.2
+      },
+      "record_low_celsius": -8.4,
+      "record_high_celsius": 20.0
+    },
+    "wind": {
+      "mean_speed_ms": 5.5,
+      "max_recorded_ms": 16.1,
+      "std_deviation_ms": 3.2
+    },
+    "cloud_cover": {
+      "mean_percent": 58.6,
+      "std_percent": 33.7,
+      "clear_days_percent": 23.2,
+      "cloudy_days_percent": 42.9
+    },
+    "weather_category": "Clear",
+    "category_confidence": 0.41,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.768,
+      "heavy_rain_above_10mm": 0.0,
+      "high_wind_above_5ms": 0.493
+    },
+    "additional": {
+      "humidity_celsius": 1.4,
+      "pressure_hpa": 1018.5,
+      "solar_radiation_wm2": 0.0
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.659999966621399,
+        "temp_celsius": 9.079999923706055,
+        "wind_ms": 4.650000095367432,
+        "cloud_pct": 55.97999954223633
+      },
+      "2016": {
+        "rainfall_mm": 2.450000047683716,
+        "temp_celsius": 8.449999809265137,
+        "wind_ms": 6.909999847412109,
+        "cloud_pct": 79.33000183105469
+      },
+      "2017": {
+        "rainfall_mm": 1.0399999618530273,
+        "temp_celsius": 7.570000171661377,
+        "wind_ms": 3.5799999237060547,
+        "cloud_pct": 65.91000366210938
+      },
+      "2018": {
+        "rainfall_mm": 0.9200000166893005,
+        "temp_celsius": 5.840000152587891,
+        "wind_ms": 4.949999809265137,
+        "cloud_pct": 71.41999816894531
+      },
+      "2019": {
+        "rainfall_mm": 8.010000228881836,
+        "temp_celsius": 5.239999771118164,
+        "wind_ms": 5.340000152587891,
+        "cloud_pct": 75.55000305175781
+      },
+      "2020": {
+        "rainfall_mm": 5.489999771118164,
+        "temp_celsius": 6.800000190734863,
+        "wind_ms": 6.800000190734863,
+        "cloud_pct": 52.029998779296875
+      },
+      "2021": {
+        "rainfall_mm": 0.8500000238418579,
+        "temp_celsius": 9.100000381469727,
+        "wind_ms": 4.510000228881836,
+        "cloud_pct": 64.54000091552734
+      },
+      "2022": {
+        "rainfall_mm": 0.4000000059604645,
+        "temp_celsius": 9.229999542236328,
+        "wind_ms": 5.5,
+        "cloud_pct": 38.599998474121094
+      },
+      "2023": {
+        "rainfall_mm": 3.7200000286102295,
+        "temp_celsius": 7.050000190734863,
+        "wind_ms": 3.619999885559082,
+        "cloud_pct": 81.20999908447266
+      },
+      "2024": {
+        "rainfall_mm": 0.15000000596046448,
+        "temp_celsius": 3.3499999046325684,
+        "wind_ms": 8.0600004196167,
+        "cloud_pct": 33.209999084472656
+      }
+    }
+  },
+  "12-15": {
+    "date": "2025-12-15",
+    "month_day": "12-15",
+    "location": "",
+    "prediction_type": "historical_pattern",
+    "based_on_data_range": "1990-2024",
+    "historical_years_analyzed": 35,
+    "total_observations": 525,
+    "rainfall": {
+      "probability": 0.257,
+      "probability_percent": 25.7,
+      "expected_amount_mm": 0.4,
+      "median_amount_mm": 0.0,
+      "max_recorded_mm": 17.28,
+      "std_deviation_mm": 1.35,
+      "intensity_distribution": {
+        "light_rain_days": 111,
+        "moderate_rain_days": 22,
+        "heavy_rain_days": 2,
+        "no_rain_days": 390
+      }
+    },
+    "temperature": {
+      "mean_avg_celsius": 5.4,
+      "mean_std_celsius": 4.6,
+      "expected_range": {
+        "min": 4.0,
+        "max": 6.8
+      },
+      "record_low_celsius": -15.2,
+      "record_high_celsius": 16.0
+    },
+    "wind": {
+      "mean_speed_ms": 5.7,
+      "max_recorded_ms": 17.2,
+      "std_deviation_ms": 3.3
+    },
+    "cloud_cover": {
+      "mean_percent": 62.5,
+      "std_percent": 34.3,
+      "clear_days_percent": 21.1,
+      "cloudy_days_percent": 47.6
+    },
+    "weather_category": "Cloudy",
+    "category_confidence": 0.62,
+    "extreme_probabilities": {
+      "temp_above_30C": 0.0,
+      "temp_below_10C": 0.897,
+      "heavy_rain_above_10mm": 0.004,
+      "high_wind_above_5ms": 0.507
+    },
+    "additional": {
+      "humidity_celsius": 0.4,
+      "pressure_hpa": 1019.2,
+      "solar_radiation_wm2": null
+    },
+    "recent_years": {
+      "2015": {
+        "rainfall_mm": 1.8899999856948853,
+        "temp_celsius": 10.789999961853027,
+        "wind_ms": 4.739999771118164,
+        "cloud_pct": 67.25
+      },
+      "2016": {
+        "rainfall_mm": 2.6600000858306885,
+        "temp_celsius": 3.569999933242798,
+        "wind_ms": 5.880000114440918,
+        "cloud_pct": 69.30000305175781
+      },
+      "2017": {
+        "rainfall_mm": 2.5799999237060547,
+        "temp_celsius": 4.289999961853027,
+        "wind_ms": 5.25,
+        "cloud_pct": 74.2300033569336
+      },
+      "2018": {
+        "rainfall_mm": 2.8299999237060547,
+        "temp_celsius": 5.5,
+        "wind_ms": 5.449999809265137,
+        "cloud_pct": 67.73999786376953
+      },
+      "2019": {
+        "rainfall_mm": 11.989999771118164,
+        "temp_celsius": 5.0,
+        "wind_ms": 5.900000095367432,
+        "cloud_pct": 63.939998626708984
+      },
+      "2020": {
+        "rainfall_mm": 3.630000114440918,
+        "temp_celsius": 4.730000019073486,
+        "wind_ms": 4.860000133514404,
+        "cloud_pct": 60.810001373291016
+      },
+      "2021": {
+        "rainfall_mm": 1.340000033378601,
+        "temp_celsius": 7.489999771118164,
+        "wind_ms": 4.519999980926514,
+        "cloud_pct": 72.69999694824219
+      },
+      "2022": {
+        "rainfall_mm": 4.489999771118164,
+        "temp_celsius": 5.239999771118164,
+        "wind_ms": 6.050000190734863,
+        "cloud_pct": 59.150001525878906
+      },
+      "2023": {
+        "rainfall_mm": 17.350000381469727,
+        "temp_celsius": 6.96999979019165,
+        "wind_ms": 6.019999980926514,
+        "cloud_pct": 43.41999816894531
+      },
+      "2024": {
+        "rainfall_mm": 27.81999969482422,
+        "temp_celsius": 6.070000171661377,
+        "wind_ms": 5.119999885559082,
+        "cloud_pct": 65.48999786376953
+      }
+    }
+  }
+}
