@@ -36,6 +36,15 @@ except Exception as e:
     print(f"⚠ Google Calendar integration not available: {e}")
     print("  Calendar features will be disabled.")
 
+# Add Auth Router
+try:
+    from auth_routes import auth_router
+    app.include_router(auth_router, prefix="/auth", tags=["Auth"])
+    print("✓ Auth Router loaded")
+except Exception as e:
+    print(f"⚠ Auth Router not available: {e}")
+    print("  Authentication features will not be avaialable.")
+
 # CORS middleware (allow frontend to connect)
 app.add_middleware(
     CORSMiddleware,
