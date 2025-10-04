@@ -1628,3 +1628,44 @@ html, body {
 .calendar-message a:hover {
   opacity: 0.8;
 }
+
+
+
+
+/* Social Tab */
+
+.poll-btn {
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5dade2, #2e86c1);
+  box-shadow: 0 2px 6px rgba(46, 134, 193, 0.3);
+  transition: all 0.25s ease;
+}
+
+.poll-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(46, 134, 193, 0.4);
+}
+
+.poll-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(46, 134, 193, 0.3);
+}
+
+.poll-options label {
+  display: flex;
+  align-items: center;
+  margin: 6px 0; /* vertical spacing between options */
+  cursor: pointer;
+}
+
+.poll-options input[type="radio"] {
+  margin-right: 8px; /* gap between radio box and text */
+}

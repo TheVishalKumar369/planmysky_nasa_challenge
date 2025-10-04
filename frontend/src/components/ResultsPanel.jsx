@@ -1,11 +1,38 @@
 import React, { useState } from 'react';
 import WeatherPredictionTab from './WeatherPredictionTab';
 import WeatherStatsTab from './WeatherStatsTab';
+import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+
 
 const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
   const [activeTab, setActiveTab] = useState('probability');
+    const [selectedOption, setSelectedOption] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  // dummy data: todo
+  const [pollResults, setPollResults] = useState([
+    { name: "Stay home", value: 40 },
+    { name: "Go out anyway", value: 35 },
+    { name: "Work outdoors", value: 25 },
+  ]);
 
   if (!isOpen) return null;
+
+    const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+
+  const handleVote = () => {
+    if (!selectedOption) return;
+
+    // update poll results locally
+    setPollResults((prev) =>
+      prev.map((item) =>
+        item.name === selectedOption
+          ? { ...item, value: item.value + 1 }
+          : item
+      )
+    );
+    setSubmitted(true);
+  };
 
   return (
     <div
@@ -54,6 +81,12 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
         >
           Weather Connect
         </button>
+        <button
+          className={`tab-btn ${activeTab === 'social' ? 'active' : ''}`}
+          onClick={() => setActiveTab('social')}
+        >
+          Social
+        </button>
       </div>
 
       {/* Tab Content */}
@@ -73,6 +106,62 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
               <p>Weather connection and integration data will be displayed here.</p>
               {weatherData && (
                 <pre>{JSON.stringify(weatherData, null, 2)}</pre>
+              )}
+            </div>
+          </div>
+        )}
+
+
+        {/* SOCIAL TAB */}
+        {activeTab === 'social' && (
+          <div className="tab-panel">
+            <h3>🌦 Social Poll</h3>
+            <div className="data-content">
+              {!submitted ? (
+                <>
+                  <p><strong>Question:</strong> What are you planning today if it rains?</p>
+                  <div className="poll-options">
+                    {pollResults.map((option) => (
+                      <label key={option.name} style={{ display: "block", margin: "5px 0" }}>
+                        <input
+                          type="radio"
+                          name="poll"
+                          value={option.name}
+                          onChange={() => setSelectedOption(option.name)}
+                        />
+                        {option.name}
+                      </label>
+                    ))}
+                  </div>
+                  <button className="poll-btn" onClick={handleVote}>
+                    Submit
+                  </button>
+                </>
+              ) : (
+                <>
+                  <h4>Community Results:</h4>               
+                  
+                  <PieChart width={300} height={250}>
+                    <Pie
+                      data={pollResults}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      outerRadius={80}
+                      fill="#8884d8"
+                      dataKey="value"
+                      // label
+                    >
+                      {pollResults.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip />
+                    <Legend />
+                  </PieChart>
+                
+                  <p>✅ You voted: <strong>{selectedOption}</strong></p>
+                </>
               )}
             </div>
           </div>
