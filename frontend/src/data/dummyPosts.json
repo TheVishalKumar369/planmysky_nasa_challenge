@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "username": "Adeel",
+    "location": "Lahore",
+    "text": "Sunny day! Perfect for cricket",
+    "timestamp": "2025-10-04 11:00",
+    "reactions": {
+      "like": 12,
+      "sun": 8,
+      "rain": 1,
+      "wind": 2
+    }
+  },
+  {
+    "id": 2,
+    "username": "Sara",
+    "location": "Karachi",
+    "text": "It’s so windy today, flying kites was fun",
+    "timestamp": "2025-10-04 10:45",
+    "reactions": {
+      "like": 15,
+      "sun": 3,
+      "rain": 0,
+      "wind": 6
+    }
+  },
+  {
+    "id": 3,
+    "username": "Bilal",
+    "location": "Islamabad",
+    "text": "Unexpected rain caught me while jogging",
+    "timestamp": "2025-10-04 09:50",
+    "reactions": {
+      "like": 9,
+      "sun": 1,
+      "rain": 5,
+      "wind": 0
+    }
+  },
+  {
+    "id": 4,
+    "username": "Fatima",
+    "location": "Multan",
+    "text": "It’s getting hotter again, can’t wait for winter",
+    "timestamp": "2025-10-03 18:30",
+    "reactions": {
+      "like": 20,
+      "sun": 10,
+      "rain": 0,
+      "wind": 1
+    }
+  },
+  {
+    "id": 5,
+    "username": "Omar",
+    "location": "Peshawar",
+    "text": "Cool breeze and clouds — best weather combo",
+    "timestamp": "2025-10-03 16:20",
+    "reactions": {
+      "like": 14,
+      "sun": 4,
+      "rain": 2,
+      "wind": 7
+    }
+  },
+  {
+    "id": 6,
+    "username": "Nida",
+    "location": "Quetta",
+    "text": "Heavy rain in my area, stay safe everyone! 🌧",
+    "timestamp": "2025-10-03 14:10",
+    "reactions": {
+      "like": 18,
+      "sun": 0,
+      "rain": 12,
+      "wind": 1
+    }
+  }
+]

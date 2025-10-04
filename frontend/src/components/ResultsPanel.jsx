@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import WeatherPredictionTab from './WeatherPredictionTab';
 import WeatherStatsTab from './WeatherStatsTab';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+import MiniPosts from './MiniPosts';
+import LocalTrends from './LocalTrends';
 
 
 const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
@@ -99,7 +101,7 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
           <WeatherStatsTab weatherData={weatherData} locationData={locationData} />
         )}
 
-        {activeTab === 'connect' && (
+        {/* {activeTab === 'connect' && (
           <div className="tab-panel">
             <h3>Weather Connect</h3>
             <div className="data-content">
@@ -109,10 +111,15 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
               )}
             </div>
           </div>
+        )} */}
+
+        {activeTab === "connect" && (
+          <div>
+            <MiniPosts />
+            <LocalTrends />
+          </div>
         )}
 
-
-        {/* SOCIAL TAB */}
         {activeTab === 'social' && (
           <div className="tab-panel">
             <h3>🌦 Social Poll</h3>
