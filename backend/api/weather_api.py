@@ -19,7 +19,7 @@ from pathlib import Path
 # Add src/modeling to path
 sys.path.append(str(Path(__file__).parent.parent.parent / "src" / "modeling"))
 
-from historical_pattern_predictor import HistoricalWeatherPredictor
+from src.modeling.historical_pattern_predictor import HistoricalWeatherPredictor
 
 # Initialize FastAPI
 app = FastAPI(
