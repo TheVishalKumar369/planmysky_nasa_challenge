@@ -1,10 +1,63 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { format, addDays } from 'date-fns';
 import DatePicker from './DatePicker';
+import { checkAuthStatus, initiateGoogleAuth, createCalendarEvent } from '../services/calendarApi';
 
-const WeatherPredictionTab = ({ weatherData }) => {
+const WeatherPredictionTab = ({ weatherData, locationData }) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [isCalendarAuth, setIsCalendarAuth] = useState(false);
+  const [isAddingToCalendar, setIsAddingToCalendar] = useState(false);
+  const [calendarMessage, setCalendarMessage] = useState(null);
+
+  // Check auth status on mount
+  useEffect(() => {
+    checkAuthStatus().then(setIsCalendarAuth);
+  }, []);
+
+  const handleAddToCalendar = async () => {
+    try {
+      setIsAddingToCalendar(true);
+      setCalendarMessage(null);
+
+      // Check if authenticated
+      if (!isCalendarAuth) {
+        // Initiate OAuth flow
+        setCalendarMessage({ type: 'info', text: 'Opening Google authorization...' });
+        await initiateGoogleAuth();
+        setIsCalendarAuth(true);
+        setCalendarMessage({ type: 'success', text: 'Authorization successful!' });
+      }
+
+      // Create calendar event
+      setCalendarMessage({ type: 'info', text: 'Adding event to calendar...' });
+      const result = await createCalendarEvent(weatherData, locationData, format(selectedDate, 'yyyy-MM-dd'));
+
+      setCalendarMessage({
+        type: 'success',
+        text: 'Event added to Google Calendar!',
+        link: result.event_link
+      });
+
+      // Clear message after 5 seconds
+      setTimeout(() => setCalendarMessage(null), 5000);
+    } catch (error) {
+      console.error('Calendar error:', error);
+
+      if (error.message === 'NOT_AUTHENTICATED') {
+        setIsCalendarAuth(false);
+        setCalendarMessage({ type: 'error', text: 'Please authorize Google Calendar access' });
+      } else if (error.message.includes('cancelled')) {
+        setCalendarMessage({ type: 'warning', text: 'Authorization cancelled' });
+      } else {
+        setCalendarMessage({ type: 'error', text: 'Failed to add event. Please try again.' });
+      }
+
+      setTimeout(() => setCalendarMessage(null), 5000);
+    } finally {
+      setIsAddingToCalendar(false);
+    }
+  };
 
   if (!weatherData) {
     return <p className="loading">Loading weather prediction data...</p>;
@@ -44,6 +97,38 @@ const WeatherPredictionTab = ({ weatherData }) => {
         selectedDate={selectedDate}
         onDateSelect={setSelectedDate}
       />
+
+      {/* Add to Calendar Button */}
+      <div className="calendar-action-section">
+        <button
+          className="add-to-calendar-btn"
+          onClick={handleAddToCalendar}
+          disabled={isAddingToCalendar}
+        >
+          {isAddingToCalendar ? (
+            <>
+              <span className="btn-spinner"></span>
+              <span>Adding...</span>
+            </>
+          ) : (
+            <>
+              <span className="calendar-icon">📅</span>
+              <span>Add to Google Calendar</span>
+            </>
+          )}
+        </button>
+
+        {calendarMessage && (
+          <div className={`calendar-message ${calendarMessage.type}`}>
+            <span>{calendarMessage.text}</span>
+            {calendarMessage.link && (
+              <a href={calendarMessage.link} target="_blank" rel="noopener noreferrer">
+                View Event
+              </a>
+            )}
+          </div>
+        )}
+      </div>
 
       {/* Current Day Weather Card */}
       <div className="weather-card">

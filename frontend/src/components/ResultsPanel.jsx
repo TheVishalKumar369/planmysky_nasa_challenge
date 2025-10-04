@@ -59,7 +59,7 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
       {/* Tab Content */}
       <div className="tab-content">
         {activeTab === 'probability' && (
-          <WeatherPredictionTab weatherData={weatherData} />
+          <WeatherPredictionTab weatherData={weatherData} locationData={locationData} />
         )}
 
         {activeTab === 'stats' && (

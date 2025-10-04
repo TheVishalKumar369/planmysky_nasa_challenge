@@ -27,6 +27,15 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Import Google Calendar router (after app initialization)
+try:
+    from google_calendar import router as calendar_router
+    app.include_router(calendar_router)
+    print("✓ Google Calendar integration loaded")
+except Exception as e:
+    print(f"⚠ Google Calendar integration not available: {e}")
+    print("  Calendar features will be disabled.")
+
 # CORS middleware (allow frontend to connect)
 app.add_middleware(
     CORSMiddleware,
