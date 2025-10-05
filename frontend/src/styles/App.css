@@ -221,6 +221,37 @@ html, body {
   letter-spacing: -0.5px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
 .close-btn {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.06) 100%);
   border: 0.5px solid rgba(0, 0, 0, 0.08);
@@ -411,12 +442,27 @@ html, body {
 }
 
 /* Date Picker Container */
+/* Old date picker container - now hidden */
 .date-picker-container {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  max-width: 300px;
+  display: none;
+}
+
+/* Date picker inside panel */
+.panel-date-picker {
+  padding: 15px 20px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.panel-date-picker .custom-date-picker {
+  max-width: 100%;
+}
+
+.panel-date-picker .date-picker-label {
+  color: #1d1d1f;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 /* Custom Date Picker */
@@ -926,48 +972,183 @@ html, body {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+  /* Map Controls - Move to bottom left, smaller */
   .map-controls {
-    bottom: 20px;
+    bottom: 80px; /* Above hamburger menu */
     left: 10px;
-    padding: 8px;
-    gap: 8px;
+    padding: 6px;
+    gap: 6px;
+    flex-direction: column;
   }
 
   .map-control-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 
+  /* Map Legend - Move below search bar */
   .map-legend {
-    top: 10px;
+    top: 80px; /* Below search bar */
     left: 10px;
-    padding: 10px 15px;
+    padding: 8px 12px;
+    font-size: 11px;
   }
 
   .legend-item {
-    font-size: 12px;
+    font-size: 11px;
+    gap: 6px;
   }
 
+  /* Instruction Overlay - Smaller, centered at bottom */
   .instruction-overlay {
     left: 10px;
     right: 10px;
+    bottom: 100px;
+    top: auto;
     transform: none;
-    padding: 10px 20px;
+    padding: 12px 16px;
+    font-size: 13px;
   }
 
+  .instruction-overlay p {
+    margin: 4px 0;
+    font-size: 12px;
+  }
+
+  /* Results Panel - Full screen on mobile */
   .results-panel {
     width: 100%;
     right: -100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .results-panel.open {
+    right: 0;
+  }
+
+  /* Panel Header - Smaller on mobile */
+  .panel-header {
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
   }
 
   .panel-header h2 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .download-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .close-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+
+  /* Date Picker in Panel - Full width on mobile */
+  .panel-date-picker {
+    padding: 12px 16px;
+  }
+
+  .date-display-button {
+    padding: 12px;
+  }
+
+  /* Location Info - Smaller text */
+  .location-info {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .location-info p {
+    margin: 4px 0;
+  }
+
+  /* Tab Navigation - Scrollable on mobile */
+  .tab-navigation {
+    padding: 0 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tab-navigation::-webkit-scrollbar {
+    display: none;
   }
 
   .tab-btn {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 10px 16px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Tab Content - More padding on mobile */
+  .tab-content {
+    padding: 16px;
+    height: calc(100vh - 320px);
+    overflow-y: auto;
+  }
+
+  /* Weather Card - Stack elements vertically */
+  .weather-card {
+    padding: 16px;
+  }
+
+  .weather-card-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .weather-icon-large {
+    font-size: 64px;
+  }
+
+  .temperature-display {
+    font-size: 42px;
+  }
+
+  .weather-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .detail-value {
+    font-size: 16px;
+  }
+
+  /* Forecast Cards - 2 columns on mobile */
+  .forecast-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .forecast-card {
+    min-width: 80px;
     padding: 12px 8px;
+  }
+
+  /* Charts - Smaller height on mobile */
+  .chart-section {
+    margin: 16px 0;
+  }
+
+  .chart-section h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1307,18 +1488,29 @@ html, body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .search-bar {
-    width: calc(100vw - 40px);
-    top: 20px;
+    width: calc(100vw - 30px);
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
+  /* Hide search bar when panel is open on mobile */
   .search-bar.panel-open {
-    left: 50%;
-    top: 20px;
+    display: none;
   }
 
   .search-input {
     padding: 12px 45px 12px 45px;
     font-size: 14px;
+  }
+
+  .search-icon {
+    left: 14px;
+    font-size: 16px;
+  }
+
+  .search-clear {
+    right: 14px;
   }
 }
 
@@ -2408,4 +2600,82 @@ html, body {
   margin-top: 20px;
   color: #666;
   font-size: 15px;
+}
+
+/* ============================================ */
+/* EXTRA SMALL SCREENS (Mobile Portrait) */
+/* ============================================ */
+@media (max-width: 480px) {
+  /* Make everything more compact */
+  .panel-header h2 {
+    font-size: 18px;
+  }
+
+  .download-btn {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  .tab-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .weather-icon-large {
+    font-size: 56px;
+  }
+
+  .temperature-display {
+    font-size: 36px;
+  }
+
+  .weather-details-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .forecast-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+
+  .forecast-card {
+    min-width: 70px;
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+
+  /* Stack header items vertically */
+  .header-actions {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  /* Smaller instruction overlay */
+  .instruction-overlay {
+    padding: 10px 12px;
+    bottom: 90px;
+  }
+
+  .instruction-overlay p {
+    font-size: 11px;
+  }
+
+  /* Map controls - even smaller */
+  .map-control-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /* Hamburger menu */
+  .hamburger-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hamburger-menu-container {
+    bottom: 15px;
+    right: 12px;
+  }
 }

@@ -57,14 +57,21 @@ class HistoricalWeatherPredictor:
                         "era5_processed_*.parquet"))
                     if parquet_files:
                         logger.info(f"Loading {parquet_files[0].name}...")
-                        self.df = pd.read_parquet(parquet_files[0])
+                        # Only load necessary columns for faster loading
+                        columns_needed = ['date', 'T2M_mean', 'T2M_min', 'T2M_max',
+                                        'PRECTOT_mm', 'WindSpeed', 'CLDTOT_pct',
+                                        'D2M', 'MSL', 'SSRD', 'location_name']
+                        self.df = pd.read_parquet(parquet_files[0], columns=columns_needed)
                     else:
                         # Fall back to CSV
                         csv_files = list(self.location_folder.glob(
                             "era5_processed_*.csv"))
                         if csv_files:
                             logger.info(f"Loading {csv_files[0].name}...")
-                            self.df = pd.read_csv(csv_files[0])
+                            columns_needed = ['date', 'T2M_mean', 'T2M_min', 'T2M_max',
+                                            'PRECTOT_mm', 'WindSpeed', 'CLDTOT_pct',
+                                            'D2M', 'MSL', 'SSRD', 'location_name']
+                            self.df = pd.read_csv(csv_files[0], usecols=columns_needed)
                         else:
                             raise FileNotFoundError(
                                 f"No processed data files found in {self.location_folder}")
@@ -77,26 +84,34 @@ class HistoricalWeatherPredictor:
                     "era5_processed_*.parquet"))
                 if parquet_files:
                     logger.info(f"Loading {parquet_files[0].name}...")
-                    self.df = pd.read_parquet(parquet_files[0])
+                    # Only load necessary columns for faster loading
+                    columns_needed = ['date', 'T2M_mean', 'T2M_min', 'T2M_max',
+                                    'PRECTOT_mm', 'WindSpeed', 'CLDTOT_pct',
+                                    'D2M', 'MSL', 'SSRD', 'location_name']
+                    self.df = pd.read_parquet(parquet_files[0], columns=columns_needed)
                 else:
                     # Fall back to CSV
                     csv_files = list(self.data_dir.glob(
                         "era5_processed_*.csv"))
                     if csv_files:
                         logger.info(f"Loading {csv_files[0].name}...")
-                        self.df = pd.read_csv(csv_files[0])
+                        columns_needed = ['date', 'T2M_mean', 'T2M_min', 'T2M_max',
+                                        'PRECTOT_mm', 'WindSpeed', 'CLDTOT_pct',
+                                        'D2M', 'MSL', 'SSRD', 'location_name']
+                        self.df = pd.read_csv(csv_files[0], usecols=columns_needed)
                     else:
                         raise FileNotFoundError(
                             "No processed data files found")
 
-            # Convert date to datetime
-            self.df['date'] = pd.to_datetime(self.df['date'])
+            # Convert date to datetime with fast path
+            self.df['date'] = pd.to_datetime(self.df['date'], format='ISO8601', cache=True)
 
-            # Extract temporal features
-            self.df['month'] = self.df['date'].dt.month
-            self.df['day'] = self.df['date'].dt.day
-            self.df['year'] = self.df['date'].dt.year
-            self.df['day_of_year'] = self.df['date'].dt.dayofyear
+            # Extract temporal features using optimized vectorized operations
+            dates = self.df['date'].dt
+            self.df['month'] = dates.month.astype('int8')  # Smaller dtype
+            self.df['day'] = dates.day.astype('int8')
+            self.df['year'] = dates.year.astype('int16')
+            self.df['day_of_year'] = dates.dayofyear.astype('int16')
 
             # Get location name
             if 'location_name' in self.df.columns:

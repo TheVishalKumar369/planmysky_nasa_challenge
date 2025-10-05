@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { format, addDays } from 'date-fns';
-import DatePicker from './DatePicker';
 import { checkAuthStatus, initiateGoogleAuth, createCalendarEvent } from '../services/calendarApi';
 
 const WeatherPredictionTab = ({ weatherData, locationData }) => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
   const [isCalendarAuth, setIsCalendarAuth] = useState(false);
   const [isAddingToCalendar, setIsAddingToCalendar] = useState(false);
   const [calendarMessage, setCalendarMessage] = useState(null);
@@ -36,18 +34,26 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
       setIsAddingToCalendar(true);
       setCalendarMessage(null);
 
-      // Check if authenticated
-      if (!isCalendarAuth) {
-        // Initiate OAuth flow
-        setCalendarMessage({ type: 'info', text: 'Opening Google authorization...' });
-        await initiateGoogleAuth();
-        setIsCalendarAuth(true);
-        setCalendarMessage({ type: 'success', text: 'Authorization successful!' });
+      // Check if authenticated first
+      const isAuth = await checkAuthStatus();
+
+      if (!isAuth) {
+        // Need to authenticate - store event data for after OAuth
+        localStorage.setItem('planmysky_pending_calendar_event', JSON.stringify({
+          weatherData,
+          locationData,
+          selectedDate: format(new Date(), 'yyyy-MM-dd')
+        }));
+
+        // Redirect to OAuth (will leave the page)
+        setCalendarMessage({ type: 'info', text: 'Redirecting to Google authorization...' });
+        initiateGoogleAuth();
+        return; // Function will not continue after redirect
       }
 
-      // Create calendar event
+      // Already authenticated - create event directly
       setCalendarMessage({ type: 'info', text: 'Adding event to calendar...' });
-      const result = await createCalendarEvent(weatherData, locationData, format(selectedDate, 'yyyy-MM-dd'));
+      const result = await createCalendarEvent(weatherData, locationData, format(new Date(), 'yyyy-MM-dd'));
 
       setCalendarMessage({
         type: 'success',
@@ -61,10 +67,9 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
       console.error('Calendar error:', error);
 
       if (error.message === 'NOT_AUTHENTICATED') {
-        setIsCalendarAuth(false);
         setCalendarMessage({ type: 'error', text: 'Please authorize Google Calendar access' });
-      } else if (error.message.includes('cancelled')) {
-        setCalendarMessage({ type: 'warning', text: 'Authorization cancelled' });
+        // Trigger OAuth after showing message
+        setTimeout(() => initiateGoogleAuth(), 1500);
       } else {
         setCalendarMessage({ type: 'error', text: 'Failed to add event. Please try again.' });
       }
@@ -81,9 +86,10 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
 
   // Generate 7-day forecast data (mock for now - will be replaced with real API calls)
   const generate7DayData = () => {
+    const today = new Date();
     const data = [];
     for (let i = 0; i < 7; i++) {
-      const date = addDays(selectedDate, i);
+      const date = addDays(today, i);
       data.push({
         date: format(date, 'MMM dd'),
         shortDate: format(date, 'EEE'),
@@ -108,12 +114,6 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
 
   return (
     <div className="weather-prediction-content">
-      {/* Custom Date Picker */}
-      <DatePicker
-        selectedDate={selectedDate}
-        onDateSelect={setSelectedDate}
-      />
-
       {/* Add to Calendar Button */}
       <div className="calendar-action-section">
         <button
@@ -151,7 +151,7 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
         <div className="weather-card-header">
           <div className="weather-icon-large">{getWeatherIcon()}</div>
           <div className="weather-main-info">
-            <h4>{format(selectedDate, 'EEEE, MMMM dd')}</h4>
+            <h4>{weatherData.date || format(new Date(), 'EEEE, MMMM dd')}</h4>
             <div className="temperature-display">
               {weatherData.temperature?.mean_avg_celsius?.toFixed(1)}°C
             </div>

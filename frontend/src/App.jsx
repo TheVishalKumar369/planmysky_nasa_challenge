@@ -3,7 +3,6 @@ import MapContainer from './components/MapContainer';
 import ResultsPanel from './components/ResultsPanel';
 import SearchBar from './components/SearchBar';
 import HamburgerMenu from './components/HamburgerMenu';
-import DatePicker from './components/DatePicker';
 import { findNearestLocation, getWeatherPrediction } from './services/weatherApi';
 import './styles/App.css';
 
@@ -53,7 +52,7 @@ function App() {
 
       console.log(`🌤️ Fetching weather prediction for ${month}/${day}...`);
 
-      const prediction = await getWeatherPrediction(month, day, nearest.name, 7);
+      const prediction = await getWeatherPrediction(month, day, nearest.name, 0);
 
       console.log('✅ Weather Prediction Received:');
       console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -111,7 +110,7 @@ function App() {
         const month = date.getMonth() + 1;
         const day = date.getDate();
 
-        const prediction = await getWeatherPrediction(month, day, nearestLocation.name, 7);
+        const prediction = await getWeatherPrediction(month, day, nearestLocation.name, 0);
         setWeatherData(prediction);
         setIsPanelOpen(true);
       } catch (err) {
@@ -133,14 +132,6 @@ function App() {
         onLocationSelect={handleLocationSelect}
       />
 
-      {/* Date Picker */}
-      <div className="date-picker-container">
-        <DatePicker
-          selectedDate={selectedDate}
-          onDateSelect={handleDateChange}
-        />
-      </div>
-
       <ResultsPanel
         isOpen={isPanelOpen}
         onClose={handleClosePanel}
@@ -149,6 +140,8 @@ function App() {
           clicked: selectedLocation,
           nearest: nearestLocation
         }}
+        selectedDate={selectedDate}
+        onDateChange={handleDateChange}
       />
 
       <HamburgerMenu />

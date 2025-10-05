@@ -22,6 +22,7 @@ merra2_production.log
 temp_raw/
 raw_data/
 processed_data/
+tokens/
 
 # IDE
 .vscode/

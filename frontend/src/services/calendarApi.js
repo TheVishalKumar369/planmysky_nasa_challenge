@@ -55,80 +55,17 @@ export const checkAuthStatus = async () => {
 
 /**
  * Initiate Google OAuth flow
- * Opens Google consent screen in popup window
+ * Redirects to Google consent screen in current window
  */
-export const initiateGoogleAuth = async () => {
+export const initiateGoogleAuth = () => {
   const userId = getUserId();
 
-  try {
-    const response = await fetch(`${API_BASE}/auth/initiate?user_id=${userId}`);
-    const data = await response.json();
+  // Store the current location to return after OAuth
+  localStorage.setItem('planmysky_pre_oauth_path', window.location.pathname + window.location.search);
 
-    if (data.auth_url) {
-      // Open OAuth consent screen in popup
-      const width = 600;
-      const height = 700;
-      const left = window.screen.width / 2 - width / 2;
-      const top = window.screen.height / 2 - height / 2;
-
-      const popup = window.open(
-        data.auth_url,
-        'Google Calendar Authorization',
-        `width=${width},height=${height},left=${left},top=${top},toolbar=no,menubar=no`
-      );
-
-      // Listen for messages from callback page
-      return new Promise((resolve, reject) => {
-        const messageHandler = (event) => {
-          // Verify message origin
-          if (event.origin !== window.location.origin) return;
-
-          if (event.data.type === 'oauth_success') {
-            window.removeEventListener('message', messageHandler);
-            resolve(true);
-          } else if (event.data.type === 'oauth_error') {
-            window.removeEventListener('message', messageHandler);
-            reject(new Error(event.data.error || 'Authentication failed'));
-          }
-        };
-
-        window.addEventListener('message', messageHandler);
-
-        // Also check if popup was closed manually
-        const checkInterval = setInterval(() => {
-          if (popup.closed) {
-            clearInterval(checkInterval);
-            window.removeEventListener('message', messageHandler);
-            // Give a moment for message to arrive
-            setTimeout(() => {
-              checkAuthStatus().then(isAuth => {
-                if (isAuth) {
-                  resolve(true);
-                } else {
-                  reject(new Error('Authentication was cancelled'));
-                }
-              });
-            }, 500);
-          }
-        }, 500);
-
-        // Timeout after 5 minutes
-        setTimeout(() => {
-          clearInterval(checkInterval);
-          window.removeEventListener('message', messageHandler);
-          if (!popup.closed) {
-            popup.close();
-          }
-          reject(new Error('Authentication timeout'));
-        }, 5 * 60 * 1000);
-      });
-    } else {
-      throw new Error('Failed to get authorization URL');
-    }
-  } catch (error) {
-    console.error('Error initiating OAuth:', error);
-    throw error;
-  }
+  // Directly redirect to backend OAuth initiate endpoint
+  // Backend will redirect to Google, then back to our callback
+  window.location.href = `${API_BASE}/auth/initiate?user_id=${userId}`;
 };
 
 /**
