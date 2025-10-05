@@ -1,0 +1,28 @@
+{
+  "location_name": "Banglore, India",
+  "latitude": 12.9629,
+  "longitude": 77.5775,
+  "coverage_km": 111,
+  "coverage_area": {
+    "north": 13.4629,
+    "south": 12.4629,
+    "west": 77.0775,
+    "east": 78.0775,
+    "margin_degrees": 0.5
+  },
+  "start_date": "1993-12-31",
+  "end_date": "1995-12-31",
+  "download_date": "2025-10-05T10:30:32.019417",
+  "file_size_mb": 1.0208749771118164,
+  "variables": [
+    "total_precipitation",
+    "2m_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_cloud_cover",
+    "2m_dewpoint_temperature",
+    "mean_sea_level_pressure",
+    "total_column_water_vapour",
+    "surface_solar_radiation_downwards"
+  ]
+}

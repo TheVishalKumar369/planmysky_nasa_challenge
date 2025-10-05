@@ -43,7 +43,7 @@ try:
     print("✓ Auth Router loaded")
 except Exception as e:
     print(f"⚠ Auth Router not available: {e}")
-    print("  Authentication features will not be avaialable.")
+    print("  Authentication features will not be available.")
 
 # CORS middleware (allow frontend to connect)
 app.add_middleware(
