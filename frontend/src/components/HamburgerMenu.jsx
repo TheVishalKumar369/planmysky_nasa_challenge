@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect, useContext } from 'react';
 import Signup from './SignUp';
 import Login from './LogIn';
 import { AuthContext } from "../contexts/AuthContext";
+import PrivacyPolicy from './PrivacyPolicy';
+import Terms from './Terms';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +15,9 @@ const HamburgerMenu = () => {
 
   const [showSignup, setShowSignup] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
 
   const { token, logout } = useContext(AuthContext);
 
@@ -27,10 +32,15 @@ const HamburgerMenu = () => {
       setShowSignup(false);
     } else if (action === "logout") {
       logout();
+    } else if (action === "privacy") {
+      setShowPrivacy(true);
+    } else if (action === "terms") {
+      setShowTerms(true);
     }
 
     setIsOpen(false);
   };
+
 
   return (
     <div ref={menuRef} className="hamburger-menu-container">
@@ -112,7 +122,7 @@ const HamburgerMenu = () => {
       {/* Signup Popup */}
       {showSignup && (
         <div className="popup-overlay">
-          <div className="popup-content">
+          <div className="popup-content auth-modal">
             <button className="close-btn" onClick={() => setShowSignup(false)}>&times;</button>
             <Signup onSuccess={() => setShowSignup(false)} />
           </div>
@@ -122,12 +132,37 @@ const HamburgerMenu = () => {
       {/* Login Popup */}
       {showLogin && (
         <div className="popup-overlay">
-          <div className="popup-content">
+          <div className="popup-content auth-modal">
             <button className="close-btn" onClick={() => setShowLogin(false)}>&times;</button>
             <Login onSuccess={() => setShowLogin(false)} />
           </div>
         </div>
       )}
+
+      {/* Privacy Policy Modal */}
+      {showPrivacy && (
+        <div className="popup-overlay">
+          <div className="popup-content privacy-modal">
+            <button className="close-btn" onClick={() => setShowPrivacy(false)}>
+              &times;
+            </button>
+            <PrivacyPolicy />
+          </div>
+        </div>
+      )}
+
+      {/* Terms & Conditions Modal */}
+      {showTerms && (
+        <div className="popup-overlay">
+          <div className="popup-content privacy-modal">
+            <button className="close-btn" onClick={() => setShowTerms(false)}>
+              &times;
+            </button>
+            <Terms/>
+          </div>
+        </div>
+      )}
+
 
     </div>
   );
