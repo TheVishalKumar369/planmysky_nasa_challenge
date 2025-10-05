@@ -1,35 +1,46 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
+import Signup from './SignUp';
+import Login from './LogIn';
+import { AuthContext } from "../contexts/AuthContext";
+import PrivacyPolicy from './PrivacyPolicy';
+import Terms from './Terms';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // Close menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen]);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const [showSignup, setShowSignup] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
+
+  const { token, logout } = useContext(AuthContext);
+
   const handleMenuItemClick = (action) => {
     console.log(`Menu action: ${action}`);
-    // TODO: Implement actual navigation/actions
+
+    if (action === "signup") {
+      setShowSignup(true);
+      setShowLogin(false);
+    } else if (action === "login") {
+      setShowLogin(true);
+      setShowSignup(false);
+    } else if (action === "logout") {
+      logout();
+    } else if (action === "privacy") {
+      setShowPrivacy(true);
+    } else if (action === "terms") {
+      setShowTerms(true);
+    }
+
     setIsOpen(false);
   };
+
 
   return (
     <div ref={menuRef} className="hamburger-menu-container">
@@ -48,20 +59,23 @@ const HamburgerMenu = () => {
       {isOpen && (
         <div className="hamburger-dropdown">
           <div className="menu-section">
-            <button
-              className="menu-item"
-              onClick={() => handleMenuItemClick('signup')}
-            >
-              <span className="menu-icon">👤</span>
-              <span className="menu-text">Sign Up</span>
-            </button>
-            <button
-              className="menu-item"
-              onClick={() => handleMenuItemClick('login')}
-            >
-              <span className="menu-icon">🔐</span>
-              <span className="menu-text">Login</span>
-            </button>
+            {!token ? (
+              <>
+                <button className="menu-item" onClick={() => handleMenuItemClick("signup")}>
+                  <span className="menu-icon">👤</span>
+                  <span className="menu-text">Sign Up</span>
+                </button>
+                <button className="menu-item" onClick={() => handleMenuItemClick("login")}>
+                  <span className="menu-icon">🔐</span>
+                  <span className="menu-text">Login</span>
+                </button>
+              </>
+            ) : (
+              <button className="menu-item" onClick={() => handleMenuItemClick("logout")}>
+                <span className="menu-icon">🚪</span>
+                <span className="menu-text">Logout</span>
+              </button>
+            )}
           </div>
 
           <div className="menu-divider"></div>
@@ -104,6 +118,52 @@ const HamburgerMenu = () => {
           </div>
         </div>
       )}
+
+      {/* Signup Popup */}
+      {showSignup && (
+        <div className="popup-overlay">
+          <div className="popup-content auth-modal">
+            <button className="close-btn" onClick={() => setShowSignup(false)}>&times;</button>
+            <Signup onSuccess={() => setShowSignup(false)} />
+          </div>
+        </div>
+      )}
+
+      {/* Login Popup */}
+      {showLogin && (
+        <div className="popup-overlay">
+          <div className="popup-content auth-modal">
+            <button className="close-btn" onClick={() => setShowLogin(false)}>&times;</button>
+            <Login onSuccess={() => setShowLogin(false)} />
+          </div>
+        </div>
+      )}
+
+      {/* Privacy Policy Modal */}
+      {showPrivacy && (
+        <div className="popup-overlay">
+          <div className="popup-content privacy-modal">
+            <button className="close-btn" onClick={() => setShowPrivacy(false)}>
+              &times;
+            </button>
+            <PrivacyPolicy />
+          </div>
+        </div>
+      )}
+
+      {/* Terms & Conditions Modal */}
+      {showTerms && (
+        <div className="popup-overlay">
+          <div className="popup-content privacy-modal">
+            <button className="close-btn" onClick={() => setShowTerms(false)}>
+              &times;
+            </button>
+            <Terms/>
+          </div>
+        </div>
+      )}
+
+
     </div>
   );
 };
