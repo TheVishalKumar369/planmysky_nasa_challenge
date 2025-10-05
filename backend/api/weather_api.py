@@ -160,16 +160,9 @@ async def startup_event():
             predictor_status["locations_available"] = available_locations
             print(f"✓ Found {len(available_locations)} location(s): {', '.join(available_locations)}")
 
-            # Pre-load all locations to speed up first requests
-            print("Pre-loading location data...")
-            for location in available_locations:
-                predictor = load_predictor(location)
-                if predictor:
-                    print(f"  ✓ Pre-loaded {location}")
-                else:
-                    print(f"  ✗ Failed to pre-load {location}")
-
-            print(f"✓ Ready! All {len(predictors)} location(s) loaded")
+            # Skip pre-loading for faster startup - data will be loaded on-demand
+            print("⚡ Fast startup mode: Data will be loaded on first request")
+            print(f"✓ Ready! {len(available_locations)} location(s) available")
         else:
             predictor_status["error"] = "No processed data found"
             print(f"✗ No processed data locations found")

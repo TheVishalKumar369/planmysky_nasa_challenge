@@ -12,7 +12,8 @@ const WeatherStatsTab = ({ weatherData, locationData }) => {
     if (locationData?.nearest?.name) {
       fetchAnnualStats();
     }
-  }, [locationData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locationData?.nearest?.name]);
 
   const fetchAnnualStats = async () => {
     try {

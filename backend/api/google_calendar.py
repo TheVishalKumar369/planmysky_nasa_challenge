@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 from datetime import datetime, timedelta
 import httpx
+from urllib.parse import urlencode
 
 # Load environment variables
 try:
@@ -126,17 +127,18 @@ async def initiate_oauth(user_id: str = Query(..., description="Unique user iden
             detail="Google OAuth not configured. Please set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET environment variables."
         )
 
-    # Build OAuth URL
-    auth_url = (
-        f"{GOOGLE_AUTH_URL}?"
-        f"client_id={GOOGLE_CLIENT_ID}&"
-        f"redirect_uri={GOOGLE_REDIRECT_URI}&"
-        f"response_type=code&"
-        f"scope={CALENDAR_SCOPE}&"
-        f"access_type=offline&"
-        f"prompt=consent&"
-        f"state={user_id}"  # Pass user_id as state
-    )
+    # Build OAuth URL with proper URL encoding
+    params = {
+        'client_id': GOOGLE_CLIENT_ID,
+        'redirect_uri': GOOGLE_REDIRECT_URI,
+        'response_type': 'code',
+        'scope': CALENDAR_SCOPE,
+        'access_type': 'offline',
+        'prompt': 'consent',
+        'state': user_id
+    }
+
+    auth_url = f"{GOOGLE_AUTH_URL}?{urlencode(params)}"
 
     return {
         "auth_url": auth_url,
@@ -394,6 +396,18 @@ async def test_config():
     """
     Test endpoint to verify OAuth configuration
     """
+    # Generate sample auth URL to verify format
+    test_params = {
+        'client_id': GOOGLE_CLIENT_ID,
+        'redirect_uri': GOOGLE_REDIRECT_URI,
+        'response_type': 'code',
+        'scope': CALENDAR_SCOPE,
+        'access_type': 'offline',
+        'prompt': 'consent',
+        'state': 'test_user_123'
+    }
+    sample_auth_url = f"{GOOGLE_AUTH_URL}?{urlencode(test_params)}"
+
     return {
         "status": "ok",
         "config": {
@@ -401,9 +415,16 @@ async def test_config():
             "client_id_prefix": GOOGLE_CLIENT_ID[:20] + "..." if GOOGLE_CLIENT_ID else "NOT SET",
             "client_secret_set": bool(GOOGLE_CLIENT_SECRET),
             "redirect_uri": GOOGLE_REDIRECT_URI,
-            "expected_redirect_format": "http://localhost:3000/oauth-callback.html"
+            "calendar_scope": CALENDAR_SCOPE,
+            "google_auth_url": GOOGLE_AUTH_URL,
+            "google_token_url": GOOGLE_TOKEN_URL
         },
-        "note": "Make sure redirect_uri matches expected_redirect_format and is added to Google Cloud Console"
+        "sample_auth_url": sample_auth_url,
+        "instructions": [
+            "1. Verify redirect_uri is added to Google Cloud Console",
+            "2. Check that Client ID and Secret are correct",
+            "3. Sample auth URL shows the exact format being sent to Google"
+        ]
     }
 
 

@@ -26,11 +26,29 @@ export const checkAuthStatus = async () => {
   const userId = getUserId();
 
   try {
-    const response = await fetch(`${API_BASE}/auth/status?user_id=${userId}`);
+    // Add timeout to prevent hanging
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout
+
+    const response = await fetch(`${API_BASE}/auth/status?user_id=${userId}`, {
+      signal: controller.signal
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      console.warn('Auth status check failed:', response.status);
+      return false;
+    }
+
     const data = await response.json();
     return data.authenticated;
   } catch (error) {
-    console.error('Error checking auth status:', error);
+    if (error.name === 'AbortError') {
+      console.warn('Auth status check timed out');
+    } else {
+      console.error('Error checking auth status:', error);
+    }
     return false;
   }
 };

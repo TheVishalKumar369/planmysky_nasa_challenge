@@ -12,7 +12,23 @@ const WeatherPredictionTab = ({ weatherData, locationData }) => {
 
   // Check auth status on mount
   useEffect(() => {
-    checkAuthStatus().then(setIsCalendarAuth);
+    // Temporarily disable auto-check to prevent hanging
+    // Will check on first calendar button click instead
+    setIsCalendarAuth(false);
+
+    /*
+    const checkAuth = async () => {
+      try {
+        const isAuth = await checkAuthStatus();
+        setIsCalendarAuth(isAuth);
+      } catch (error) {
+        console.error('Failed to check calendar auth status:', error);
+        setIsCalendarAuth(false);
+      }
+    };
+
+    checkAuth();
+    */
   }, []);
 
   const handleAddToCalendar = async () => {
