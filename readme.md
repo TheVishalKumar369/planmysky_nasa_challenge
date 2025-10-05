@@ -738,8 +738,13 @@ MIT License - See LICENSE file for details
 ## 👥 Team
 
 **Project:** PlanMySky
-**Lead Developer:** [Pancha Narayan Sahu(Vishal Kumar)](https://github.com/TheVishalKumar369)
+**Lead Developer(Backend, Social Feature, Calendar Integration, Model Design, Data Acquisition and processing):** [Pancha Narayan Sahu(Vishal Kumar)](https://github.com/TheVishalKumar369)
 **Contact:** panchanarayansahu00@gmail.com
+**Full Stack Developer(with a focus on Frontend & Deployment):** [Vansh Kumar](https://github.com/VanshWebDev)
+**Contact:** vanshvanshkumar39@gmail.com
+**Full Stack Developer(Social Feature, Team Management, Documentation):** [Abdullah Khetran](https://github.com/AbdullahKhetran)
+**Contact:** khetranabdullah@gmail.com
+**Team Management and Presentation** [Abdul Rehman](https://github.com/abdulrehman-work)
 
 ---
 
