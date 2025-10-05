@@ -3,6 +3,7 @@ import MapContainer from './components/MapContainer';
 import ResultsPanel from './components/ResultsPanel';
 import SearchBar from './components/SearchBar';
 import HamburgerMenu from './components/HamburgerMenu';
+import DatePicker from './components/DatePicker';
 import { findNearestLocation, getWeatherPrediction } from './services/weatherApi';
 import './styles/App.css';
 
@@ -11,6 +12,7 @@ function App() {
   const [nearestLocation, setNearestLocation] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const isProcessingRef = useRef(false);
 
   const handleLocationSelect = useCallback(async ({ lat, lng }) => {
@@ -45,9 +47,9 @@ function App() {
         }
       });
 
-      // Auto-fetch weather for current date (example: July 15)
-      const month = 7;
-      const day = 15;
+      // Get month and day from selected date
+      const month = selectedDate.getMonth() + 1; // getMonth() returns 0-11
+      const day = selectedDate.getDate();
 
       console.log(`🌤️ Fetching weather prediction for ${month}/${day}...`);
 
@@ -94,10 +96,28 @@ function App() {
     } finally {
       isProcessingRef.current = false;
     }
-  }, []); // Empty dependencies - function never changes
+  }, [selectedDate]); // Re-fetch when date changes
 
   const handleClosePanel = () => {
     setIsPanelOpen(false);
+  };
+
+  const handleDateChange = async (date) => {
+    setSelectedDate(date);
+
+    // If a location is already selected, fetch weather for new date
+    if (nearestLocation) {
+      try {
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+
+        const prediction = await getWeatherPrediction(month, day, nearestLocation.name, 7);
+        setWeatherData(prediction);
+        setIsPanelOpen(true);
+      } catch (err) {
+        console.error('❌ Error fetching weather for new date:', err.message);
+      }
+    }
   };
 
   return (
@@ -112,6 +132,14 @@ function App() {
         isPanelOpen={isPanelOpen}
         onLocationSelect={handleLocationSelect}
       />
+
+      {/* Date Picker */}
+      <div className="date-picker-container">
+        <DatePicker
+          selectedDate={selectedDate}
+          onDateSelect={handleDateChange}
+        />
+      </div>
 
       <ResultsPanel
         isOpen={isPanelOpen}
@@ -129,6 +157,7 @@ function App() {
       {!isPanelOpen && (
         <div className="instruction-overlay">
           <p>🗺️ Click anywhere on the map or search for a location</p>
+          <p>📅 Select a date to see weather predictions</p>
           <p style={{ fontSize: '12px', opacity: 0.8 }}>Weather results will appear in the side panel</p>
         </div>
       )}

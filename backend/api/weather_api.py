@@ -31,19 +31,28 @@ app = FastAPI(
 try:
     from google_calendar import router as calendar_router
     app.include_router(calendar_router)
-    print("✓ Google Calendar integration loaded")
+    print("[OK] Google Calendar integration loaded")
 except Exception as e:
-    print(f"⚠ Google Calendar integration not available: {e}")
+    print(f"[WARNING] Google Calendar integration not available: {e}")
     print("  Calendar features will be disabled.")
 
 # Add Auth Router
 try:
     from auth_routes import auth_router
-    app.include_router(auth_router, prefix="/auth", tags=["Auth"])
-    print("✓ Auth Router loaded")
+    app.include_router(auth_router, prefix="/api/auth", tags=["Auth"])
+    print("[OK] Auth Router loaded")
 except Exception as e:
-    print(f"⚠ Auth Router not available: {e}")
+    print(f"[WARNING] Auth Router not available: {e}")
     print("  Authentication features will not be available.")
+
+# Add Survey Router
+try:
+    from survey_routes import survey_router
+    app.include_router(survey_router, prefix="/api/survey", tags=["Survey"])
+    print("[OK] Survey Router loaded")
+except Exception as e:
+    print(f"[WARNING] Survey Router not available: {e}")
+    print("  Survey features will not be available.")
 
 # CORS middleware (allow frontend to connect)
 app.add_middleware(
@@ -144,14 +153,14 @@ def load_predictor(location_name: str):
 
         if predictor.load_historical_data():
             predictors[location_name] = predictor
-            print(f"✓ Loaded predictor for {location_name}")
+            print(f"[OK] Loaded predictor for {location_name}")
             return predictor
         else:
-            print(f"✗ Failed to load data for {location_name}")
+            print(f"[ERROR] Failed to load data for {location_name}")
             return None
 
     except Exception as e:
-        print(f"✗ Error loading predictor for {location_name}: {e}")
+        print(f"[ERROR] Error loading predictor for {location_name}: {e}")
         return None
 
 
@@ -167,18 +176,18 @@ async def startup_event():
         if available_locations:
             predictor_status["loaded"] = True
             predictor_status["locations_available"] = available_locations
-            print(f"✓ Found {len(available_locations)} location(s): {', '.join(available_locations)}")
+            print(f"[OK] Found {len(available_locations)} location(s): {', '.join(available_locations)}")
 
             # Skip pre-loading for faster startup - data will be loaded on-demand
-            print("⚡ Fast startup mode: Data will be loaded on first request")
-            print(f"✓ Ready! {len(available_locations)} location(s) available")
+            print("[INFO] Fast startup mode: Data will be loaded on first request")
+            print(f"[OK] Ready! {len(available_locations)} location(s) available")
         else:
             predictor_status["error"] = "No processed data found"
-            print(f"✗ No processed data locations found")
+            print(f"[ERROR] No processed data locations found")
 
     except Exception as e:
         predictor_status["error"] = str(e)
-        print(f"✗ Error discovering locations: {e}")
+        print(f"[ERROR] Error discovering locations: {e}")
 
 
 @app.on_event("shutdown")
@@ -701,7 +710,7 @@ async def download_predictions(
             with open(output_file, 'w') as f:
                 json.dump(response_data, f, indent=2)
 
-            print(f"✓ Saved predictions to {output_file}")
+            print(f"[OK] Saved predictions to {output_file}")
 
         # Return as downloadable file
         json_str = json.dumps(response_data, indent=2)

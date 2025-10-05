@@ -3,10 +3,12 @@ import {
   LineChart, Line, BarChart, Bar, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
+import YearlyDataView from './YearlyDataView';
 
 const WeatherStatsTab = ({ weatherData, locationData }) => {
   const [monthlyStats, setMonthlyStats] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [view, setView] = useState('monthly'); // 'monthly' or 'yearly'
 
   useEffect(() => {
     if (locationData?.nearest?.name) {
@@ -82,8 +84,28 @@ const WeatherStatsTab = ({ weatherData, locationData }) => {
 
   return (
     <div className="weather-stats-content">
-      {/* Climate Summary Cards */}
-      <div className="stats-overview">
+      {/* View Toggle */}
+      <div className="stats-view-toggle">
+        <button
+          className={`view-toggle-btn ${view === 'monthly' ? 'active' : ''}`}
+          onClick={() => setView('monthly')}
+        >
+          📊 Monthly Overview
+        </button>
+        <button
+          className={`view-toggle-btn ${view === 'yearly' ? 'active' : ''}`}
+          onClick={() => setView('yearly')}
+        >
+          📅 Complete Year Analysis
+        </button>
+      </div>
+
+      {view === 'yearly' ? (
+        <YearlyDataView locationData={locationData} />
+      ) : (
+        <>
+          {/* Climate Summary Cards */}
+          <div className="stats-overview">
         <h3>Climate Overview</h3>
         <div className="summary-grid">
           <div className="summary-card">
@@ -255,11 +277,13 @@ const WeatherStatsTab = ({ weatherData, locationData }) => {
         </div>
       </div>
 
-      {/* Data Source */}
-      <div className="data-source-info">
-        <p>📊 Based on {monthlyStats[0]?.years_covered} years of historical ERA5 reanalysis data</p>
-        <p>🔢 Total days analyzed: {monthlyStats.reduce((sum, m) => sum + (m.total_days || 0), 0).toLocaleString()}</p>
-      </div>
+          {/* Data Source */}
+          <div className="data-source-info">
+            <p>📊 Based on {monthlyStats[0]?.years_covered} years of historical ERA5 reanalysis data</p>
+            <p>🔢 Total days analyzed: {monthlyStats.reduce((sum, m) => sum + (m.total_days || 0), 0).toLocaleString()}</p>
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -10,10 +10,10 @@
     "east": 78.0775,
     "margin_degrees": 0.5
   },
-  "start_date": "1993-12-31",
-  "end_date": "1995-12-31",
-  "download_date": "2025-10-05T10:30:32.019417",
-  "file_size_mb": 1.0208749771118164,
+  "start_date": "1997-12-30",
+  "end_date": "1999-12-30",
+  "download_date": "2025-10-05T13:48:59.989039",
+  "file_size_mb": 1.019582748413086,
   "variables": [
     "total_precipitation",
     "2m_temperature",

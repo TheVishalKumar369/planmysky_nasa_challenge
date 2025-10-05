@@ -1,0 +1,8 @@
+{
+  "access_token": "ya29.a0AQQ_BDRIDxRouL12IcemfAfK77lvBeq27GOgS1zYGz0FwbhWeKHTHc6I3xtH35mfiAr9CsHXuEcBYzDRcGjGs9vlrYzLN2nk9nDGCDjFYZmpIdcMPE5hbfh2iStGNxIv6Y8-Pz90e0Coqf4_A65JZZ5_k_hf1AscWPxIVlmDWYJEE1Ea-wSayxVmCE9GA0LPRMV1chYaCgYKAWUSARYSFQHGX2Mia8HWl6oNH0CPub06N5TJog0206",
+  "expires_in": 3599,
+  "refresh_token": "1//0giKq5o-cjpfiCgYIARAAGBASNwF-L9IruXcHrqlBE94po4DrcAYoAQ4VLkhQ8aQPgmM-2-f7HN3mnSwGB8yMS7fE2fgBvcdM8P0",
+  "scope": "https://www.googleapis.com/auth/calendar.events",
+  "token_type": "Bearer",
+  "saved_at": "2025-10-05T12:28:24.232603"
+}

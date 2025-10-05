@@ -1,8 +1,8 @@
 {
-  "access_token": "ya29.a0AQQ_BDR1SFjkTu13w6eZPBRb3MKqkvbrceV6snDhsb56IgYoPGHO5Ox-Ge1AltFJiyt9TjooxjvHuJkw51ysf3tO9EjkiInlrwwJYV4jBnQFB-YPX3n5Q1cFCY5suz_0Ib7L3UPTHsrteQKe0GLeAuQr0GUHnOLrzcfN5Jq5N9wzqmIOLtAEw61nKtUtQ30u3SSC8I4aCgYKAZoSARYSFQHGX2MiDq2XUI1UPjZYFhFEEKlo8w0206",
+  "access_token": "ya29.a0AQQ_BDRUnXPzB9V0-Y_MW-ohK8T1FzT5mQLn9mw_XqMAYkarONpv2_3GHNJGsw2WMYDNXn4ptYht6oDMyMWgQbyPzNUINXP78Aaq-LSUygsWOUY1pCgqMCWdteNCI6C2unp5SgLdV09wvrv3hHHEADsNfX8YfFmVp5XViU7MbGxqRcTnWwQqdhUd755JPz7bYLRyW8kaCgYKAXQSARYSFQHGX2Mi7oVxYJLEvIQDO3pzLkM_HQ0206",
   "expires_in": 3599,
-  "refresh_token": "1//0geQ0ZRPMm8HwCgYIARAAGBASNwF-L9IrzrsGSbH-Fah40EdPvc7cqXKP3FnqSlZ3BQunoanA0g3EVO8xTJZoSh3bC95o-tWjcvU",
+  "refresh_token": "1//0gXVsDEkYXtkECgYIARAAGBASNwF-L9Ir7KQjCTkHMCcuDCwPle5LH9QNiRHTFuVOdscZJe5iVps-K519LLgHXNG3KMcK56xPXx4",
   "scope": "https://www.googleapis.com/auth/calendar.events",
   "token_type": "Bearer",
-  "saved_at": "2025-10-05T10:33:41.044675"
+  "saved_at": "2025-10-05T12:02:05.056242"
 }

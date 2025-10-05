@@ -410,6 +410,15 @@ html, body {
   gap: 24px;
 }
 
+/* Date Picker Container */
+.date-picker-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  max-width: 300px;
+}
+
 /* Custom Date Picker */
 .custom-date-picker {
   position: relative;
@@ -1887,4 +1896,516 @@ html, body {
   max-height: 70vh;
   overflow-y: auto;
   padding-right: 10px;
+}
+
+/* User Dashboard Styles */
+.user-dashboard {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h3 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
+}
+
+.dashboard-section h4 {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 12px 0;
+}
+
+.dashboard-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.info-value {
+  color: #333;
+  font-family: 'Courier New', monospace;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.status-badge.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.warning {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.calendar-connected,
+.calendar-disconnected {
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.calendar-info {
+  color: #666;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.connect-btn,
+.disconnect-btn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.connect-btn {
+  background: #4285f4;
+  color: white;
+}
+
+.connect-btn:hover {
+  background: #3367d6;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
+.disconnect-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.dashboard-message {
+  text-align: center;
+  color: #666;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* Weather Survey Styles */
+.weather-survey {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.survey-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.survey-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.survey-location-info {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.survey-location-info p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.survey-location-info strong {
+  color: #333;
+}
+
+.survey-question-section {
+  margin-top: 20px;
+}
+
+.survey-question {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.survey-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.survey-option {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.survey-option:hover {
+  background: #e9ecef;
+  border-color: #4285f4;
+}
+
+.survey-option input[type="radio"] {
+  margin-right: 12px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.survey-option span {
+  font-size: 15px;
+  color: #333;
+  flex: 1;
+}
+
+.survey-submit-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.survey-submit-btn:hover:not(:disabled) {
+  background: #3367d6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.survey-submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.survey-results-section {
+  margin-top: 20px;
+}
+
+.voted-badge {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.voted-badge strong {
+  font-weight: 700;
+}
+
+.survey-results-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0 16px 0;
+  text-align: center;
+}
+
+.survey-stats {
+  text-align: center;
+  margin-top: 16px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.total-votes {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+.total-votes strong {
+  color: #4285f4;
+  font-size: 18px;
+}
+
+.survey-message {
+  text-align: center;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Stats View Toggle */
+.stats-view-toggle {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #666;
+}
+
+.view-toggle-btn:hover {
+  border-color: #4285f4;
+  color: #4285f4;
+  transform: translateY(-1px);
+}
+
+.view-toggle-btn.active {
+  background: #4285f4;
+  border-color: #4285f4;
+  color: white;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* Yearly Data View Styles */
+.yearly-data-view {
+  padding: 20px;
+}
+
+.yearly-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.yearly-header h2 {
+  font-size: 28px;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.yearly-subtitle {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
+
+.month-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month-btn {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #666;
+}
+
+.month-btn:hover {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.month-btn.active {
+  background: #4285f4;
+  border-color: #4285f4;
+  color: white;
+}
+
+.yearly-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 32px;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.monthly-breakdown-section {
+  margin-top: 32px;
+}
+
+.monthly-breakdown-section h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.monthly-breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.month-summary-card {
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.month-summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.month-summary-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.month-summary-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+.data-notes {
+  margin-top: 32px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #4285f4;
+}
+
+.data-notes p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4285f4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 15px;
 }

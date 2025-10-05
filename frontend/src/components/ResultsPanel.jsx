@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import WeatherPredictionTab from './WeatherPredictionTab';
 import WeatherStatsTab from './WeatherStatsTab';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 import MiniPosts from './MiniPosts';
 import LocalTrends from './LocalTrends';
+import UserDashboard from './UserDashboard';
+import WeatherSurvey from './WeatherSurvey';
+import { AuthContext } from '../contexts/AuthContext';
 
 
 const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
+  const { token } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState('probability');
-    const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
   // dummy data: todo
@@ -110,57 +114,10 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
         )}
 
         {activeTab === 'social' && (
-          <div className="tab-panel">
-            <h3>🌦 Social Poll</h3>
-            <div className="data-content">
-              {!submitted ? (
-                <>
-                  <p><strong>Question:</strong> What are you planning today if it rains?</p>
-                  <div className="poll-options">
-                    {pollResults.map((option) => (
-                      <label key={option.name} style={{ display: "block", margin: "5px 0" }}>
-                        <input
-                          type="radio"
-                          name="poll"
-                          value={option.name}
-                          onChange={() => setSelectedOption(option.name)}
-                        />
-                        {option.name}
-                      </label>
-                    ))}
-                  </div>
-                  <button className="poll-btn" onClick={handleVote}>
-                    Submit
-                  </button>
-                </>
-              ) : (
-                <>
-                  <h4>Community Results:</h4>               
-                  
-                  <PieChart width={300} height={250}>
-                    <Pie
-                      data={pollResults}
-                      cx="50%"
-                      cy="50%"
-                      labelLine={false}
-                      outerRadius={80}
-                      fill="#8884d8"
-                      dataKey="value"
-                      // label
-                    >
-                      {pollResults.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                      ))}
-                    </Pie>
-                    <Tooltip />
-                    <Legend />
-                  </PieChart>
-                
-                  <p>✅ You voted: <strong>{selectedOption}</strong></p>
-                </>
-              )}
-            </div>
-          </div>
+          <>
+            {token && <UserDashboard />}
+            <WeatherSurvey weatherData={weatherData} locationData={locationData} />
+          </>
         )}
       </div>
     </div>

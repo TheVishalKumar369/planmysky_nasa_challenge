@@ -140,10 +140,8 @@ async def initiate_oauth(user_id: str = Query(..., description="Unique user iden
 
     auth_url = f"{GOOGLE_AUTH_URL}?{urlencode(params)}"
 
-    return {
-        "auth_url": auth_url,
-        "message": "Redirect user to this URL for authentication"
-    }
+    # Redirect directly to Google's authorization page
+    return RedirectResponse(url=auth_url)
 
 
 @router.get("/auth/callback")
@@ -179,12 +177,9 @@ async def oauth_callback(
     tokens = response.json()
     save_tokens(user_id, tokens)
 
-    # Return success response (will be handled by frontend callback page)
-    return {
-        "success": True,
-        "message": "Authorization successful",
-        "user_id": user_id
-    }
+    # Redirect back to frontend with success message
+    frontend_url = "http://localhost:3000"
+    return RedirectResponse(url=f"{frontend_url}?calendar_connected=true")
 
 
 @router.post("/create-event")
