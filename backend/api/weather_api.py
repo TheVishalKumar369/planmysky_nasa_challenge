@@ -54,6 +54,15 @@ except Exception as e:
     print(f"[WARNING] Survey Router not available: {e}")
     print("  Survey features will not be available.")
 
+# Add Community Router
+try:
+    from community_routes import community_router
+    app.include_router(community_router, tags=["Community"])
+    print("[OK] Community Router loaded")
+except Exception as e:
+    print(f"[WARNING] Community Router not available: {e}")
+    print("  Community features will not be available.")
+
 # CORS middleware (allow frontend to connect)
 app.add_middleware(
     CORSMiddleware,
@@ -178,9 +187,20 @@ async def startup_event():
             predictor_status["locations_available"] = available_locations
             print(f"[OK] Found {len(available_locations)} location(s): {', '.join(available_locations)}")
 
-            # Skip pre-loading for faster startup - data will be loaded on-demand
-            print("[INFO] Fast startup mode: Data will be loaded on first request")
-            print(f"[OK] Ready! {len(available_locations)} location(s) available")
+            # Pre-load all locations for faster API responses
+            print("[INFO] Pre-loading weather data for all locations...")
+            import time
+            start_time = time.time()
+
+            for location in available_locations:
+                try:
+                    load_predictor(location)
+                except Exception as e:
+                    print(f"[WARNING] Failed to pre-load {location}: {e}")
+
+            load_time = time.time() - start_time
+            print(f"[OK] Pre-loaded {len(predictors)} location(s) in {load_time:.2f}s")
+            print(f"[OK] Ready! API is now responsive")
         else:
             predictor_status["error"] = "No processed data found"
             print(f"[ERROR] No processed data locations found")
