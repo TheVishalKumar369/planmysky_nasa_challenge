@@ -753,6 +753,7 @@ MIT License - See LICENSE file for details
 
 **Team Management and Presentation** [Abdul Rehman](https://github.com/abdulrehman-work)
 
+**Contact:** 547abdulrehman@gmail.com
 ---
 
 ## 🙏 Acknowledgments
