@@ -101,17 +101,6 @@ const ResultsPanel = ({ isOpen, onClose, weatherData, locationData }) => {
           <WeatherStatsTab weatherData={weatherData} locationData={locationData} />
         )}
 
-        {/* {activeTab === 'connect' && (
-          <div className="tab-panel">
-            <h3>Weather Connect</h3>
-            <div className="data-content">
-              <p>Weather connection and integration data will be displayed here.</p>
-              {weatherData && (
-                <pre>{JSON.stringify(weatherData, null, 2)}</pre>
-              )}
-            </div>
-          </div>
-        )} */}
 
         {activeTab === "connect" && (
           <div>
